@@ -25,3 +25,13 @@ export const CARD_SIZES = "(min-width: 1024px) 352px, (min-width: 640px) 50vw, c
 
 /** Intrinsic ratio of every generated variant, used to reserve layout space. */
 export const CARD_ASPECT = { width: 1200, height: 800 } as const;
+
+/** Product artwork carries a fourth width for the large guide-page hero. */
+export const PRODUCT_WIDTHS = [480, 800, 1200, 1600] as const;
+
+export function productSrcSet(base: string): string {
+  return PRODUCT_WIDTHS.map((w) => `${base}-${w}.webp ${w}w`).join(", ");
+}
+
+/** Card grid sizing, matching CARD_SIZES; the hero uses its own value. */
+export const PRODUCT_HERO_SIZES = "(min-width: 1024px) 700px, calc(100vw - 2rem)";

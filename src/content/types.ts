@@ -102,6 +102,12 @@ export interface Product {
    * renders a disabled state rather than a dead or fabricated link.
    */
   affiliateUrl: string | null;
+  /**
+   * Base path for responsive product artwork, without width suffix or
+   * extension. `-480`, `-800`, `-1200` and `-1600` .webp must all exist.
+   * Falls back to the generated SVG in `art` when absent.
+   */
+  image?: string;
   art: ArtSeed;
   /** Which category/subcategory listings this appears in. */
   placements: Placement[];

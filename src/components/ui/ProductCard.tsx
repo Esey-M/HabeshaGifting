@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Artwork } from "@/components/Artwork";
 import type { Product } from "@/content/types";
 import { getBudget } from "@/lib/content";
+import { CARD_ASPECT, CARD_SIZES, cardSrc, productSrcSet } from "@/lib/images";
 import { routes } from "@/lib/site";
 
 /**
@@ -21,13 +22,28 @@ export function ProductCard({ product }: { product: Product }) {
         href={routes.guide(product.slug)}
         tabIndex={-1}
         aria-hidden="true"
-        className="relative block aspect-[4/3] overflow-hidden"
+        className="relative block aspect-[3/2] overflow-hidden bg-cream"
       >
-        <Artwork
-          seed={product.art}
-          id={`pc-${product.slug}`}
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-        />
+        {product.image ? (
+          /* eslint-disable-next-line @next/next/no-img-element -- static export, no optimizer */
+          <img
+            src={cardSrc(product.image)}
+            srcSet={productSrcSet(product.image)}
+            sizes={CARD_SIZES}
+            width={CARD_ASPECT.width}
+            height={CARD_ASPECT.height}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+          />
+        ) : (
+          <Artwork
+            seed={product.art}
+            id={`pc-${product.slug}`}
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+          />
+        )}
       </Link>
 
       <div className="flex flex-1 flex-col p-5">

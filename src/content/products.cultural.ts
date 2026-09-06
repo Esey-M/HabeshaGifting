@@ -58,7 +58,7 @@ export const culturalProducts: Product[] = [
         "Openwork is fiddly to clean",
         "Regional style rarely stated by sellers",
       ],
-      alternatives: ["eritrean-ethiopian-silver-necklace-earring-set", "tigrinya-script-bracelet"],
+      alternatives: ["habesha-cross-necklace-earring-set", "tigrinya-script-bracelet"],
     },
   },
   {

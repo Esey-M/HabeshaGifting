@@ -9,3 +9,4 @@ next-env.d.ts
 # Original AI-generated illustration masters (~66MB). Kept locally and out of
 # git history; the optimised WebP variants under public/img are what ship.
 source-images/
+artwork-inbox/processed/

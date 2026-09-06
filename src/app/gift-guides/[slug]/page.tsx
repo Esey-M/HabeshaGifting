@@ -12,6 +12,7 @@ import {
   relatedProducts,
   resolveAlternatives,
 } from "@/lib/content";
+import { PRODUCT_HERO_SIZES, productSrcSet } from "@/lib/images";
 import { absoluteUrl, routes, site } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -109,15 +110,35 @@ export default async function GuidePage({ params }: { params: Params }) {
           </header>
 
           <figure className="mt-9 overflow-hidden rounded-card border border-line">
-            <Artwork
-              seed={product.art}
-              id={`guide-${product.slug}`}
-              scale="feature"
-              className="aspect-[16/9] w-full object-cover"
-            />
+            {product.image ? (
+              /* eslint-disable-next-line @next/next/no-img-element -- static export, no optimizer */
+              <img
+                src={`${product.image}-1200.webp`}
+                srcSet={productSrcSet(product.image)}
+                sizes={PRODUCT_HERO_SIZES}
+                width={1600}
+                height={1067}
+                alt={`Illustration of the ${product.title.toLowerCase()}`}
+                className="aspect-[3/2] w-full bg-cream object-cover"
+              />
+            ) : (
+              <Artwork
+                seed={product.art}
+                id={`guide-${product.slug}`}
+                scale="feature"
+                className="aspect-[3/2] w-full object-cover"
+              />
+            )}
+            {/*
+              The caption has to match what the image actually is. A generated
+              pattern represents the category; a commissioned illustration
+              depicts this specific product and must say it is an interpretation
+              rather than a photograph, since it sits beside a Buy button.
+            */}
             <figcaption className="border-t border-line bg-cream px-5 py-3 text-xs text-muted">
-              Illustrative artwork. We do not publish retailer product photography, so images on
-              this site represent the category rather than a specific listing.
+              {product.image
+                ? "Illustration of the recommended product — an artist's interpretation, not a photograph. Check the retailer's listing for exact appearance, finish and colour options."
+                : "Illustrative artwork. We do not publish retailer product photography, so images on this site represent the category rather than a specific listing."}
             </figcaption>
           </figure>
 

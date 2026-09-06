@@ -13,8 +13,8 @@ import type { Product } from "./types";
  */
 export const giftingProducts: Product[] = [
   {
-    slug: "eritrean-ethiopian-silver-necklace-earring-set",
-    title: "Habesha Silver Necklace & Earring Set",
+    slug: "habesha-cross-necklace-earring-set",
+    title: "Habesha Cross Necklace & Earring Set",
     tag: "Jewelry",
     summary:
       "A matched necklace and earring set in traditional Ethiopian and Eritrean styling — the safest way to give cultural jewellery without guessing at one piece.",
@@ -22,9 +22,10 @@ export const giftingProducts: Product[] = [
     budget: "under-100",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DHGFPTGK?linkCode=ll2&tag=mesmerdesign-20&linkId=80b9ef0532b385df54fbd8206724aaf4&language=en_US",
+    image: "/img/products/habesha-cross-necklace-earring-set",
     art: { hue: 45, motif: "cross" },
     updated: "2026-09-06",
-    tags: ["jewelry", "necklace", "earrings", "silver", "eritrean", "ethiopian", "set", "girlfriend"],
+    tags: ["jewelry", "necklace", "earrings", "cross", "eritrean", "ethiopian", "set", "girlfriend"],
     placements: [
       { category: "gifts-for-her", subcategory: "girlfriend" },
       { category: "ethiopian-eritrean-gifts", subcategory: "jewelry" },
@@ -37,12 +38,12 @@ export const giftingProducts: Product[] = [
         "A necklace on its own has to be exactly right. A matched set gives her two ways to wear your gift, which quietly lowers the stakes on both.",
       why: [
         "A set solves the single-piece problem. Buy one necklace and it either suits her neckline, her other jewellery and her daily style, or it sits in a drawer. A set gives her the option of wearing the earrings alone on days the necklace is too much — and earrings are far more forgiving of personal taste than anything worn at the throat.",
-        "Traditional Habesha silverwork reads as jewellery first and heritage second, which is exactly the right order for a gift to a girlfriend. It is culturally specific without being a statement she has to explain at work.",
+        "Traditional Habesha cross work reads as jewellery first and heritage second, which is exactly the right order for a gift to a girlfriend. It is culturally specific without being a statement she has to explain at work.",
         "Sets photograph and present better than a single piece. Opening a box with two matched items feels considered in a way a single small pendant does not, without costing proportionally more.",
       ],
       whoFor: [
         "A girlfriend or partner where you want something cultural but not heavy",
-        "Anyone who already wears silver rather than gold day to day",
+        "Anyone who wears one metal consistently — check which before you order",
         "An anniversary or milestone where a set suits the occasion better than one piece",
         "Someone building a cultural jewellery collection from nothing",
       ],
@@ -52,7 +53,7 @@ export const giftingProducts: Product[] = [
         "Culturally specific without demanding she wear a statement",
       ],
       considerations: [
-        "Check the metal description carefully. Sterling silver, silver-plated and silver-tone are three very different things at three very different lifespans, and listings use the words loosely.",
+        "Check the metal and the colour variant. Listings like this often sell gold-tone and silver-tone versions under one page, and sterling, plated and tone are three different things at three different lifespans. Confirm which variant you are actually adding to the basket.",
         "Confirm the earring fitting type. Posts, hooks and clips are not interchangeable, and pierced-only fittings are useless to someone without pierced ears.",
         "Look at the chain length in the specification rather than the photograph. Necklaces photograph at flattering lengths that bear no relation to the number in the listing.",
         "If she has a nickel sensitivity, verify the alloy is stated as nickel-free — plated jewellery is a common cause of reactions.",
@@ -81,6 +82,7 @@ export const giftingProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0GRLB4RNR?linkCode=ll2&tag=mesmerdesign-20&linkId=1f2db89e74a112fa5e1a5c2f80f7674f&language=en_US",
+    image: "/img/products/initial-letter-pendant-necklace",
     art: { hue: 330, motif: "cross" },
     updated: "2026-09-06",
     tags: ["jewelry", "necklace", "initial", "personalized", "budget", "girlfriend", "valentine"],
@@ -303,7 +305,7 @@ export const giftingProducts: Product[] = [
         "Plating wears quickly on a beaded chain",
         "Denominational mismatch is easy to get wrong",
       ],
-      alternatives: ["ethiopian-cross-pendant", "eritrean-ethiopian-silver-necklace-earring-set", "tigrinya-script-bracelet"],
+      alternatives: ["ethiopian-cross-pendant", "habesha-cross-necklace-earring-set", "tigrinya-script-bracelet"],
     },
   },
   {
