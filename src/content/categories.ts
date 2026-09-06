@@ -19,6 +19,7 @@ export const categories: Category[] = [
     childLabel: "Occasions",
     art: { hue: 0, motif: "rays" },
     inNav: true,
+    image: "/img/categories/gifts-by-occasion",
     subcategories: [
       {
         slug: "wedding",
@@ -132,6 +133,7 @@ export const categories: Category[] = [
     childLabel: "Recipients",
     art: { hue: 350, motif: "weave" },
     inNav: true,
+    image: "/img/categories/gifts-for-her",
     subcategories: [
       {
         slug: "mom",
@@ -141,6 +143,7 @@ export const categories: Category[] = [
         heading: "Best Gifts for Mom",
         intro:
           "Gifts for a Habesha mother are a particular challenge: she will insist she does not need anything, then use the right gift every single day. These lean toward things she would never buy for herself.",
+        image: "/img/gifts-for-her/mom",
         art: { hue: 352, motif: "vessel" },
       },
       {
@@ -151,6 +154,7 @@ export const categories: Category[] = [
         heading: "Gifts for Your Wife or Partner",
         intro:
           "The bar is higher here, and it is not about price. These ideas favour the personal and the lasting over the grand gesture.",
+        image: "/img/gifts-for-her/wife-partner",
         art: { hue: 345, motif: "cross" },
       },
       {
@@ -161,6 +165,7 @@ export const categories: Category[] = [
         heading: "Gifts for Your Girlfriend",
         intro:
           "Early-relationship gifting is a calibration problem. These ideas read as considered rather than heavy — beautiful objects, small luxuries, nothing that implies a mortgage.",
+        image: "/img/gifts-for-her/girlfriend",
         art: { hue: 340, motif: "weave" },
       },
       {
@@ -171,6 +176,7 @@ export const categories: Category[] = [
         heading: "Gifts for Your Sister",
         intro:
           "Sisters are the most honest recipients you will ever have, which makes them the most rewarding. These ideas suit a wide range of ages and styles.",
+        image: "/img/gifts-for-her/sister",
         art: { hue: 330, motif: "weave" },
       },
       {
@@ -181,6 +187,7 @@ export const categories: Category[] = [
         heading: "Gifts for Your Daughter",
         intro:
           "Many of these are gifts with a second life as heirlooms — jewellery, keepsakes and cultural pieces that mean more the older she gets.",
+        image: "/img/gifts-for-her/daughter",
         art: { hue: 20, motif: "cross" },
       },
       {
@@ -191,6 +198,7 @@ export const categories: Category[] = [
         heading: "Gifts for a Friend",
         intro:
           "Friend gifts should be warm and low-pressure. These work for a birthday, a thank-you, or turning up at her place without a reason.",
+        image: "/img/gifts-for-her/friend",
         art: { hue: 15, motif: "basket" },
       },
       {
@@ -201,6 +209,7 @@ export const categories: Category[] = [
         heading: "Gifts for Teen Girls",
         intro:
           "The trick with teenagers is choosing something cultural that does not feel like homework. These lean modern — jewellery, personalised pieces and things she can wear or show a friend.",
+        image: "/img/gifts-for-her/teen-girl",
         art: { hue: 320, motif: "rays" },
       },
       {
@@ -211,6 +220,7 @@ export const categories: Category[] = [
         heading: "Gifts for Young Girls",
         intro:
           "For younger children, the best cultural gifts are the ones that get handled: books, colour, music and things that survive being loved hard.",
+        image: "/img/gifts-for-her/young-girl",
         art: { hue: 35, motif: "basket" },
       },
       {
@@ -221,6 +231,7 @@ export const categories: Category[] = [
         heading: "Gifts for Grandma",
         intro:
           "Gifts for a grandmother work best when they are comfortable, useful and unmistakably chosen for her. Photographs and coffee do a lot of work here.",
+        image: "/img/gifts-for-her/grandma",
         art: { hue: 10, motif: "vessel" },
       },
     ],
@@ -235,6 +246,7 @@ export const categories: Category[] = [
     childLabel: "Recipients",
     art: { hue: 200, motif: "arch" },
     inNav: true,
+    image: "/img/categories/gifts-for-him",
     subcategories: [
       {
         slug: "dad",
@@ -244,6 +256,7 @@ export const categories: Category[] = [
         heading: "Best Gifts for Dad",
         intro:
           "He will say not to spend money on him. Buy him the good coffee equipment anyway — these are gifts that quietly upgrade something he does every day.",
+        image: "/img/gifts-for-him/dad",
         art: { hue: 205, motif: "vessel" },
       },
       {
@@ -254,6 +267,7 @@ export const categories: Category[] = [
         heading: "Gifts for Your Husband or Partner",
         intro:
           "These favour things with some permanence — leather, wood, engraving — over novelty that ends up in a drawer.",
+        image: "/img/gifts-for-him/husband-partner",
         art: { hue: 210, motif: "cross" },
       },
       {
@@ -264,6 +278,7 @@ export const categories: Category[] = [
         heading: "Gifts for Your Boyfriend",
         intro:
           "Good early-relationship gifts are specific to him rather than expensive. These ideas suit birthdays, anniversaries and holidays alike.",
+        image: "/img/gifts-for-him/boyfriend",
         art: { hue: 215, motif: "weave" },
       },
       {
@@ -274,6 +289,7 @@ export const categories: Category[] = [
         heading: "Gifts for Your Brother",
         intro:
           "Brothers are forgiving recipients but hard to surprise. These ideas skew practical, cultural, or funny enough to earn a photo in the family group chat.",
+        image: "/img/gifts-for-him/brother",
         art: { hue: 220, motif: "rays" },
       },
       {
@@ -284,6 +300,7 @@ export const categories: Category[] = [
         heading: "Gifts for Your Son",
         intro:
           "Whether he is eight or twenty-eight, these are gifts with a thread back to home — keepsakes, cultural pieces and things worth keeping.",
+        image: "/img/gifts-for-him/son",
         art: { hue: 195, motif: "cross" },
       },
       {
@@ -294,6 +311,7 @@ export const categories: Category[] = [
         heading: "Gifts for a Friend",
         intro:
           "Low-stakes, high-warmth gifting: coffee, good-looking desk objects, and things that are pleasant to receive without obligating anybody.",
+        image: "/img/gifts-for-him/friend",
         art: { hue: 190, motif: "basket" },
       },
       {
@@ -304,6 +322,7 @@ export const categories: Category[] = [
         heading: "Gifts for Teen Boys",
         intro:
           "Aim for things he can wear, use, or put in his room without editing. Subtle cultural design beats anything that looks like a souvenir.",
+        image: "/img/gifts-for-him/teen-boy",
         art: { hue: 225, motif: "rays" },
       },
       {
@@ -314,6 +333,7 @@ export const categories: Category[] = [
         heading: "Gifts for Young Boys",
         intro:
           "For younger kids, choose the cultural gifts that invite handling — books, music, football and colour.",
+        image: "/img/gifts-for-him/young-boy",
         art: { hue: 185, motif: "basket" },
       },
       {
@@ -324,6 +344,7 @@ export const categories: Category[] = [
         heading: "Gifts for Grandpa",
         intro:
           "Comfort, coffee and photographs. Gifts for grandfathers work best when they are easy to use and clearly chosen with him in mind.",
+        image: "/img/gifts-for-him/grandpa",
         art: { hue: 200, motif: "vessel" },
       },
     ],
@@ -339,6 +360,7 @@ export const categories: Category[] = [
     childLabel: "Collections",
     art: { hue: 100, motif: "weave" },
     inNav: true,
+    image: "/img/categories/ethiopian-eritrean-gifts",
     subcategories: [
       {
         slug: "ethiopian-inspired",
@@ -413,6 +435,7 @@ export const categories: Category[] = [
     childLabel: "Collections",
     art: { hue: 25, motif: "vessel" },
     inNav: true,
+    image: "/img/categories/coffee-traditional-gifts",
     subcategories: [
       {
         slug: "jebena-coffee-pots",
@@ -487,6 +510,7 @@ export const categories: Category[] = [
     childLabel: "Collections",
     art: { hue: 280, motif: "cross" },
     inNav: true,
+    image: "/img/categories/personalized-gifts",
     subcategories: [
       {
         slug: "personalized-jewelry",

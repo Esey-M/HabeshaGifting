@@ -39,7 +39,7 @@ export default function GiftsIndexPage() {
       </div>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {categories.map((category) => (
+        {categories.map((category, i) => (
           <CategoryCard
             key={category.slug}
             id={`gi-${category.slug}`}
@@ -48,6 +48,8 @@ export default function GiftsIndexPage() {
             icon={category.icon}
             description={category.tagline}
             art={category.art}
+            image={category.image}
+            priority={i < 3}
             meta={`${category.subcategories.length} ${category.childLabel.toLowerCase()} · ${productsInCategory(category.slug).length} ideas`}
           />
         ))}

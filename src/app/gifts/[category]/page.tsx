@@ -78,7 +78,7 @@ export default async function CategoryPage({ params }: { params: Params }) {
           Browse by {category.childLabel.toLowerCase()}
         </h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {category.subcategories.map((sub) => {
+          {category.subcategories.map((sub, i) => {
             const count = countIn(category.slug, sub.slug);
             return (
               <CategoryCard
@@ -89,6 +89,8 @@ export default async function CategoryPage({ params }: { params: Params }) {
                 icon={sub.icon}
                 description={sub.tagline}
                 art={sub.art}
+                image={sub.image}
+                priority={i < 3}
                 meta={count > 0 ? `${count} ${count === 1 ? "guide" : "guides"}` : "Guides coming soon"}
               />
             );

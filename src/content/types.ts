@@ -40,6 +40,12 @@ export interface Category {
   childLabel: "Recipients" | "Occasions" | "Collections";
   /** Palette seed for generated artwork, so a category looks consistent. */
   art: ArtSeed;
+  /**
+   * Base path for responsive card artwork, without width suffix or extension.
+   * `-480.webp`, `-800.webp` and `-1200.webp` must all exist under /public.
+   * When absent the card falls back to the generated SVG in `art`.
+   */
+  image?: string;
   subcategories: Subcategory[];
   /** Shown in the primary desktop navigation. */
   inNav?: boolean;
@@ -55,6 +61,12 @@ export interface Subcategory {
   heading: string;
   /** Editorial standfirst above the product grid. */
   intro: string;
+  /**
+   * Base path for responsive card artwork, without width suffix or extension.
+   * `-480.webp`, `-800.webp` and `-1200.webp` must all exist under /public.
+   * When absent the card falls back to the generated SVG in `art`.
+   */
+  image?: string;
   art: ArtSeed;
 }
 
