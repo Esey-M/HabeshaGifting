@@ -3,68 +3,6 @@ import type { Product } from "./types";
 /** Jewelry, clothing, personalised and keepsake products. */
 export const culturalProducts: Product[] = [
   {
-    slug: "amharic-name-necklace",
-    title: "Amharic Script Name Necklace",
-    tag: "Personalized Jewelry",
-    summary:
-      "A custom pendant with a name written in Ge'ez script, in gold-tone, silver-tone or solid metal.",
-    bestFor: "Daughter · Girlfriend · Teen girl",
-    budget: "under-100",
-    affiliateUrl: null,
-    art: { hue: 285, motif: "cross" },
-    updated: "2026-08-30",
-    tags: ["jewelry", "necklace", "amharic", "personalized", "script", "ge'ez", "name"],
-    placements: [
-      { category: "personalized-gifts", subcategory: "personalized-jewelry" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "ethiopian-inspired" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "jewelry" },
-      { category: "gifts-for-her", subcategory: "daughter" },
-      { category: "gifts-for-her", subcategory: "girlfriend" },
-      { category: "gifts-for-her", subcategory: "teen-girl" },
-      { category: "gifts-by-occasion", subcategory: "birthday" },
-    ],
-    guide: {
-      heading: "Amharic Name Necklaces: Get the Spelling Right First",
-      standfirst:
-        "The most requested personalised gift in the Habesha diaspora, and the one with the highest rate of expensive, unfixable mistakes.",
-      why: [
-        "Ge'ez script is visually distinctive in a way Latin-alphabet name jewellery is not. Each character is a syllable with its own form, so even a short name becomes a genuinely ornamental shape rather than simply letters on a chain.",
-        "It works as an everyday cultural signal. Unlike a piece that only comes out for holidays, a name pendant is worn to work and to school — which is exactly why it resonates with second-generation recipients negotiating two identities.",
-        "It is personal without being presumptuous. A name is specific to the recipient but carries none of the commitment implied by other jewellery, which makes it viable for a girlfriend, a sister or a niece alike.",
-      ],
-      whoFor: [
-        "Daughters, nieces and teenagers connecting with heritage",
-        "A girlfriend or partner, where a name is personal but not loaded",
-        "Anyone with a name that is commonly misspelled in Latin script",
-        "Graduation and milestone birthdays, where a keepsake suits the moment",
-      ],
-      whyGift: [
-        "Highly personal — it can only have been made for them",
-        "Worn daily rather than kept in a box",
-        "Reads as cultural without requiring explanation",
-      ],
-      considerations: [
-        "Have the spelling checked by a fluent reader before ordering, ideally someone from the recipient's own family. Transliteration from Latin to Ge'ez is not one-to-one and sellers frequently guess wrong.",
-        "Confirm the seller sets the script from your typed Ge'ez characters rather than converting from Latin themselves. Ask for a proof image before production.",
-        "Custom pieces are usually non-returnable. Spelling errors are your problem, not the seller's.",
-        "Plated pieces tarnish, particularly on anyone who wears jewellery in the shower. Solid silver costs more and lasts far longer.",
-        "Thin script pendants with fine connecting strokes are structurally weak; look at the metal thickness in the photos.",
-      ],
-      pros: [
-        "Deeply personal and visually striking",
-        "Worn every day",
-        "Suits a wide range of ages and relationships",
-      ],
-      cons: [
-        "Spelling errors are permanent and non-refundable",
-        "Plating wears through with daily use",
-        "Delicate scripts can snap at thin points",
-        "Custom production adds lead time — order early",
-      ],
-      alternatives: ["ethiopian-cross-pendant", "tigrinya-script-bracelet", "personalized-birthstone-ring"],
-    },
-  },
-  {
     slug: "ethiopian-cross-pendant",
     title: "Ethiopian Cross Pendant",
     tag: "Jewelry",
@@ -120,7 +58,7 @@ export const culturalProducts: Product[] = [
         "Openwork is fiddly to clean",
         "Regional style rarely stated by sellers",
       ],
-      alternatives: ["amharic-name-necklace", "tigrinya-script-bracelet"],
+      alternatives: ["eritrean-ethiopian-silver-necklace-earring-set", "tigrinya-script-bracelet"],
     },
   },
   {
@@ -178,7 +116,7 @@ export const culturalProducts: Product[] = [
         "Cuffs are hard to size remotely",
         "Shallow engraving wears off on plated metal",
       ],
-      alternatives: ["amharic-name-necklace", "ethiopian-cross-pendant", "personalized-birthstone-ring"],
+      alternatives: ["ethiopian-cross-pendant", "personalized-birthstone-ring"],
     },
   },
   {
@@ -236,7 +174,7 @@ export const culturalProducts: Product[] = [
         "Personalised rings are often non-returnable",
         "Stone quality and metal are inconsistently described",
       ],
-      alternatives: ["amharic-name-necklace", "tigrinya-script-bracelet", "custom-family-photo-frame"],
+      alternatives: ["initial-letter-pendant-necklace", "tigrinya-script-bracelet", "custom-family-photo-frame"],
     },
   },
   {
@@ -354,7 +292,7 @@ export const culturalProducts: Product[] = [
         "Printed tibeb is common at lower prices",
         "Long lead times on made-to-order pieces",
       ],
-      alternatives: ["netela-traditional-scarf", "custom-family-reunion-shirts", "amharic-name-necklace"],
+      alternatives: ["netela-traditional-scarf", "custom-family-reunion-shirts", "habesha-textile-wall-hanging"],
     },
   },
   {

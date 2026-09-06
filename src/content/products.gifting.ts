@@ -68,7 +68,7 @@ export const giftingProducts: Product[] = [
         "Earring fittings may not suit every recipient",
         "Matched sets can look dated worn together — she may only ever wear them apart",
       ],
-      alternatives: ["amharic-name-necklace", "ethiopian-cross-pendant", "gold-plated-rosary-necklace"],
+      alternatives: ["tigrinya-script-bracelet", "ethiopian-cross-pendant", "gold-plated-rosary-necklace"],
     },
   },
   {
@@ -129,7 +129,7 @@ export const giftingProducts: Product[] = [
         "Simulated stones rather than mined",
         "Less distinctive than script or cultural pieces",
       ],
-      alternatives: ["amharic-name-necklace", "personalized-steel-pendant-necklace", "tigrinya-script-bracelet"],
+      alternatives: ["personalized-birthstone-ring", "personalized-steel-pendant-necklace", "tigrinya-script-bracelet"],
     },
   },
   {
@@ -188,7 +188,7 @@ export const giftingProducts: Product[] = [
         "Cannot be resized or repaired",
         "Personalised items are non-returnable if the spelling is wrong",
       ],
-      alternatives: ["initial-letter-pendant-necklace", "amharic-name-necklace", "tigrinya-script-bracelet"],
+      alternatives: ["initial-letter-pendant-necklace", "personalized-birthstone-ring", "tigrinya-script-bracelet"],
     },
   },
   {
@@ -303,7 +303,7 @@ export const giftingProducts: Product[] = [
         "Plating wears quickly on a beaded chain",
         "Denominational mismatch is easy to get wrong",
       ],
-      alternatives: ["ethiopian-cross-pendant", "eritrean-ethiopian-silver-necklace-earring-set", "amharic-name-necklace"],
+      alternatives: ["ethiopian-cross-pendant", "eritrean-ethiopian-silver-necklace-earring-set", "tigrinya-script-bracelet"],
     },
   },
   {
