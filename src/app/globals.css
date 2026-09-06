@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+/**
+ * Design tokens.
+ *
+ * The brand red is an accent, not a ground. It appears on CTAs, active states,
+ * rules and small marks — everything else sits on warm off-white and cream so
+ * the site reads as editorial rather than as a storefront.
+ */
+@theme {
+  --color-brand-50: #fdf5f4;
+  --color-brand-100: #fae8e6;
+  --color-brand-200: #f3cbc7;
+  --color-brand-300: #e7a29c;
+  --color-brand-400: #d4685f;
+  --color-brand-500: #b03d34;
+  --color-brand-600: #8f1f18;
+  --color-brand: #740504;
+  --color-brand-800: #5c0403;
+  --color-brand-900: #400302;
+
+  /* Warm neutrals: paper, not grey. */
+  --color-paper: #fbf9f6;
+  --color-cream: #f5f0e8;
+  --color-cream-deep: #ece5d9;
+  --color-ink: #1c1917;
+  --color-ink-soft: #44403c;
+  --color-muted: #6f6862;
+  --color-line: #e3ddd3;
+  --color-line-soft: #efeae1;
+
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --radius-card: 1rem;
+  --radius-lg: 0.75rem;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    color: var(--color-ink);
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* A single visible focus treatment everywhere, including keyboard nav. */
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: var(--color-brand-100);
+    color: var(--color-brand-900);
+  }
+}
+
+@layer components {
+  /* The small uppercase label used above card titles and section headings. */
+  .eyebrow {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-brand);
+  }
+
+  .prose-editorial p {
+    margin-block: 0.9em;
+    color: var(--color-ink-soft);
+  }
+
+  .prose-editorial li {
+    color: var(--color-ink-soft);
+  }
+}
