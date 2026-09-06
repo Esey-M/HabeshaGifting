@@ -60,16 +60,17 @@ export function ProductCard({ product }: { product: Product }) {
           )}
         </dl>
 
-        <div className="mt-auto flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-line-soft pt-4">
+        {/* Two equal columns rather than a wrapping row, so the pair stays side
+            by side at every card width instead of stacking on longer titles. */}
+        <div className="mt-auto grid grid-cols-2 gap-2 border-t border-line-soft pt-4">
+          <AmazonLink product={product} />
           <Link
             href={routes.guide(product.slug)}
-            className="inline-flex items-center gap-1.5 rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-cream transition-colors hover:bg-brand-800"
+            className="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-lg border border-line bg-cream px-3 py-2.5 text-sm font-semibold text-ink-soft transition-colors hover:border-brand-200 hover:bg-brand-50 hover:text-brand"
           >
-            Read Full Guide
+            Read Guide
             <span aria-hidden="true">→</span>
           </Link>
-
-          <AmazonLink product={product} />
         </div>
       </div>
     </article>
@@ -79,9 +80,11 @@ export function ProductCard({ product }: { product: Product }) {
 /**
  * The outbound affiliate action.
  *
- * `rel="sponsored nofollow noopener"` is required for paid links, and the
- * visually hidden text makes the destination explicit for screen readers
- * rather than relying on the arrow glyph alone.
+ * Filled in the brand colour and placed first, so it reads as the primary
+ * action. `rel="sponsored nofollow noopener"` is required for paid links, and
+ * the visually hidden text keeps the destination explicit for screen readers
+ * rather than relying on the arrow glyph alone — a filled button must not blur
+ * the fact that it leaves the site.
  */
 export function AmazonLink({
   product,
@@ -93,15 +96,15 @@ export function AmazonLink({
   const classes =
     size === "lg"
       ? "px-6 py-3 text-base"
-      : "px-3 py-2 text-sm";
+      : "px-3 py-2.5 text-sm";
 
   if (!product.affiliateUrl) {
     return (
       <span
-        className={`inline-flex items-center gap-1.5 rounded-lg border border-dashed border-line text-muted ${classes}`}
+        className={`inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-lg border border-dashed border-line text-muted ${classes}`}
         title="We have not linked a retailer for this recommendation yet."
       >
-        Retailer link coming soon
+        Link coming soon
       </span>
     );
   }
@@ -111,7 +114,7 @@ export function AmazonLink({
       href={product.affiliateUrl}
       target="_blank"
       rel="sponsored nofollow noopener"
-      className={`inline-flex items-center gap-1.5 rounded-lg border border-line font-semibold text-ink-soft transition-colors hover:border-brand-200 hover:bg-brand-50 hover:text-brand ${classes}`}
+      className={`inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-lg bg-brand font-semibold text-cream transition-colors hover:bg-brand-800 ${classes}`}
     >
       Buy on Amazon
       <span className="sr-only">(opens Amazon in a new tab — affiliate link)</span>
