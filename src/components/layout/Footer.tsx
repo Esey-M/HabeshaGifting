@@ -2,7 +2,6 @@ import Link from "next/link";
 import { categories } from "@/content";
 import { allGuides } from "@/lib/content";
 import { routes, site } from "@/lib/site";
-import { Newsletter } from "./Newsletter";
 
 const legalLinks = [
   { href: routes.about, label: "About" },
@@ -18,9 +17,7 @@ export function Footer() {
   return (
     <footer className="mt-24 border-t border-line bg-paper">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-        <Newsletter />
-
-        <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="font-display text-lg font-semibold text-ink">
               Habesha<span className="text-brand">Gifting</span>

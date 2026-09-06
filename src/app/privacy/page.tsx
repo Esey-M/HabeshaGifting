@@ -37,7 +37,6 @@ export default function PrivacyPage() {
           "No accounts, logins or profiles.",
           "No advertising trackers or third-party analytics scripts are embedded in these pages.",
           "Search runs entirely in your browser — what you type is never sent anywhere.",
-          "The newsletter form is not connected to any provider yet. Nothing you type into it is stored or transmitted.",
         ]}
       />
 
@@ -81,8 +80,8 @@ export default function PrivacyPage() {
 
       <H2>Changes</H2>
       <p>
-        If this policy changes — for example when the newsletter goes live and an email
-        provider is involved — we will update the date at the top of this page and describe
+        If this policy changes — for example if we later add a form or a service that
+        handles your data — we will update the date at the top of this page and describe
         what changed.
       </p>
     </ProsePage>
