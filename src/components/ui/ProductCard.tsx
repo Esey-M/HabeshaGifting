@@ -44,7 +44,7 @@ export function ProductCard({ product }: { product: Product }) {
 
         <p className="mt-2 text-sm leading-relaxed text-ink-soft">{product.summary}</p>
 
-        <dl className="mt-4 space-y-1.5 text-xs">
+        <dl className="mt-4 mb-5 space-y-1.5 text-xs">
           <div className="flex gap-1.5">
             <dt className="font-semibold uppercase tracking-wide text-muted">Best for</dt>
             <dd className="text-ink-soft">{product.bestFor}</dd>
@@ -60,7 +60,7 @@ export function ProductCard({ product }: { product: Product }) {
           )}
         </dl>
 
-        <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-line-soft pt-4">
+        <div className="mt-auto flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-line-soft pt-4">
           <Link
             href={routes.guide(product.slug)}
             className="inline-flex items-center gap-1.5 rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-cream transition-colors hover:bg-brand-800"
