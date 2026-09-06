@@ -91,7 +91,7 @@ function Motifs({ motif }: { motif: Motif }) {
           <path d="M200 236c32 0 54-22 54-50 0-26-20-44-40-52" />
           <path d="M186 134l6-52h16l6 52" />
           <path d="M192 82c0-8 6-14 8-18 2 4 8 10 8 18" />
-          <path d="M246 168c14 6 22 14 24 22" />
+          <path d="M248 176c16-4 28-16 34-32" />
           <ellipse cx="200" cy="236" rx="40" ry="7" />
         </>
       );
@@ -140,13 +140,40 @@ function Motifs({ motif }: { motif: Motif }) {
       );
     case "weave":
     default:
-      // Warp and weft, the base of every tibeb border.
+      // A tibeb band: chevron rows framing a row of diamonds, as on the woven
+      // border of a netela. Built from loops so the rhythm stays even.
       return (
         <>
-          <path d="M110 110h180v120H110z" />
-          <path d="M110 150h180M110 190h180M150 110v120M190 110v120M230 110v120M250 110v120" />
-          <path d="M110 110l40 40M150 110l40 40M190 110l40 40M230 110l40 40" opacity="0.6" />
+          <path d="M104 118h192v114H104z" />
+          <path d="M104 140h192M104 210h192" />
+          <path d={chevron(104, 136, 16, 12)} />
+          <path d={chevron(104, 214, 16, 12)} />
+          {diamonds(122, 175, 25, 7, 11, 16)}
+          <path d="M116 118v114M284 118v114" opacity="0.55" />
         </>
       );
   }
+}
+
+/** Zigzag run: `count` peaks of width `w` alternating around baseline `y`. */
+function chevron(x: number, y: number, w: number, h: number): string {
+  const segments: string[] = [`M${x} ${y}`];
+  for (let i = 0; i < 12; i++) {
+    const dir = i % 2 === 0 ? -h : h;
+    segments.push(`L${x + w * (i + 1)} ${y + dir}`);
+  }
+  return segments.join(" ");
+}
+
+/** A run of diamonds along a baseline — the core tibeb motif. */
+function diamonds(x: number, cy: number, step: number, count: number, rx: number, ry: number) {
+  return Array.from({ length: count }, (_, i) => {
+    const cx = x + i * step;
+    return (
+      <path
+        key={cx}
+        d={`M${cx - rx} ${cy}L${cx} ${cy - ry}L${cx + rx} ${cy}L${cx} ${cy + ry}Z`}
+      />
+    );
+  });
 }
