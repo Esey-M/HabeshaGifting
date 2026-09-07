@@ -4,7 +4,9 @@ import { Breadcrumbs, JsonLd } from "@/components/ui/Breadcrumbs";
 import { CategoryCard } from "@/components/ui/CategoryCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { allCategoryPaths, countIn, getCategory } from "@/lib/content";
-import { absoluteUrl, routes } from "@/lib/site";
+import { OG_DEFAULT, ogImageMeta } from "@/lib/og";
+import { graph, webPageNode } from "@/lib/schema";
+import { absoluteUrl, assetUrl, routes } from "@/lib/site";
 
 /** Static export: the full set of category routes is known at build time. */
 export const dynamicParams = false;
@@ -21,6 +23,9 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!category) return {};
 
   const url = routes.category(category.slug);
+  const image = category.image ? `${category.image}-1200.webp` : OG_DEFAULT;
+  const images = ogImageMeta(image, category.heading);
+
   return {
     title: category.heading,
     description: category.tagline,
@@ -30,6 +35,13 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       title: `${category.heading} | HabeshaGifting`,
       description: category.tagline,
       url: absoluteUrl(url),
+      images,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${category.heading} | HabeshaGifting`,
+      description: category.tagline,
+      images: [images[0]?.url ?? assetUrl(OG_DEFAULT)],
     },
   };
 }
@@ -45,23 +57,37 @@ export default async function CategoryPage({ params }: { params: Params }) {
     { href: routes.category(category.slug), label: category.title },
   ];
 
-  const itemList = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: category.heading,
-    description: category.tagline,
-    itemListElement: category.subcategories.map((sub, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: sub.title,
-      url: absoluteUrl(routes.subcategory(category.slug, sub.slug)),
-    })),
-  };
+  const path = routes.category(category.slug);
+
+  const jsonLd = graph(
+    ...webPageNode({
+      path,
+      name: category.heading,
+      description: category.intro,
+      image: category.image ? assetUrl(`${category.image}-1200.webp`) : undefined,
+      trail,
+      type: "CollectionPage",
+    }),
+    {
+      "@type": "ItemList",
+      "@id": `${absoluteUrl(path)}#list`,
+      name: category.heading,
+      description: category.tagline,
+      numberOfItems: category.subcategories.length,
+      itemListElement: category.subcategories.map((sub, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: sub.heading,
+        description: sub.tagline,
+        url: absoluteUrl(routes.subcategory(category.slug, sub.slug)),
+      })),
+    },
+  );
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
-      <JsonLd data={itemList} />
-      <Breadcrumbs trail={trail} />
+      <JsonLd data={jsonLd} />
+      <Breadcrumbs trail={trail} schema={false} />
 
       <header className="mt-8 max-w-2xl">
         <p className="eyebrow">

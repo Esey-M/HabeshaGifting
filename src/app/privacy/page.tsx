@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <ProsePage
+      type="WebPage"
       title="Privacy Policy"
       eyebrow="Privacy"
       standfirst="This site is deliberately simple, and so is what it knows about you."

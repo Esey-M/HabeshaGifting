@@ -16,6 +16,8 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <ProsePage
+      type="AboutPage"
+      aboutUs
       title="About HabeshaGifting"
       eyebrow="About"
       standfirst="A gift discovery site for the Habesha community — built because searching for these gifts online is genuinely frustrating."

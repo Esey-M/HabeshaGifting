@@ -4,7 +4,9 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd } from "@/components/ui/Breadcrumbs";
 import { FilterableProducts } from "@/components/ui/FilterableProducts";
 import { allSubcategoryPaths, budgetsPresent, getSubcategory, productsIn } from "@/lib/content";
-import { absoluteUrl, routes } from "@/lib/site";
+import { OG_DEFAULT, ogImageMeta } from "@/lib/og";
+import { graph, webPageNode } from "@/lib/schema";
+import { absoluteUrl, assetUrl, routes } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -23,6 +25,9 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const url = routes.subcategory(categorySlug, subSlug);
   const description = `${subcategory.tagline} Honest gift guides with what to check before you buy.`;
 
+  const image = subcategory.image ? `${subcategory.image}-1200.webp` : OG_DEFAULT;
+  const images = ogImageMeta(image, subcategory.heading);
+
   return {
     title: subcategory.heading,
     description,
@@ -32,6 +37,13 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       title: `${subcategory.heading} | HabeshaGifting`,
       description,
       url: absoluteUrl(url),
+      images,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${subcategory.heading} | HabeshaGifting`,
+      description,
+      images: [images[0]?.url ?? assetUrl(OG_DEFAULT)],
     },
   };
 }
@@ -52,27 +64,47 @@ export default async function SubcategoryPage({ params }: { params: Params }) {
     { href: routes.subcategory(category.slug, subcategory.slug), label: subcategory.title },
   ];
 
-  const itemList = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: subcategory.heading,
-    description: subcategory.tagline,
-    numberOfItems: items.length,
-    itemListElement: items.map((p, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: p.title,
-      url: absoluteUrl(routes.guide(p.slug)),
-    })),
-  };
+  const path = routes.subcategory(category.slug, subcategory.slug);
+
+  /**
+   * The listing itself is the entity here: an ordered set of recommendations,
+   * each pointing at the guide that argues for it. Descriptions are carried on
+   * the list items so an answer engine can summarise the page without having to
+   * fetch every guide behind it.
+   */
+  const jsonLd = graph(
+    ...webPageNode({
+      path,
+      name: subcategory.heading,
+      description: subcategory.intro,
+      image: subcategory.image ? assetUrl(`${subcategory.image}-1200.webp`) : undefined,
+      trail,
+      type: "CollectionPage",
+    }),
+    {
+      "@type": "ItemList",
+      "@id": `${absoluteUrl(path)}#list`,
+      name: subcategory.heading,
+      description: subcategory.tagline,
+      numberOfItems: items.length,
+      itemListOrder: "https://schema.org/ItemListUnordered",
+      itemListElement: items.map((p, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: p.title,
+        description: p.summary,
+        url: absoluteUrl(routes.guide(p.slug)),
+      })),
+    },
+  );
 
   // Sibling links keep the internal linking graph dense without a tag soup.
   const siblings = category.subcategories.filter((s) => s.slug !== subcategory.slug).slice(0, 8);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
-      <JsonLd data={itemList} />
-      <Breadcrumbs trail={trail} />
+      <JsonLd data={jsonLd} />
+      <Breadcrumbs trail={trail} schema={false} />
 
       <header className="mt-8 max-w-2xl">
         <p className="eyebrow">

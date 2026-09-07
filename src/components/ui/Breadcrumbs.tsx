@@ -10,7 +10,18 @@ export interface Crumb {
  * Breadcrumbs plus their BreadcrumbList schema, emitted together so the visible
  * trail and the structured data can never drift apart.
  */
-export function Breadcrumbs({ trail }: { trail: Crumb[] }) {
+export function Breadcrumbs({
+  trail,
+  schema = true,
+}: {
+  trail: Crumb[];
+  /**
+   * Set false on pages that emit their own entity graph — `webPageNode` already
+   * carries the BreadcrumbList there, and two copies of the same list is the
+   * kind of duplication that makes a rich result fail validation.
+   */
+  schema?: boolean;
+}) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -49,7 +60,7 @@ export function Breadcrumbs({ trail }: { trail: Crumb[] }) {
           })}
         </ol>
       </nav>
-      <JsonLd data={jsonLd} />
+      {schema && <JsonLd data={jsonLd} />}
     </>
   );
 }

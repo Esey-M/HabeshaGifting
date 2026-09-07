@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <ProsePage
+      type="ContactPage"
       title="Contact"
       eyebrow="Get in touch"
       standfirst="Corrections, suggestions and questions are all welcome."

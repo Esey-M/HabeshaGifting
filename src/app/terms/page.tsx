@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <ProsePage
+      type="WebPage"
       title="Terms of Use"
       eyebrow="Terms"
       standfirst="What you can expect from this site, and what we cannot promise."

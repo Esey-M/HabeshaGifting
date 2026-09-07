@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint src",
     "typecheck": "tsc --noEmit",
-    "artwork": "node scripts/ingest-artwork.mjs"
+    "artwork": "node scripts/ingest-artwork.mjs",
+    "og": "node scripts/og-images.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "next": "^15.5.25",

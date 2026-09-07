@@ -7,6 +7,7 @@ import { ProductCard } from "@/components/ui/ProductCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { categories } from "@/content";
 import { allGuides, productsInCategory } from "@/lib/content";
+import { graph, webPageNode } from "@/lib/schema";
 import { absoluteUrl, routes, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -18,34 +19,33 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const featured = allGuides().slice(0, 3);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": `${site.url}/#website`,
-        url: absoluteUrl("/"),
-        name: site.name,
-        description: site.description,
-        inLanguage: "en",
-        potentialAction: {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: `${site.url}/search/?q={search_term_string}`,
-          },
-          "query-input": "required name=search_term_string",
-        },
-      },
-      {
-        "@type": "Organization",
-        "@id": `${site.url}/#organization`,
-        name: site.name,
-        url: absoluteUrl("/"),
-        description: site.description,
-      },
-    ],
-  };
+  /**
+   * The homepage is the site's entry point, so it also publishes the category
+   * list as an ItemList. That is what lets Google build a sitelinks block from
+   * our own hierarchy rather than guessing at it from the nav.
+   */
+  const jsonLd = graph(
+    ...webPageNode({
+      path: routes.home,
+      name: `${site.name} — ${site.tagline}`,
+      description: site.description,
+      type: "CollectionPage",
+    }),
+    {
+      "@type": "ItemList",
+      "@id": `${absoluteUrl(routes.home)}#categories`,
+      name: "Gift categories",
+      description: "Every way into the catalogue: by recipient, by occasion, or by kind of gift.",
+      numberOfItems: categories.length,
+      itemListElement: categories.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: c.heading,
+        description: c.tagline,
+        url: absoluteUrl(routes.category(c.slug)),
+      })),
+    },
+  );
 
   return (
     <>

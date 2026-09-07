@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 export default function DisclosurePage() {
   return (
     <ProsePage
+      type="WebPage"
       title="Affiliate Disclosure"
       eyebrow="Disclosure"
       standfirst="HabeshaGifting earns commission from qualifying purchases made through links on this site."

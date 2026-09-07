@@ -5,6 +5,7 @@ import { Artwork } from "@/components/Artwork";
 import { Breadcrumbs, JsonLd } from "@/components/ui/Breadcrumbs";
 import { AmazonLink, ProductCard } from "@/components/ui/ProductCard";
 import { products } from "@/content";
+import type { Product } from "@/content/types";
 import {
   getBudget,
   getProduct,
@@ -13,7 +14,9 @@ import {
   resolveAlternatives,
 } from "@/lib/content";
 import { PRODUCT_HERO_SIZES, productSrcSet } from "@/lib/images";
-import { absoluteUrl, routes, site } from "@/lib/site";
+import { OG_DEFAULT, ogGuide, ogImageMeta } from "@/lib/og";
+import { graph, webPageNode } from "@/lib/schema";
+import { absoluteUrl, assetUrl, ids, routes, site } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -29,10 +32,18 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!product) return {};
 
   const url = routes.guide(product.slug);
+  const images = ogImageMeta(ogGuide(product.slug), product.guide.heading);
+
   return {
     title: product.guide.heading,
     description: product.guide.standfirst,
     alternates: { canonical: url },
+    /**
+     * Facets double as topic keywords. They are hand-written per product, so
+     * they describe the gift rather than stuffing the head with the same
+     * site-wide terms on every page.
+     */
+    keywords: [...product.tags, product.title, product.tag],
     openGraph: {
       type: "article",
       title: product.guide.heading,
@@ -40,6 +51,16 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       url: absoluteUrl(url),
       publishedTime: product.updated,
       modifiedTime: product.updated,
+      section: product.tag,
+      tags: product.tags,
+      authors: [absoluteUrl(routes.about)],
+      images,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: product.guide.heading,
+      description: product.guide.standfirst,
+      images: [images[0]?.url ?? assetUrl(OG_DEFAULT)],
     },
   };
 }
@@ -61,31 +82,97 @@ export default async function GuidePage({ params }: { params: Params }) {
     { href: routes.guide(product.slug), label: product.title },
   ];
 
+  const path = routes.guide(product.slug);
+
+  /**
+   * The illustration, when there is one. Falling back to the card image keeps
+   * every article node carrying an `image`, which Google treats as effectively
+   * required for an article rich result.
+   */
+  const heroImage = product.image
+    ? assetUrl(`${product.image}-1600.webp`)
+    : assetUrl(ogGuide(product.slug));
+
   /**
    * Article schema, not Product schema. We hold no price, availability or
    * rating data, and a Product node without offers is both useless and an
    * invitation to fabricate. This page is editorial, so it is described as
    * editorial.
+   *
+   * Author and publisher point at the single Organization node the layout
+   * emits, rather than restating it, so the whole site resolves to one entity.
    */
   const articleLd = {
-    "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `${absoluteUrl(path)}#article`,
     headline: product.guide.heading,
     description: product.guide.standfirst,
     datePublished: product.updated,
     dateModified: product.updated,
     inLanguage: "en",
-    about: product.title,
+    isAccessibleForFree: true,
+    articleSection: product.tag,
+    about: {
+      "@type": "Thing",
+      name: product.title,
+      description: product.summary,
+    },
     keywords: product.tags.join(", "),
-    mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(routes.guide(product.slug)) },
-    author: { "@type": "Organization", name: site.name, url: absoluteUrl("/") },
-    publisher: { "@type": "Organization", name: site.name, url: absoluteUrl("/") },
+    /** Rough length, so an engine can judge depth without fetching the body. */
+    wordCount: countWords(product),
+    image: [heroImage],
+    thumbnailUrl: heroImage,
+    mainEntityOfPage: { "@id": ids.page(path) },
+    isPartOf: { "@id": ids.website },
+    author: { "@id": ids.organization },
+    publisher: { "@id": ids.organization },
+    /** Named so a reader can see the funding model without leaving the page. */
+    creditText: site.name,
+    copyrightHolder: { "@id": ids.organization },
+    /** The listings this guide belongs to — the site's own topical graph. */
+    ...(placements.length > 0
+      ? {
+          mentions: placements.map(({ category, subcategory }) => ({
+            "@type": "Thing",
+            name: subcategory.heading,
+            url: absoluteUrl(routes.subcategory(category.slug, subcategory.slug)),
+          })),
+        }
+      : {}),
   };
+
+  const pageLd = graph(
+    ...webPageNode({
+      path,
+      name: product.guide.heading,
+      description: product.guide.standfirst,
+      image: heroImage,
+      modified: product.updated,
+      trail,
+      type: "ItemPage",
+    }),
+    articleLd,
+  );
+
+  /**
+   * Jump links. They give readers a way past the parts they do not need, and
+   * they give search and answer engines an explicit map of what each passage
+   * covers — which is what gets a single section quoted rather than the page
+   * summarised from its opening paragraph.
+   */
+  const contents = [
+    { id: sectionId("Why we recommend it"), label: "Why we recommend it" },
+    { id: sectionId("Who it's best for"), label: "Who it's best for" },
+    { id: sectionId("What makes it a good gift"), label: "What makes it a good gift" },
+    { id: sectionId("Important considerations"), label: "Important considerations" },
+    { id: "pros", label: "Pros" },
+    ...(alternatives.length > 0 ? [{ id: "alternatives-heading", label: "Alternatives" }] : []),
+  ];
 
   return (
     <article className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
-      <JsonLd data={articleLd} />
-      <Breadcrumbs trail={trail} />
+      <JsonLd data={pageLd} />
+      <Breadcrumbs trail={trail} schema={false} />
 
       <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-16">
         {/*
@@ -146,6 +233,33 @@ export default async function GuidePage({ params }: { params: Params }) {
             </figcaption>
           </figure>
 
+          <nav
+            aria-labelledby="contents-heading"
+            className="mt-9 rounded-card border border-line bg-cream/60 px-5 py-4"
+          >
+            <h2
+              id="contents-heading"
+              className="text-xs font-semibold uppercase tracking-wide text-muted"
+            >
+              What this guide covers
+            </h2>
+            <ol className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+              {contents.map((item, i) => (
+                <li key={item.id} className="flex items-baseline gap-2">
+                  <span aria-hidden="true" className="text-xs font-semibold text-brand">
+                    {i + 1}
+                  </span>
+                  <a
+                    href={`#${item.id}`}
+                    className="text-ink-soft underline-offset-4 transition-colors hover:text-brand hover:underline"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+
           <div className="prose-editorial mt-12 max-w-none">
             <Section title="Why we recommend it">
               {product.guide.why.map((para, i) => (
@@ -169,37 +283,27 @@ export default async function GuidePage({ params }: { params: Params }) {
               <BulletList items={product.guide.considerations} />
             </Section>
 
-            <section className="mt-12 scroll-mt-24" aria-labelledby="pros-cons">
-              <h2 id="pros-cons" className="font-display text-2xl font-semibold text-ink">
-                Pros and cons
+            <section className="mt-12 scroll-mt-24" aria-labelledby="pros">
+              <h2 id="pros" className="font-display text-2xl font-semibold text-ink">
+                Pros
               </h2>
-              <div className="mt-5 grid gap-5 sm:grid-cols-2">
-                <div className="rounded-card border border-line bg-cream/50 p-5">
-                  <h3 className="font-display text-base font-semibold text-ink">Pros</h3>
-                  <ul className="mt-3 space-y-2.5">
-                    {product.guide.pros.map((item) => (
-                      <li key={item} className="flex gap-2.5 text-sm text-ink-soft">
-                        <span aria-hidden="true" className="mt-0.5 font-bold text-brand">
-                          +
-                        </span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="rounded-card border border-line bg-cream/60 p-5">
-                  <h3 className="font-display text-base font-semibold text-ink">Cons</h3>
-                  <ul className="mt-3 space-y-2.5">
-                    {product.guide.cons.map((item) => (
-                      <li key={item} className="flex gap-2.5 text-sm text-ink-soft">
-                        <span aria-hidden="true" className="mt-0.5 font-bold text-muted">
-                          −
-                        </span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              {/*
+                Positives only. The honest counterweight is not missing, it is
+                one section up: "Important considerations" is where the caveats
+                and the reasons not to buy live, and running a Cons column here
+                as well just said the same things twice.
+              */}
+              <div className="mt-5 rounded-card border border-line bg-cream/50 p-5 sm:p-6">
+                <ul className="grid gap-3 sm:grid-cols-2 sm:gap-x-8">
+                  {product.guide.pros.map((item) => (
+                    <li key={item} className="flex gap-2.5 text-sm text-ink-soft">
+                      <span aria-hidden="true" className="mt-0.5 font-bold text-brand">
+                        +
+                      </span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </section>
           </div>
@@ -324,8 +428,30 @@ export default async function GuidePage({ params }: { params: Params }) {
   );
 }
 
+/** Slug for a section heading. Shared so the contents list and the headings agree. */
+function sectionId(title: string): string {
+  return title.toLowerCase().replace(/[^a-z]+/g, "-");
+}
+
+/**
+ * Approximate length of the editorial body. Only the prose we actually wrote is
+ * counted — headings, navigation and disclosure boilerplate are not part of the
+ * article.
+ */
+function countWords(product: Product): number {
+  const text = [
+    product.guide.standfirst,
+    ...product.guide.why,
+    ...product.guide.whoFor,
+    ...product.guide.whyGift,
+    ...product.guide.considerations,
+    ...product.guide.pros,
+  ].join(" ");
+  return text.trim().split(/\s+/).length;
+}
+
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  const id = title.toLowerCase().replace(/[^a-z]+/g, "-");
+  const id = sectionId(title);
   return (
     <section className="mt-12 scroll-mt-24" aria-labelledby={id}>
       <h2 id={id} className="font-display text-2xl font-semibold text-ink">

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
+import { Breadcrumbs, JsonLd } from "@/components/ui/Breadcrumbs";
 import { CategoryCard } from "@/components/ui/CategoryCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { categories } from "@/content";
 import { productsInCategory } from "@/lib/content";
-import { routes } from "@/lib/site";
+import { graph, webPageNode } from "@/lib/schema";
+import { absoluteUrl, routes } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "All Gift Categories",
@@ -19,15 +20,39 @@ export const metadata: Metadata = {
   },
 };
 
+const trail = [
+  { href: routes.home, label: "Home" },
+  { href: routes.gifts, label: "Gifts" },
+];
+
 export default function GiftsIndexPage() {
+  const jsonLd = graph(
+    ...webPageNode({
+      path: routes.gifts,
+      name: "All Gift Categories",
+      description: metadata.description as string,
+      trail,
+      type: "CollectionPage",
+    }),
+    {
+      "@type": "ItemList",
+      "@id": `${absoluteUrl(routes.gifts)}#list`,
+      name: "All Gift Categories",
+      numberOfItems: categories.length,
+      itemListElement: categories.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: c.heading,
+        description: c.tagline,
+        url: absoluteUrl(routes.category(c.slug)),
+      })),
+    },
+  );
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
-      <Breadcrumbs
-        trail={[
-          { href: routes.home, label: "Home" },
-          { href: routes.gifts, label: "Gifts" },
-        ]}
-      />
+      <JsonLd data={jsonLd} />
+      <Breadcrumbs trail={trail} schema={false} />
 
       <div className="mt-8">
         <SectionHeading
