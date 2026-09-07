@@ -138,11 +138,7 @@ export const momProducts: Product[] = [
         "Decorative finish will not suit every room",
         "Heavier and more awkward to post than a small case",
       ],
-      alternatives: [
-        "jewelry-organizer-box",
-        "wifi-digital-photo-frame",
-        "engraved-wooden-keepsake-box",
-      ],
+      alternatives: ["jewelry-organizer-box", "wifi-digital-photo-frame", "crochet-rose-keepsake"],
     },
   },
   {

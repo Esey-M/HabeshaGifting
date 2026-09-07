@@ -136,7 +136,11 @@ export const brotherProducts: Product[] = [
         "Gets warm during fast charging",
         "Battery capacity fades over a few years",
       ],
-      alternatives: ["noise-cancelling-headphones", "foldable-wireless-charging-station", "fitness-smartwatch"],
+      alternatives: [
+        "noise-cancelling-headphones",
+        "foldable-wireless-charging-station",
+        "fitness-smartwatch",
+      ],
     },
   },
   {
@@ -199,7 +203,11 @@ export const brotherProducts: Product[] = [
         "Not suited to traditional sini cups",
         "Occupies a socket and desk space permanently",
       ],
-      alternatives: ["adey-abeba-23-piece-coffee-set", "coffee-ceremony-starter-set", "wooden-coffee-tray-rekbot"],
+      alternatives: [
+        "adey-abeba-23-piece-coffee-set",
+        "wooden-coffee-tray-rekbot",
+        "ceramic-lined-travel-mug",
+      ],
     },
   },
   {
@@ -260,7 +268,11 @@ export const brotherProducts: Product[] = [
         "Aviator sizing does not suit narrow faces",
         "Hinges are the weak point at this price",
       ],
-      alternatives: ["stainless-chronograph-watch", "slim-rfid-leather-wallet", "noise-cancelling-headphones"],
+      alternatives: [
+        "stainless-chronograph-watch",
+        "slim-rfid-leather-wallet",
+        "noise-cancelling-headphones",
+      ],
     },
   },
   {
@@ -323,7 +335,11 @@ export const brotherProducts: Product[] = [
         "Not suitable for swimming despite the water rating",
         "Depends on a manufacturer app of unknown longevity",
       ],
-      alternatives: ["stainless-chronograph-watch", "noise-cancelling-headphones", "nano-power-bank"],
+      alternatives: [
+        "stainless-chronograph-watch",
+        "noise-cancelling-headphones",
+        "nano-power-bank",
+      ],
     },
   },
   {
@@ -385,7 +401,11 @@ export const brotherProducts: Product[] = [
         "Water resistance is limited despite the wording",
         "Bracelet needs sizing before wear",
       ],
-      alternatives: ["mens-classic-dress-watch", "fitness-smartwatch", "polarized-aviator-sunglasses"],
+      alternatives: [
+        "mens-classic-dress-watch",
+        "fitness-smartwatch",
+        "polarized-aviator-sunglasses",
+      ],
     },
   },
   {
@@ -506,7 +526,11 @@ export const brotherProducts: Product[] = [
         "Warm and not very breathable",
         "Memory foam flattens over time",
       ],
-      alternatives: ["mens-arch-support-slippers", "memory-foam-house-slippers", "mens-full-size-spa-basket"],
+      alternatives: [
+        "mens-arch-support-slippers",
+        "memory-foam-house-slippers",
+        "mens-full-size-spa-basket",
+      ],
     },
   },
   {
@@ -564,7 +588,11 @@ export const brotherProducts: Product[] = [
         "Small — check the measurements",
         "Not substantial enough to stand alone at a big occasion",
       ],
-      alternatives: ["crochet-tulip-keepsake", "crochet-rose-keepsake", "polarized-aviator-sunglasses"],
+      alternatives: [
+        "crochet-tulip-keepsake",
+        "crochet-rose-keepsake",
+        "polarized-aviator-sunglasses",
+      ],
     },
   },
 ];

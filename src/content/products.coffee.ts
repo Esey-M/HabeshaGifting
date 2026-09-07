@@ -63,8 +63,8 @@ export const coffeeProducts: Product[] = [
       ],
       alternatives: [
         "ceramic-jebena-modern-design",
-        "coffee-ceremony-starter-set",
         "adey-abeba-23-piece-coffee-set",
+        "electric-mug-warmer",
       ],
     },
   },
@@ -123,7 +123,7 @@ export const coffeeProducts: Product[] = [
       alternatives: [
         "traditional-clay-jebena-coffee-pot",
         "adey-abeba-23-piece-coffee-set",
-        "coffee-ceremony-starter-set",
+        "electric-mug-warmer",
       ],
     },
   },
@@ -179,69 +179,7 @@ export const coffeeProducts: Product[] = [
         "Sizing must be matched to their existing jebena",
         "Hand-wash only in most cases",
       ],
-      alternatives: [
-        "adey-abeba-23-piece-coffee-set",
-        "woven-mesob-inspired-basket",
-        "coffee-ceremony-starter-set",
-      ],
-    },
-  },
-  {
-    slug: "coffee-ceremony-starter-set",
-    title: "Complete Coffee Ceremony Starter Set",
-    tag: "Coffee Ceremony",
-    summary:
-      "Jebena, cups, tray and stand bundled together — the whole ceremony in one box, for someone starting from nothing.",
-    bestFor: "Wedding · Graduation · A first home abroad",
-    budget: "100-plus",
-    affiliateUrl: null,
-    art: { hue: 20, motif: "rays" },
-    updated: "2026-08-28",
-    tags: ["coffee", "ceremony", "set", "wedding", "gift set", "starter"],
-    placements: [
-      { category: "gifts-for-her", subcategory: "daughter" },
-    ],
-    guide: {
-      heading: "Is a Complete Coffee Ceremony Set Worth It?",
-      standfirst:
-        "Bundled sets trade some quality per piece for coherence and convenience. For the right recipient that is a good deal — for the wrong one it is a shelf of duplicates.",
-      why: [
-        "For someone starting from zero, coherence beats individual quality. A set that matches out of the box saves them assembling four purchases from four sellers, and everything is sized to work together — which is precisely where piecemeal buying goes wrong.",
-        "It removes the guesswork about what a ceremony needs. People who grew up watching the ceremony but never bought the equipment often do not know a stand and a tray are separate objects.",
-        "As a group gift it is unusually easy. Several people can contribute to one substantial present rather than arriving with three overlapping ones.",
-      ],
-      whoFor: [
-        "Newlyweds setting up a first household",
-        "A graduate moving into their own place",
-        "Anyone who has recently emigrated and left their set behind",
-        "Group gifting, where a larger single present makes sense",
-      ],
-      whyGift: [
-        "Complete and immediately usable — nothing else to buy",
-        "Presents well as a single substantial gift",
-        "Ideal for pooling contributions from several givers",
-      ],
-      considerations: [
-        "Sets are only worth it if they own nothing. For a household that already has a jebena, buy the missing piece instead — usually the tray.",
-        "Bundled jebenas are sometimes the decorative kind. Verify stovetop suitability separately, because bundle listings tend to describe the set rather than each piece.",
-        "Component quality is uneven in cheaper bundles; the cups are often the weak point.",
-        "These are heavy boxes. Shipping cost and damage risk both rise.",
-      ],
-      pros: [
-        "Everything matches and fits together",
-        "Excellent for someone starting from nothing",
-        "Natural group gift",
-      ],
-      cons: [
-        "Wasteful if they already own part of a set",
-        "Component quality varies within the bundle",
-        "Bulky and more fragile in transit",
-      ],
-      alternatives: [
-        "traditional-clay-jebena-coffee-pot",
-        "wooden-coffee-tray-rekbot",
-        "adey-abeba-23-piece-coffee-set",
-      ],
+      alternatives: ["adey-abeba-23-piece-coffee-set", "woven-mesob-inspired-basket", "electric-mug-warmer"],
     },
   },
   {
@@ -296,7 +234,7 @@ export const coffeeProducts: Product[] = [
         "Origin is often vaguely described",
       ],
       alternatives: [
-        "coffee-ceremony-starter-set",
+        "adey-abeba-23-piece-coffee-set",
         "woven-mesob-inspired-basket",
         "traditional-clay-jebena-coffee-pot",
       ],

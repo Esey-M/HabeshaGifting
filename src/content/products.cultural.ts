@@ -61,65 +61,6 @@ export const culturalProducts: Product[] = [
     },
   },
   {
-    slug: "habesha-kemis-inspired-dress",
-    title: "Habesha Kemis-Inspired Dress",
-    tag: "Clothing",
-    summary:
-      "A modern dress drawing on the traditional kemis silhouette and tibeb detailing, cut for everyday or event wear.",
-    bestFor: "Wedding guests · Teen girl · Holidays",
-    budget: "100-plus",
-    affiliateUrl: null,
-    art: { hue: 340, motif: "weave" },
-    updated: "2026-07-15",
-    tags: ["clothing", "kemis", "dress", "tibeb", "traditional", "wedding", "modern"],
-    placements: [
-      { category: "gifts-for-her", subcategory: "teen-girl" },
-    ],
-    guide: {
-      heading: "Modern Kemis-Inspired Dresses: Sizing Is the Whole Problem",
-      standfirst:
-        "A beautiful gift with the worst return rate in traditional clothing. Read this before you order one for someone else.",
-      why: [
-        "Modern cuts make the tradition wearable more often. A full traditional kemis is reserved for major occasions; a contemporary dress using the same tibeb detailing can be worn to a graduation dinner or a friend's wedding without feeling like costume.",
-        "It suits younger recipients who want the cultural connection without the formality. For teenagers especially, a modern silhouette is the difference between a dress worn and a dress hung up.",
-        "Tibeb detailing carries the design. Even a simple modern cut reads as unmistakably Habesha when the woven border is used at the hem, sleeves or neckline.",
-      ],
-      whoFor: [
-        "A sister or daughter attending weddings and family events",
-        "Teenagers who like the tradition but not full formal dress",
-        "Anyone who has outgrown or worn out an existing kemis",
-        "Wedding guests who need something appropriate but not bridal-adjacent",
-      ],
-      whyGift: [
-        "Striking and generous as a gift",
-        "Worn to real events rather than stored",
-        "Bridges traditional and contemporary wardrobes",
-      ],
-      considerations: [
-        "Sizing is the central risk and it is a serious one. Sellers frequently use their own charts, sizes run small against US and EU standards, and personalised or made-to-order pieces are usually non-returnable. Get her actual measurements rather than her usual dress size.",
-        "Confirm the return policy in writing before ordering. If the answer is no returns and you are guessing at the size, buy a netela or a scarf instead.",
-        "Ask whether the tibeb is woven or printed. Printed borders cost far less and look it in person, even when the photographs are flattering.",
-        "Lead times for made-to-order pieces run to weeks. Ordering three days before a wedding will not work.",
-        "Avoid buying this as a surprise for a body-conscious recipient. A gift card toward one she chooses herself is often the kinder gift.",
-      ],
-      pros: [
-        "Beautiful and generous",
-        "More wearable than fully traditional dress",
-        "Strong cultural design language",
-      ],
-      cons: [
-        "Sizing is genuinely hard and often non-returnable",
-        "Printed tibeb is common at lower prices",
-        "Long lead times on made-to-order pieces",
-      ],
-      alternatives: [
-        "pashmina-shawl-wrap",
-        "custom-family-reunion-shirts",
-        "habesha-textile-wall-hanging",
-      ],
-    },
-  },
-  {
     slug: "custom-family-photo-frame",
     title: "Custom Engraved Photo Frame",
     tag: "Photo Gifts",
@@ -346,66 +287,8 @@ export const culturalProducts: Product[] = [
       ],
       alternatives: [
         "personalized-coffee-mug-amharic",
-        "habesha-kemis-inspired-dress",
+        "pashmina-shawl-wrap",
         "custom-family-photo-frame",
-      ],
-    },
-  },
-  {
-    slug: "engraved-wooden-keepsake-box",
-    title: "Engraved Wooden Keepsake Box",
-    tag: "Engraved Gifts",
-    summary:
-      "A lidded wooden box engraved with a name, date or blessing — for jewellery, documents or small heirlooms.",
-    bestFor: "Wedding · Graduation · Anniversary",
-    budget: "under-100",
-    affiliateUrl: null,
-    art: { hue: 210, motif: "cross" },
-    updated: "2026-08-01",
-    tags: ["engraved", "wood", "keepsake", "box", "wedding", "graduation", "personalized"],
-    placements: [
-      { category: "gifts-for-her", subcategory: "daughter" },
-    ],
-    guide: {
-      heading: "Keepsake Boxes: A Gift That Becomes About What Goes Inside It",
-      standfirst:
-        "The box is the least interesting part. What makes this work is that it invites the recipient to decide what deserves keeping.",
-      why: [
-        "It is a gift with an open ending. Unlike an object with a fixed purpose, a keepsake box becomes whatever the recipient makes it — wedding rings, letters, a grandmother's cross — and that authorship is the actual present.",
-        "Engraving suits it better than almost any other object. A flat wooden lid takes a name, a date or a short blessing cleanly, without the size constraints that make jewellery engraving so fiddly.",
-        "It suits milestone occasions specifically because permanence is the message. A box engraved with a wedding date is still being opened at the twentieth anniversary.",
-      ],
-      whoFor: [
-        "Newlyweds, engraved with the wedding date",
-        "Graduates, as a place for certificates and mementoes",
-        "A partner at a significant anniversary",
-        "Anyone inheriting family jewellery and lacking somewhere to keep it",
-      ],
-      whyGift: [
-        "Meaning accrues over time rather than diminishing",
-        "Engraving makes it unmistakably theirs",
-        "Suits milestones where permanence matters",
-      ],
-      considerations: [
-        "Check whether the interior is lined. Unlined wood scratches jewellery, which matters if that is the intended use.",
-        "Solid wood ages better than veneered MDF, and the difference is obvious after a few years. Listings often describe both simply as 'wooden'.",
-        "Confirm engraving character support if you want Ge'ez script, and request a proof.",
-        "Hinges are the usual failure point on cheaper boxes. Look for metal hinges rather than moulded plastic in the photographs.",
-      ],
-      pros: [
-        "Open-ended and personal",
-        "Excellent engraving surface",
-        "Long-lived milestone gift",
-      ],
-      cons: [
-        "Cheap hinges fail",
-        "Veneer is often sold as solid wood",
-        "Unlined interiors scratch jewellery",
-      ],
-      alternatives: [
-        "custom-family-photo-frame",
-        "amharic-family-name-print",
-        "personalized-birthstone-ring",
       ],
     },
   },
@@ -422,7 +305,6 @@ export const culturalProducts: Product[] = [
     updated: "2026-08-22",
     tags: ["books", "kids", "children", "amharic", "tigrinya", "language", "learning"],
     placements: [
-      { category: "gifts-for-her", subcategory: "young-girl" },
       { category: "gifts-for-him", subcategory: "young-boy" },
       { category: "gifts-by-occasion", subcategory: "new-baby" },
     ],

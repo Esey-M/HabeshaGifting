@@ -502,7 +502,7 @@ export const giftingProducts: Product[] = [
         "Scale is hard to judge from listing photographs",
       ],
       alternatives: [
-        "engraved-wooden-keepsake-box",
+        "painted-wooden-jewelry-armoire",
         "bath-and-body-gift-set",
         "initial-letter-pendant-necklace",
       ],

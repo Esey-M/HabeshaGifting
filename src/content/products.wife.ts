@@ -449,9 +449,9 @@ export const wifeProducts: Product[] = [
         "Takes real cupboard space to store",
       ],
       alternatives: [
-        "coffee-ceremony-starter-set",
         "traditional-clay-jebena-coffee-pot",
         "wooden-coffee-tray-rekbot",
+        "electric-mug-warmer",
       ],
     },
   },
@@ -690,11 +690,7 @@ export const wifeProducts: Product[] = [
         "Pattern combinations are usually fixed",
         "Too light for a cold bedroom",
       ],
-      alternatives: [
-        "fleece-sherpa-pajama-set",
-        "pashmina-shawl-wrap",
-        "habesha-kemis-inspired-dress",
-      ],
+      alternatives: ["fleece-sherpa-pajama-set", "pashmina-shawl-wrap", "oversized-open-cardigan"],
     },
   },
 ];
