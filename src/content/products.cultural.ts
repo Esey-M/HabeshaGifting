@@ -303,8 +303,6 @@ export const culturalProducts: Product[] = [
     tags: ["mug", "personalized", "amharic", "coffee", "budget", "office", "funny"],
     placements: [
       { category: "personalized-gifts", subcategory: "custom-mugs" },
-      { category: "gifts-for-him", subcategory: "friend" },
-      { category: "gifts-for-him", subcategory: "brother" },
     ],
     guide: {
       heading: "The Custom Mug: Low Risk, Surprisingly High Hit Rate",
@@ -363,8 +361,6 @@ export const culturalProducts: Product[] = [
     tags: ["clothing", "custom", "shirts", "family", "reunion", "group", "wedding"],
     placements: [
       { category: "personalized-gifts", subcategory: "custom-clothing" },
-      { category: "gifts-by-occasion", subcategory: "graduation" },
-      { category: "gifts-for-him", subcategory: "brother" },
     ],
     guide: {
       heading: "Custom Shirts for Family Events: Order Earlier Than You Think",
@@ -422,8 +418,6 @@ export const culturalProducts: Product[] = [
     updated: "2026-08-01",
     tags: ["engraved", "wood", "keepsake", "box", "wedding", "graduation", "personalized"],
     placements: [
-      { category: "gifts-by-occasion", subcategory: "graduation" },
-      { category: "gifts-for-him", subcategory: "husband-partner" },
       { category: "gifts-for-her", subcategory: "daughter" },
     ],
     guide: {
@@ -525,66 +519,7 @@ export const culturalProducts: Product[] = [
       alternatives: [
         "personalized-coffee-mug-amharic",
         "custom-family-photo-frame",
-        "habesha-music-vinyl-collection",
-      ],
-    },
-  },
-  {
-    slug: "habesha-music-vinyl-collection",
-    title: "Ethio-Jazz Vinyl Collection",
-    tag: "Music",
-    summary:
-      "Reissues of the Ethio-jazz and golden-age recordings that shaped Habesha music, pressed for a turntable.",
-    bestFor: "Dad · Brother · Music lovers",
-    budget: "under-100",
-    affiliateUrl: null,
-    art: { hue: 220, motif: "rays" },
-    updated: "2026-07-28",
-    tags: ["music", "vinyl", "ethio-jazz", "records", "dad", "nostalgia"],
-    placements: [
-      { category: "gifts-for-him", subcategory: "brother" },
-      { category: "gifts-for-him", subcategory: "boyfriend" },
-    ],
-    guide: {
-      heading: "Ethio-Jazz on Vinyl: Buying Nostalgia That Holds Up",
-      standfirst:
-        "The golden-age recordings are genuinely great records, not just sentimental ones — which is why this gift works on people who do not usually want gifts.",
-      why: [
-        "The music has real standing. Mulatu Astatke's arrangements and the Amha and Kaifa label recordings of the late sixties and seventies are studied and sampled internationally, so this is a gift with musical weight rather than only nostalgic value.",
-        "It targets a specific memory. For a father or uncle who grew up with these records, hearing them on a turntable rather than a phone speaker is a materially different experience — and one they will not arrange for themselves.",
-        "Vinyl reissues are objects. The sleeve art from that era is beautiful, and the physicality is the point for a generation that owned records and then lost them to emigration.",
-      ],
-      whoFor: [
-        "Fathers and uncles who grew up with the originals",
-        "Anyone who already owns a turntable and plays it",
-        "Younger listeners who found Ethio-jazz through samples or film soundtracks",
-        "A milestone birthday, where nostalgia is the theme",
-      ],
-      whyGift: [
-        "Musically substantial rather than merely sentimental",
-        "Physical object with genuinely good sleeve art",
-        "Hits a specific, personal memory",
-      ],
-      considerations: [
-        "Confirm they own a working turntable. This is the entire gift and it is astonishingly easy to overlook.",
-        "Reissue quality varies. Look for reputable reissue labels and check reviews for surface noise and mastering source; unlicensed pressings from poor digital transfers are common.",
-        "Check the pressing region and voltage assumptions if you are also gifting equipment.",
-        "If they do not have a turntable, a well-chosen streaming subscription or a CD edition delivers the music without the barrier.",
-      ],
-      pros: [
-        "Genuinely great music, not just nostalgic",
-        "Beautiful physical packaging",
-        "Highly specific to the recipient's era",
-      ],
-      cons: [
-        "Useless without a turntable",
-        "Reissue quality is inconsistent",
-        "Unlicensed pressings are widespread",
-      ],
-      alternatives: [
-        "ethiopian-childrens-book-set",
-        "personalized-coffee-mug-amharic",
-        "leather-journal-engraved",
+        "wifi-digital-photo-frame",
       ],
     },
   },
@@ -601,9 +536,7 @@ export const culturalProducts: Product[] = [
     updated: "2026-06-12",
     tags: ["journal", "leather", "engraved", "personalized", "graduation", "writing"],
     placements: [
-      { category: "gifts-for-him", subcategory: "teen-boy" },
       { category: "gifts-for-him", subcategory: "son" },
-      { category: "gifts-by-occasion", subcategory: "graduation" },
     ],
     guide: {
       heading: "The Engraved Journal: A Good Gift for People Who Are Starting Something",
@@ -644,7 +577,7 @@ export const culturalProducts: Product[] = [
       alternatives: [
         "engraved-wooden-keepsake-box",
         "personalized-coffee-mug-amharic",
-        "habesha-music-vinyl-collection",
+        "mens-classic-dress-watch",
       ],
     },
   },

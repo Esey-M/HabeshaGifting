@@ -82,7 +82,6 @@ export const coffeeProducts: Product[] = [
     tags: ["coffee", "jebena", "ceremony", "modern", "kitchen", "housewarming"],
     placements: [
       { category: "coffee-traditional-gifts", subcategory: "jebena-coffee-pots" },
-      { category: "gifts-by-occasion", subcategory: "graduation" },
       { category: "gifts-for-him", subcategory: "son" },
     ],
     guide: {
@@ -197,7 +196,6 @@ export const coffeeProducts: Product[] = [
     updated: "2026-08-28",
     tags: ["coffee", "ceremony", "set", "wedding", "gift set", "starter"],
     placements: [
-      { category: "gifts-by-occasion", subcategory: "graduation" },
       { category: "gifts-for-her", subcategory: "daughter" },
       { category: "gifts-for-him", subcategory: "son" },
     ],
