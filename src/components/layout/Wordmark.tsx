@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { routes } from "@/lib/site";
 
-/** The wordmark: a coffee-bean mark plus the name, no imported logo file. */
+/** The wordmark: a wrapped-present mark plus the name, no imported logo file. */
 export function Wordmark({ compact = false }: { compact?: boolean }) {
   return (
     <Link
@@ -13,9 +13,21 @@ export function Wordmark({ compact = false }: { compact?: boolean }) {
         aria-hidden="true"
         className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-brand text-cream transition-transform group-hover:scale-105"
       >
-        <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7">
-          <ellipse cx="12" cy="12" rx="7" ry="9" transform="rotate(35 12 12)" />
-          <path d="M8 16c3-3 5-5 8-8" strokeLinecap="round" />
+        <svg
+          viewBox="0 0 24 24"
+          className="h-[1.15rem] w-[1.15rem]"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinejoin="round"
+          strokeLinecap="round"
+        >
+          {/* A wrapped present: lid, box, ribbon and bow. */}
+          <rect x="3.2" y="8.4" width="17.6" height="4" rx="1" />
+          <rect x="4.8" y="12.4" width="14.4" height="8.4" rx="1" />
+          <path d="M12 8.4v12.4" />
+          <path d="M12 8.4C10.1 5.1 6.2 5.2 7.2 7.4c.8 1.7 3.2 1.2 4.8 1z" />
+          <path d="M12 8.4c1.9-3.3 5.8-3.2 4.8-1-.8 1.7-3.2 1.2-4.8 1z" />
         </svg>
       </span>
       <span className="flex flex-col leading-none">

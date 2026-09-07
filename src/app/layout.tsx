@@ -1,20 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { absoluteUrl, site } from "@/lib/site";
 import "./globals.css";
 
 /**
- * Fraunces for display gives the editorial, slightly bookish voice; Inter keeps
- * body copy neutral and highly legible at small sizes. Both are self-hosted by
- * next/font at build time, so there is no runtime request to Google.
+ * Playfair Display for headlines: high-contrast and celebratory, which suits a
+ * gifting site, with conventional letterforms — Fraunces was here first, but
+ * its WONK axis gives a hooked "f" that reads as a mistake in words like
+ * "Gifts". Inter keeps body copy neutral and highly legible at small sizes.
+ * Both are self-hosted by next/font at build time, so there is no runtime
+ * request to Google.
  */
-const fraunces = Fraunces({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  variable: "--font-playfair",
   display: "swap",
-  axes: ["SOFT", "WONK", "opsz"],
 });
 
 const inter = Inter({
@@ -62,7 +64,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="flex min-h-screen flex-col">
         <a
           href="#main"

@@ -29,7 +29,7 @@
   --color-line: #e3ddd3;
   --color-line-soft: #efeae1;
 
-  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
 
   --color-gold: #c08a2e;
