@@ -86,6 +86,8 @@ export const wifeProducts: Product[] = [
     tags: ["jewelry", "necklace", "cross", "ethiopian", "gold filled", "wife", "anniversary"],
     placements: [
       { category: "gifts-for-her", subcategory: "wife-partner" },
+      { category: "gifts-for-her", subcategory: "mom" },
+      { category: "gifts-for-her", subcategory: "grandma" },
       { category: "ethiopian-eritrean-gifts", subcategory: "jewelry" },
       { category: "ethiopian-eritrean-gifts", subcategory: "ethiopian-inspired" },
       { category: "gifts-by-occasion", subcategory: "anniversary" },
@@ -150,6 +152,8 @@ export const wifeProducts: Product[] = [
     tags: ["jewelry", "necklace", "cross", "coptic", "ethiopian", "eritrean", "wife", "everyday"],
     placements: [
       { category: "gifts-for-her", subcategory: "wife-partner" },
+      { category: "gifts-for-her", subcategory: "mom" },
+      { category: "gifts-for-her", subcategory: "grandma" },
       { category: "ethiopian-eritrean-gifts", subcategory: "jewelry" },
       { category: "ethiopian-eritrean-gifts", subcategory: "shared-cultural" },
       { category: "gifts-by-occasion", subcategory: "christmas-holidays" },
@@ -444,11 +448,7 @@ export const wifeProducts: Product[] = [
         "Gilding often rules out the dishwasher",
         "Takes real cupboard space to store",
       ],
-      alternatives: [
-        "habesha-coffee-cup-set-sini",
-        "coffee-ceremony-starter-set",
-        "traditional-clay-jebena-coffee-pot",
-      ],
+      alternatives: ["coffee-ceremony-starter-set", "traditional-clay-jebena-coffee-pot"],
     },
   },
   {
@@ -505,7 +505,11 @@ export const wifeProducts: Product[] = [
         "Not substantial enough to stand alone on a major occasion",
         "Handmade variation means it will differ from the photograph",
       ],
-      alternatives: ["romantic-keepsake-gift", "sunflower-cordless-table-lamp", "thinking-of-you-gift-box"],
+      alternatives: [
+        "romantic-keepsake-gift",
+        "sunflower-cordless-table-lamp",
+        "thinking-of-you-gift-box",
+      ],
     },
   },
   {
@@ -562,7 +566,11 @@ export const wifeProducts: Product[] = [
         "Not bright enough to read by",
         "Distinctive styling will not suit every interior",
       ],
-      alternatives: ["crystal-lamp-star-projector", "jewelry-organizer-box", "crochet-tulip-keepsake"],
+      alternatives: [
+        "crystal-lamp-star-projector",
+        "jewelry-organizer-box",
+        "crochet-tulip-keepsake",
+      ],
     },
   },
   {
@@ -678,7 +686,11 @@ export const wifeProducts: Product[] = [
         "Pattern combinations are usually fixed",
         "Too light for a cold bedroom",
       ],
-      alternatives: ["fleece-sherpa-pajama-set", "pashmina-shawl-wrap", "habesha-kemis-inspired-dress"],
+      alternatives: [
+        "fleece-sherpa-pajama-set",
+        "pashmina-shawl-wrap",
+        "habesha-kemis-inspired-dress",
+      ],
     },
   },
 ];

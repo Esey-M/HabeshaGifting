@@ -69,7 +69,11 @@ export const giftingProducts: Product[] = [
         "Earring fittings may not suit every recipient",
         "Matched sets can look dated worn together — she may only ever wear them apart",
       ],
-      alternatives: ["tigrinya-script-bracelet", "ethiopian-cross-pendant", "gold-plated-rosary-necklace"],
+      alternatives: [
+        "personalized-steel-pendant-necklace",
+        "ethiopian-cross-pendant",
+        "gold-plated-rosary-necklace",
+      ],
     },
   },
   {
@@ -131,7 +135,7 @@ export const giftingProducts: Product[] = [
         "Simulated stones rather than mined",
         "Less distinctive than script or cultural pieces",
       ],
-      alternatives: ["personalized-birthstone-ring", "personalized-steel-pendant-necklace", "tigrinya-script-bracelet"],
+      alternatives: ["personalized-birthstone-ring", "personalized-steel-pendant-necklace"],
     },
   },
   {
@@ -190,7 +194,7 @@ export const giftingProducts: Product[] = [
         "Cannot be resized or repaired",
         "Personalised items are non-returnable if the spelling is wrong",
       ],
-      alternatives: ["initial-letter-pendant-necklace", "personalized-birthstone-ring", "tigrinya-script-bracelet"],
+      alternatives: ["initial-letter-pendant-necklace", "personalized-birthstone-ring"],
     },
   },
   {
@@ -305,7 +309,11 @@ export const giftingProducts: Product[] = [
         "Plating wears quickly on a beaded chain",
         "Denominational mismatch is easy to get wrong",
       ],
-      alternatives: ["ethiopian-cross-pendant", "habesha-cross-necklace-earring-set", "tigrinya-script-bracelet"],
+      alternatives: [
+        "ethiopian-cross-pendant",
+        "habesha-cross-necklace-earring-set",
+        "personalized-steel-pendant-necklace",
+      ],
     },
   },
   {
@@ -362,7 +370,11 @@ export const giftingProducts: Product[] = [
         "Impersonal without a handwritten note",
         "Possible allergens are often poorly listed",
       ],
-      alternatives: ["bath-and-body-gift-set", "pashmina-shawl-wrap", "crystal-lamp-star-projector"],
+      alternatives: [
+        "bath-and-body-gift-set",
+        "pashmina-shawl-wrap",
+        "crystal-lamp-star-projector",
+      ],
     },
   },
   {
@@ -420,7 +432,7 @@ export const giftingProducts: Product[] = [
         "Colour choice carries real taste risk",
         "Cheaper synthetics pill quickly",
       ],
-      alternatives: ["netela-traditional-scarf", "habesha-textile-wall-hanging", "bath-and-body-gift-set"],
+      alternatives: ["habesha-textile-wall-hanging", "bath-and-body-gift-set"],
     },
   },
   {
@@ -477,7 +489,11 @@ export const giftingProducts: Product[] = [
         "Layout may not match her collection",
         "Scale is hard to judge from listing photographs",
       ],
-      alternatives: ["engraved-wooden-keepsake-box", "bath-and-body-gift-set", "initial-letter-pendant-necklace"],
+      alternatives: [
+        "engraved-wooden-keepsake-box",
+        "bath-and-body-gift-set",
+        "initial-letter-pendant-necklace",
+      ],
     },
   },
   {
@@ -591,7 +607,11 @@ export const giftingProducts: Product[] = [
         "No practical use at all",
         "Printed wording is often overdone",
       ],
-      alternatives: ["initial-letter-pendant-necklace", "thinking-of-you-gift-box", "crystal-lamp-star-projector"],
+      alternatives: [
+        "initial-letter-pendant-necklace",
+        "thinking-of-you-gift-box",
+        "crystal-lamp-star-projector",
+      ],
     },
   },
   {
@@ -708,7 +728,11 @@ export const giftingProducts: Product[] = [
         "Bulky and expensive to post",
         "Can read as quantity over thought",
       ],
-      alternatives: ["bath-and-body-gift-set", "thinking-of-you-gift-box", "r540-extrait-de-parfum"],
+      alternatives: [
+        "bath-and-body-gift-set",
+        "thinking-of-you-gift-box",
+        "r540-extrait-de-parfum",
+      ],
     },
   },
 ];

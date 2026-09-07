@@ -22,11 +22,6 @@ export const coffeeProducts: Product[] = [
     tags: ["coffee", "jebena", "ceremony", "ethiopian", "eritrean", "traditional", "kitchen"],
     placements: [
       { category: "coffee-traditional-gifts", subcategory: "jebena-coffee-pots" },
-      { category: "gifts-for-her", subcategory: "mom" },
-      { category: "gifts-for-her", subcategory: "grandma" },
-      { category: "gifts-by-occasion", subcategory: "coffee-ceremony" },
-      { category: "gifts-by-occasion", subcategory: "wedding" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "shared-cultural" },
     ],
     guide: {
       heading: "The Traditional Clay Jebena: What to Know Before You Buy One",
@@ -66,7 +61,11 @@ export const coffeeProducts: Product[] = [
         "Not all versions tolerate direct stovetop heat",
         "Heavier than ceramic or metal alternatives",
       ],
-      alternatives: ["ceramic-jebena-modern-design", "electric-coffee-roaster-pan", "habesha-coffee-cup-set-sini"],
+      alternatives: [
+        "ceramic-jebena-modern-design",
+        "coffee-ceremony-starter-set",
+        "adey-abeba-23-piece-coffee-set",
+      ],
     },
   },
   {
@@ -83,7 +82,6 @@ export const coffeeProducts: Product[] = [
     tags: ["coffee", "jebena", "ceremony", "modern", "kitchen", "housewarming"],
     placements: [
       { category: "coffee-traditional-gifts", subcategory: "jebena-coffee-pots" },
-      { category: "gifts-by-occasion", subcategory: "housewarming" },
       { category: "gifts-by-occasion", subcategory: "graduation" },
       { category: "gifts-for-him", subcategory: "son" },
     ],
@@ -124,67 +122,7 @@ export const coffeeProducts: Product[] = [
         "Heat retention is not as even as clay",
         "Still breakable under thermal shock",
       ],
-      alternatives: ["traditional-clay-jebena-coffee-pot", "habesha-coffee-cup-set-sini"],
-    },
-  },
-  {
-    slug: "habesha-coffee-cup-set-sini",
-    title: "Habesha Coffee Cup Set (Sini)",
-    tag: "Coffee Ceremony",
-    summary:
-      "Small handleless cups in a set of six or twelve, usually decorated with a coloured band or traditional pattern.",
-    bestFor: "Wedding · Housewarming · Replacing breakages",
-    budget: "under-50",
-    affiliateUrl: null,
-    art: { hue: 28, motif: "rays" },
-    updated: "2026-08-20",
-    tags: ["coffee", "cups", "sini", "ceremony", "wedding", "housewarming", "set"],
-    placements: [
-      { category: "coffee-traditional-gifts", subcategory: "coffee-cups" },
-      { category: "gifts-by-occasion", subcategory: "wedding" },
-      { category: "gifts-by-occasion", subcategory: "housewarming" },
-      { category: "gifts-by-occasion", subcategory: "coffee-ceremony" },
-      { category: "gifts-for-her", subcategory: "mom" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "shared-cultural" },
-    ],
-    guide: {
-      heading: "Choosing a Sini Coffee Cup Set as a Gift",
-      standfirst:
-        "Sini cups are the most reliably welcome gift in this entire catalogue, for one unglamorous reason: they break, constantly, and nobody enjoys replacing them.",
-      why: [
-        "Sets shrink over time. A twelve-cup set becomes a nine-cup set within a couple of years, and hosts quietly serve a smaller circle rather than buy replacements. Arriving with a full set solves a problem the recipient has stopped mentioning.",
-        "The handleless shape is functional, not merely traditional. Small volumes cool quickly enough to hold, and the size keeps servings appropriate across the three rounds of a ceremony — abol, tona and baraka.",
-        "It is a gift that scales with the household. Unlike a single object, a set of twelve says you expect them to be hosting, which is a compliment in itself.",
-      ],
-      whoFor: [
-        "Newlyweds building a service for guests",
-        "Anyone who hosts regularly and has a visibly depleted set",
-        "A new home where nothing matches yet",
-        "Someone who already owns a good jebena but mismatched cups",
-      ],
-      whyGift: [
-        "Consumable in the best sense — replacements are always needed",
-        "Inexpensive per piece while still looking generous as a set",
-        "Pairs naturally with a jebena or tray to build a larger gift",
-      ],
-      considerations: [
-        "Sets of six are common but twelve is the more useful gift for anyone who hosts family.",
-        "Check whether cups come with saucers — sets vary and mixing styles looks untidy on a tray.",
-        "Decorated bands vary from subtle gold to bright multicolour. If you do not know their taste, plain white with a thin gold line is the safe choice.",
-        "Confirm the material. Porcelain chips less readily than thin earthenware and is worth the small extra cost.",
-      ],
-      pros: [
-        "Almost always needed",
-        "Looks generous without a high price",
-        "Combines well into a larger gift set",
-        "No sizing or personal-taste risk",
-      ],
-      cons: [
-        "Fragile in shipping — check packaging reviews",
-        "Decoration styles vary and may clash with an existing set",
-        "Not a surprising gift on its own",
-      ],
-      alternatives: ["traditional-clay-jebena-coffee-pot", "wooden-coffee-tray-rekbot", "coffee-ceremony-starter-set"],
+      alternatives: ["traditional-clay-jebena-coffee-pot", "adey-abeba-23-piece-coffee-set"],
     },
   },
   {
@@ -201,9 +139,6 @@ export const coffeeProducts: Product[] = [
     tags: ["coffee", "tray", "rekbot", "wood", "wedding", "handcrafted"],
     placements: [
       { category: "coffee-traditional-gifts", subcategory: "coffee-trays" },
-      { category: "gifts-by-occasion", subcategory: "wedding" },
-      { category: "gifts-by-occasion", subcategory: "anniversary" },
-      { category: "gifts-for-her", subcategory: "mom" },
       { category: "ethiopian-eritrean-gifts", subcategory: "home-decor" },
     ],
     guide: {
@@ -242,7 +177,11 @@ export const coffeeProducts: Product[] = [
         "Sizing must be matched to their existing jebena",
         "Hand-wash only in most cases",
       ],
-      alternatives: ["habesha-coffee-cup-set-sini", "woven-mesob-inspired-basket", "coffee-ceremony-starter-set"],
+      alternatives: [
+        "adey-abeba-23-piece-coffee-set",
+        "woven-mesob-inspired-basket",
+        "coffee-ceremony-starter-set",
+      ],
     },
   },
   {
@@ -258,10 +197,7 @@ export const coffeeProducts: Product[] = [
     updated: "2026-08-28",
     tags: ["coffee", "ceremony", "set", "wedding", "gift set", "starter"],
     placements: [
-      { category: "coffee-traditional-gifts", subcategory: "ceremony-accessories" },
-      { category: "gifts-by-occasion", subcategory: "wedding" },
       { category: "gifts-by-occasion", subcategory: "graduation" },
-      { category: "gifts-by-occasion", subcategory: "coffee-ceremony" },
       { category: "gifts-for-her", subcategory: "daughter" },
       { category: "gifts-for-him", subcategory: "son" },
     ],
@@ -301,63 +237,11 @@ export const coffeeProducts: Product[] = [
         "Component quality varies within the bundle",
         "Bulky and more fragile in transit",
       ],
-      alternatives: ["traditional-clay-jebena-coffee-pot", "wooden-coffee-tray-rekbot", "habesha-coffee-cup-set-sini"],
-    },
-  },
-  {
-    slug: "electric-coffee-roaster-pan",
-    title: "Coffee Bean Roasting Pan",
-    tag: "Coffee Ceremony",
-    summary:
-      "The long-handled pan used to roast green beans at the table, so guests can smell the coffee before they drink it.",
-    bestFor: "Dad · The serious ceremony host",
-    budget: "under-50",
-    affiliateUrl: null,
-    art: { hue: 18, motif: "rays" },
-    updated: "2026-06-18",
-    tags: ["coffee", "roasting", "ceremony", "accessories", "dad"],
-    placements: [
-      { category: "coffee-traditional-gifts", subcategory: "ceremony-accessories" },
-      { category: "gifts-for-him", subcategory: "dad" },
-      { category: "gifts-for-him", subcategory: "grandpa" },
-      { category: "gifts-by-occasion", subcategory: "coffee-ceremony" },
-    ],
-    guide: {
-      heading: "The Roasting Pan: Where the Ceremony Actually Starts",
-      standfirst:
-        "Roasting green beans in front of guests is the part of the ceremony people remember. The pan that does it is cheap, specific, and rarely owned in the diaspora.",
-      why: [
-        "The smell is the point. Carrying the pan around the room so each guest can wave the smoke toward themselves is a hosting ritual, and it cannot be replicated with pre-roasted beans from a bag.",
-        "The design is deliberate: a long handle to keep hands away from the heat, and a shallow, wide base so beans roast in a single layer and can be stirred continuously. A regular frying pan roasts unevenly and burns the outside.",
-        "Almost nobody abroad has one. Households that brought a jebena with them frequently left the roasting pan behind, and it is the piece least likely to be replaced.",
+      alternatives: [
+        "traditional-clay-jebena-coffee-pot",
+        "wooden-coffee-tray-rekbot",
+        "adey-abeba-23-piece-coffee-set",
       ],
-      whoFor: [
-        "A host who already owns the jebena and cups and wants the full ceremony",
-        "A father or grandfather who roasts for the family",
-        "Anyone who has started buying green beans and is improvising with a frying pan",
-      ],
-      whyGift: [
-        "Inexpensive but very specific — it reads as genuinely knowledgeable",
-        "Fills a real gap in most diaspora kitchens",
-        "Pairs well with a bag of green beans for a complete gift",
-      ],
-      considerations: [
-        "Match the pan to their hob. Some are designed for open flame or charcoal and behave poorly on electric.",
-        "Handle length varies; a short handle gets uncomfortably hot during a long roast.",
-        "This gift assumes they can buy green beans locally. Check before committing.",
-        "Roasting indoors produces real smoke. In a small flat with a sensitive alarm this is a thoughtful gift with an awkward side effect.",
-      ],
-      pros: [
-        "Enables the most memorable part of the ceremony",
-        "Low cost, high specificity",
-        "Rarely already owned",
-      ],
-      cons: [
-        "Requires access to green beans",
-        "Smoke can be a problem in small flats",
-        "Not all designs suit electric hobs",
-      ],
-      alternatives: ["traditional-clay-jebena-coffee-pot", "coffee-ceremony-starter-set", "ethiopian-incense-burner-set"],
     },
   },
   {
@@ -374,10 +258,6 @@ export const coffeeProducts: Product[] = [
     tags: ["incense", "etan", "frankincense", "traditional", "home", "ceremony"],
     placements: [
       { category: "coffee-traditional-gifts", subcategory: "incense-traditional" },
-      { category: "gifts-for-her", subcategory: "grandma" },
-      { category: "gifts-for-her", subcategory: "mom" },
-      { category: "gifts-by-occasion", subcategory: "housewarming" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "shared-cultural" },
     ],
     guide: {
       heading: "Incense and Etan: The Smallest Gift With the Strongest Memory",
@@ -415,7 +295,11 @@ export const coffeeProducts: Product[] = [
         "Resin quality is inconsistent between sellers",
         "Origin is often vaguely described",
       ],
-      alternatives: ["electric-coffee-roaster-pan", "woven-mesob-inspired-basket", "traditional-clay-jebena-coffee-pot"],
+      alternatives: [
+        "coffee-ceremony-starter-set",
+        "woven-mesob-inspired-basket",
+        "traditional-clay-jebena-coffee-pot",
+      ],
     },
   },
   {
@@ -433,9 +317,6 @@ export const coffeeProducts: Product[] = [
     placements: [
       { category: "coffee-traditional-gifts", subcategory: "traditional-home-decor" },
       { category: "ethiopian-eritrean-gifts", subcategory: "home-decor" },
-      { category: "gifts-by-occasion", subcategory: "housewarming" },
-      { category: "gifts-by-occasion", subcategory: "wedding" },
-      { category: "gifts-for-her", subcategory: "mom" },
     ],
     guide: {
       heading: "The Mesob as a Gift: Beautiful, Bulky, and Worth Thinking About",
@@ -473,7 +354,11 @@ export const coffeeProducts: Product[] = [
         "Expensive and awkward to ship",
         "Sensitive to damp, sunlight and spills",
       ],
-      alternatives: ["wooden-coffee-tray-rekbot", "ethiopian-incense-burner-set", "habesha-textile-wall-hanging"],
+      alternatives: [
+        "wooden-coffee-tray-rekbot",
+        "ethiopian-incense-burner-set",
+        "habesha-textile-wall-hanging",
+      ],
     },
   },
   {
@@ -491,9 +376,6 @@ export const coffeeProducts: Product[] = [
     placements: [
       { category: "ethiopian-eritrean-gifts", subcategory: "home-decor" },
       { category: "coffee-traditional-gifts", subcategory: "traditional-home-decor" },
-      { category: "gifts-by-occasion", subcategory: "housewarming" },
-      { category: "gifts-by-occasion", subcategory: "anniversary" },
-      { category: "gifts-for-her", subcategory: "wife-partner" },
     ],
     guide: {
       heading: "Textile Wall Art: Cultural Décor Without the Clichés",
@@ -531,7 +413,11 @@ export const coffeeProducts: Product[] = [
         "Fades in sunlight",
         "Scale is hard to judge from listings",
       ],
-      alternatives: ["woven-mesob-inspired-basket", "netela-traditional-scarf", "amharic-family-name-print"],
+      alternatives: [
+        "woven-mesob-inspired-basket",
+        "pashmina-shawl-wrap",
+        "amharic-family-name-print",
+      ],
     },
   },
 ];

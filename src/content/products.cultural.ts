@@ -15,11 +15,6 @@ export const culturalProducts: Product[] = [
     updated: "2026-07-22",
     tags: ["jewelry", "cross", "ethiopian", "orthodox", "pendant", "faith", "silver"],
     placements: [
-      { category: "ethiopian-eritrean-gifts", subcategory: "jewelry" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "ethiopian-inspired" },
-      { category: "gifts-for-her", subcategory: "grandma" },
-      { category: "gifts-for-her", subcategory: "mom" },
-      { category: "gifts-by-occasion", subcategory: "christmas-holidays" },
       { category: "gifts-for-him", subcategory: "son" },
     ],
     guide: {
@@ -58,65 +53,7 @@ export const culturalProducts: Product[] = [
         "Openwork is fiddly to clean",
         "Regional style rarely stated by sellers",
       ],
-      alternatives: ["habesha-cross-necklace-earring-set", "tigrinya-script-bracelet"],
-    },
-  },
-  {
-    slug: "tigrinya-script-bracelet",
-    title: "Tigrinya Script Bracelet",
-    tag: "Personalized Jewelry",
-    summary:
-      "A cuff or chain bracelet engraved with a word, name or phrase in Tigrinya.",
-    bestFor: "Eritrean gifts · Sister · Anniversary",
-    budget: "under-50",
-    affiliateUrl: null,
-    art: { hue: 210, motif: "arch" },
-    updated: "2026-08-05",
-    tags: ["jewelry", "bracelet", "tigrinya", "eritrean", "personalized", "engraved", "script"],
-    placements: [
-      { category: "personalized-gifts", subcategory: "personalized-jewelry" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "eritrean-inspired" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "jewelry" },
-      { category: "gifts-for-her", subcategory: "sister" },
-      { category: "gifts-by-occasion", subcategory: "anniversary" },
-    ],
-    guide: {
-      heading: "Tigrinya Script Jewelry: Specifically Eritrean Gifting",
-      standfirst:
-        "Most 'Habesha' jewellery defaults to Amharic. For Eritrean recipients, Tigrinya script is the detail that shows you were paying attention.",
-      why: [
-        "The distinction matters to the recipient. Habesha is a shared umbrella, but Eritrean identity is its own thing, and a gift that defaults to Amharic for a Tigrinya-speaking family quietly misses — this is the piece that does not.",
-        "Both languages use the Ge'ez script, so the same engraving process applies, but the words differ. A phrase such as a mother's name or a short blessing is written differently, and getting that right is the entire value of the gift.",
-        "A bracelet suits engraving better than a pendant for longer text. A cuff gives a continuous horizontal surface, so a phrase reads naturally rather than being squeezed into a shape.",
-      ],
-      whoFor: [
-        "Eritrean family members and partners",
-        "Anyone who has noticed cultural gifts always defaulting to Ethiopian",
-        "A sister or close friend, where a phrase can be an in-joke or a shared reference",
-        "Anniversaries, where a date and a short phrase work well together",
-      ],
-      whyGift: [
-        "Specific rather than generically Habesha",
-        "Engraving makes it unmistakably theirs",
-        "Understated enough for daily wear",
-      ],
-      considerations: [
-        "Confirm with a Tigrinya reader, not a translation app. Machine transliteration between Tigrinya and Amharic produces text that looks plausible and reads wrongly.",
-        "Ask for a proof image before the piece goes to engraving; most sellers will provide one on request.",
-        "Cuff bracelets have limited size adjustment. Chain styles are the safer choice if you do not know their wrist size.",
-        "Engraving depth varies. Shallow laser marks on plated metal wear away within a year or two of daily use.",
-      ],
-      pros: [
-        "Culturally specific in a way most listings are not",
-        "Good surface for longer phrases",
-        "Understated and wearable daily",
-      ],
-      cons: [
-        "Translation errors are permanent",
-        "Cuffs are hard to size remotely",
-        "Shallow engraving wears off on plated metal",
-      ],
-      alternatives: ["ethiopian-cross-pendant", "personalized-birthstone-ring"],
+      alternatives: ["habesha-cross-necklace-earring-set", "personalized-steel-pendant-necklace"],
     },
   },
   {
@@ -132,11 +69,7 @@ export const culturalProducts: Product[] = [
     updated: "2026-06-30",
     tags: ["jewelry", "ring", "birthstone", "personalized", "mom", "engraved"],
     placements: [
-      { category: "personalized-gifts", subcategory: "personalized-jewelry" },
-      { category: "gifts-for-her", subcategory: "mom" },
-      { category: "gifts-for-her", subcategory: "wife-partner" },
       { category: "gifts-by-occasion", subcategory: "new-baby" },
-      { category: "gifts-by-occasion", subcategory: "anniversary" },
     ],
     guide: {
       heading: "Birthstone Rings for Mothers: A Gift That Grows With the Family",
@@ -174,66 +107,11 @@ export const culturalProducts: Product[] = [
         "Personalised rings are often non-returnable",
         "Stone quality and metal are inconsistently described",
       ],
-      alternatives: ["initial-letter-pendant-necklace", "tigrinya-script-bracelet", "custom-family-photo-frame"],
-    },
-  },
-  {
-    slug: "netela-traditional-scarf",
-    title: "Netela Traditional Scarf",
-    tag: "Clothing",
-    summary:
-      "Handwoven white cotton with a coloured tibeb border, worn over the shoulders at church, weddings and holidays.",
-    bestFor: "Mom · Grandma · Holidays",
-    budget: "under-100",
-    affiliateUrl: null,
-    art: { hue: 350, motif: "weave" },
-    updated: "2026-08-18",
-    tags: ["clothing", "netela", "scarf", "tibeb", "handwoven", "traditional", "cotton"],
-    placements: [
-      { category: "ethiopian-eritrean-gifts", subcategory: "clothing-accessories" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "shared-cultural" },
-      { category: "gifts-for-her", subcategory: "mom" },
-      { category: "gifts-for-her", subcategory: "grandma" },
-      { category: "gifts-by-occasion", subcategory: "christmas-holidays" },
-      { category: "gifts-by-occasion", subcategory: "wedding" },
-    ],
-    guide: {
-      heading: "Buying a Netela as a Gift: One Size, Many Qualities",
-      standfirst:
-        "The netela is the rare piece of traditional clothing you can buy for someone without knowing their size — but quality varies more than almost anything else on this site.",
-      why: [
-        "It fits everybody. A netela is draped rather than fitted, which removes the single biggest obstacle to gifting traditional clothing and makes it viable for a relative you have not seen in years.",
-        "It is worn regularly rather than kept for one occasion. Church, weddings, funerals, Genna, Fasika and Meskel all call for one, so a good netela earns its place in a wardrobe several times a year.",
-        "The tibeb border is where the craft lives. The woven coloured band is hand-done on quality pieces, and its width and intricacy are the honest indicator of what you are paying for.",
+      alternatives: [
+        "initial-letter-pendant-necklace",
+        "personalized-steel-pendant-necklace",
+        "custom-family-photo-frame",
       ],
-      whoFor: [
-        "Mothers and grandmothers who attend church regularly",
-        "Anyone whose current netela is yellowing or fraying",
-        "A relative abroad who cannot buy one locally",
-        "Holiday gifting, where it will be worn within weeks",
-      ],
-      whyGift: [
-        "No sizing problem — it suits any recipient",
-        "Worn several times a year, not once",
-        "Quality is visible and appreciated by anyone who knows",
-      ],
-      considerations: [
-        "Handwoven and machine-made pieces look similar in photographs and feel completely different. Handwoven cotton is softer, slightly irregular, and considerably more expensive.",
-        "Thickness varies by intended use. A light shema is for warm weather; a heavier weave is for cold churches and winter.",
-        "White cotton yellows over time and many pieces are hand-wash only. Check care instructions before gifting to someone who will machine-wash everything.",
-        "Border width is the main price driver. A very narrow printed border on a cheap listing is the tell-tale sign of a machine-made piece.",
-      ],
-      pros: [
-        "One size fits all recipients",
-        "Genuinely used throughout the year",
-        "Handwoven versions are beautiful and long-lasting",
-      ],
-      cons: [
-        "Machine-made pieces are widely mislabelled",
-        "White cotton needs careful washing",
-        "Weight and weave quality hard to judge online",
-      ],
-      alternatives: ["habesha-textile-wall-hanging", "habesha-kemis-inspired-dress", "ethiopian-cross-pendant"],
     },
   },
   {
@@ -249,11 +127,7 @@ export const culturalProducts: Product[] = [
     updated: "2026-07-15",
     tags: ["clothing", "kemis", "dress", "tibeb", "traditional", "wedding", "modern"],
     placements: [
-      { category: "ethiopian-eritrean-gifts", subcategory: "clothing-accessories" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "ethiopian-inspired" },
       { category: "gifts-for-her", subcategory: "teen-girl" },
-      { category: "gifts-for-her", subcategory: "sister" },
-      { category: "gifts-by-occasion", subcategory: "wedding" },
     ],
     guide: {
       heading: "Modern Kemis-Inspired Dresses: Sizing Is the Whole Problem",
@@ -292,7 +166,11 @@ export const culturalProducts: Product[] = [
         "Printed tibeb is common at lower prices",
         "Long lead times on made-to-order pieces",
       ],
-      alternatives: ["netela-traditional-scarf", "custom-family-reunion-shirts", "habesha-textile-wall-hanging"],
+      alternatives: [
+        "pashmina-shawl-wrap",
+        "custom-family-reunion-shirts",
+        "habesha-textile-wall-hanging",
+      ],
     },
   },
   {
@@ -308,11 +186,6 @@ export const culturalProducts: Product[] = [
     updated: "2026-08-25",
     tags: ["photo", "frame", "engraved", "personalized", "family", "grandparents", "keepsake"],
     placements: [
-      { category: "personalized-gifts", subcategory: "photo-gifts" },
-      { category: "personalized-gifts", subcategory: "engraved-gifts" },
-      { category: "gifts-for-her", subcategory: "grandma" },
-      { category: "gifts-for-him", subcategory: "grandpa" },
-      { category: "gifts-by-occasion", subcategory: "anniversary" },
       { category: "gifts-by-occasion", subcategory: "new-baby" },
     ],
     guide: {
@@ -351,7 +224,11 @@ export const culturalProducts: Product[] = [
         "Ge'ez engraving is not universally supported",
         "Glass fronts are risky to ship",
       ],
-      alternatives: ["amharic-family-name-print", "personalized-coffee-mug-amharic", "personalized-birthstone-ring"],
+      alternatives: [
+        "amharic-family-name-print",
+        "personalized-coffee-mug-amharic",
+        "personalized-birthstone-ring",
+      ],
     },
   },
   {
@@ -368,10 +245,6 @@ export const culturalProducts: Product[] = [
     tags: ["print", "wall art", "amharic", "personalized", "home decor", "housewarming", "typography"],
     placements: [
       { category: "personalized-gifts", subcategory: "personalized-home-decor" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "ethiopian-inspired" },
-      { category: "gifts-by-occasion", subcategory: "housewarming" },
-      { category: "gifts-by-occasion", subcategory: "wedding" },
-      { category: "gifts-for-her", subcategory: "wife-partner" },
     ],
     guide: {
       heading: "Script Prints: Cultural Wall Art for a Modern Interior",
@@ -409,7 +282,11 @@ export const culturalProducts: Product[] = [
         "Spelling and typeface quality vary",
         "Easy to order the wrong size",
       ],
-      alternatives: ["custom-family-photo-frame", "habesha-textile-wall-hanging", "personalized-coffee-mug-amharic"],
+      alternatives: [
+        "custom-family-photo-frame",
+        "habesha-textile-wall-hanging",
+        "personalized-coffee-mug-amharic",
+      ],
     },
   },
   {
@@ -428,9 +305,6 @@ export const culturalProducts: Product[] = [
       { category: "personalized-gifts", subcategory: "custom-mugs" },
       { category: "gifts-for-him", subcategory: "friend" },
       { category: "gifts-for-him", subcategory: "brother" },
-      { category: "gifts-for-her", subcategory: "friend" },
-      { category: "gifts-by-occasion", subcategory: "birthday" },
-      { category: "gifts-by-occasion", subcategory: "celebration" },
     ],
     guide: {
       heading: "The Custom Mug: Low Risk, Surprisingly High Hit Rate",
@@ -468,7 +342,11 @@ export const culturalProducts: Product[] = [
         "Ge'ez character support is inconsistent",
         "Unmemorable on its own — better paired with something",
       ],
-      alternatives: ["amharic-family-name-print", "custom-family-reunion-shirts", "habesha-coffee-cup-set-sini"],
+      alternatives: [
+        "amharic-family-name-print",
+        "custom-family-reunion-shirts",
+        "adey-abeba-23-piece-coffee-set",
+      ],
     },
   },
   {
@@ -485,9 +363,7 @@ export const culturalProducts: Product[] = [
     tags: ["clothing", "custom", "shirts", "family", "reunion", "group", "wedding"],
     placements: [
       { category: "personalized-gifts", subcategory: "custom-clothing" },
-      { category: "gifts-by-occasion", subcategory: "celebration" },
       { category: "gifts-by-occasion", subcategory: "graduation" },
-      { category: "gifts-by-occasion", subcategory: "wedding" },
       { category: "gifts-for-him", subcategory: "brother" },
     ],
     guide: {
@@ -526,7 +402,11 @@ export const culturalProducts: Product[] = [
         "Collecting sizes is genuinely tedious",
         "A design or spelling error affects every shirt",
       ],
-      alternatives: ["personalized-coffee-mug-amharic", "habesha-kemis-inspired-dress", "custom-family-photo-frame"],
+      alternatives: [
+        "personalized-coffee-mug-amharic",
+        "habesha-kemis-inspired-dress",
+        "custom-family-photo-frame",
+      ],
     },
   },
   {
@@ -542,10 +422,7 @@ export const culturalProducts: Product[] = [
     updated: "2026-08-01",
     tags: ["engraved", "wood", "keepsake", "box", "wedding", "graduation", "personalized"],
     placements: [
-      { category: "personalized-gifts", subcategory: "engraved-gifts" },
-      { category: "gifts-by-occasion", subcategory: "wedding" },
       { category: "gifts-by-occasion", subcategory: "graduation" },
-      { category: "gifts-by-occasion", subcategory: "anniversary" },
       { category: "gifts-for-him", subcategory: "husband-partner" },
       { category: "gifts-for-her", subcategory: "daughter" },
     ],
@@ -585,7 +462,11 @@ export const culturalProducts: Product[] = [
         "Veneer is often sold as solid wood",
         "Unlined interiors scratch jewellery",
       ],
-      alternatives: ["custom-family-photo-frame", "amharic-family-name-print", "personalized-birthstone-ring"],
+      alternatives: [
+        "custom-family-photo-frame",
+        "amharic-family-name-print",
+        "personalized-birthstone-ring",
+      ],
     },
   },
   {
@@ -604,8 +485,6 @@ export const culturalProducts: Product[] = [
       { category: "gifts-for-her", subcategory: "young-girl" },
       { category: "gifts-for-him", subcategory: "young-boy" },
       { category: "gifts-by-occasion", subcategory: "new-baby" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "shared-cultural" },
-      { category: "gifts-by-occasion", subcategory: "birthday" },
     ],
     guide: {
       heading: "Children's Books: The Cultural Gift That Does the Most Work",
@@ -643,7 +522,11 @@ export const culturalProducts: Product[] = [
         "Binding quality is inconsistent",
         "Script-only editions exclude non-reading parents",
       ],
-      alternatives: ["personalized-coffee-mug-amharic", "custom-family-photo-frame", "habesha-music-vinyl-collection"],
+      alternatives: [
+        "personalized-coffee-mug-amharic",
+        "custom-family-photo-frame",
+        "habesha-music-vinyl-collection",
+      ],
     },
   },
   {
@@ -659,11 +542,8 @@ export const culturalProducts: Product[] = [
     updated: "2026-07-28",
     tags: ["music", "vinyl", "ethio-jazz", "records", "dad", "nostalgia"],
     placements: [
-      { category: "gifts-for-him", subcategory: "dad" },
       { category: "gifts-for-him", subcategory: "brother" },
       { category: "gifts-for-him", subcategory: "boyfriend" },
-      { category: "ethiopian-eritrean-gifts", subcategory: "shared-cultural" },
-      { category: "gifts-by-occasion", subcategory: "birthday" },
     ],
     guide: {
       heading: "Ethio-Jazz on Vinyl: Buying Nostalgia That Holds Up",
@@ -701,7 +581,11 @@ export const culturalProducts: Product[] = [
         "Reissue quality is inconsistent",
         "Unlicensed pressings are widespread",
       ],
-      alternatives: ["ethiopian-childrens-book-set", "personalized-coffee-mug-amharic", "leather-journal-engraved"],
+      alternatives: [
+        "ethiopian-childrens-book-set",
+        "personalized-coffee-mug-amharic",
+        "leather-journal-engraved",
+      ],
     },
   },
   {
@@ -717,11 +601,9 @@ export const culturalProducts: Product[] = [
     updated: "2026-06-12",
     tags: ["journal", "leather", "engraved", "personalized", "graduation", "writing"],
     placements: [
-      { category: "personalized-gifts", subcategory: "engraved-gifts" },
       { category: "gifts-for-him", subcategory: "teen-boy" },
       { category: "gifts-for-him", subcategory: "son" },
       { category: "gifts-by-occasion", subcategory: "graduation" },
-      { category: "gifts-by-occasion", subcategory: "celebration" },
     ],
     guide: {
       heading: "The Engraved Journal: A Good Gift for People Who Are Starting Something",
@@ -759,7 +641,11 @@ export const culturalProducts: Product[] = [
         "Bonded leather is widely mislabelled",
         "Thin paper limits which pens work",
       ],
-      alternatives: ["engraved-wooden-keepsake-box", "personalized-coffee-mug-amharic", "habesha-music-vinyl-collection"],
+      alternatives: [
+        "engraved-wooden-keepsake-box",
+        "personalized-coffee-mug-amharic",
+        "habesha-music-vinyl-collection",
+      ],
     },
   },
 ];
