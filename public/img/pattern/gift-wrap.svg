@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!--
+    Gift-wrap tile.
+
+    Seamless 200x200 repeat used as the site's background paper. Motifs are
+    wrapped presents, bows, sparkles and tibeb diamonds so the ground reads as
+    wrapping paper rather than as texture. Drawn at full strength here; every
+    surface dials it back with CSS opacity, so one asset serves the faint
+    page ground and the stronger hero panel alike.
+  -->
+  <g fill="none" stroke="#8f1f18" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Present, upper left -->
+    <g stroke-width="2">
+      <rect x="18" y="34" width="52" height="10" rx="2.5"/>
+      <rect x="23" y="44" width="42" height="32" rx="2.5"/>
+      <path d="M44 34v42"/>
+      <path d="M44 34c-5-9-16-9-13.5-2.5C32.3 37 39 36.2 44 34z"/>
+      <path d="M44 34c5-9 16-9 13.5-2.5C55.7 37 49 36.2 44 34z"/>
+    </g>
+
+    <!-- Sparkle, upper right -->
+    <path d="M150 24c1.8 8 4 10.2 12 12-8 1.8-10.2 4-12 12-1.8-8-4-10.2-12-12 8-1.8 10.2-4 12-12z"
+          fill="#8f1f18" stroke="none" opacity="0.75"/>
+
+    <!-- Bow, mid right -->
+    <g stroke-width="2">
+      <path d="M152 122c-8-10-22-8-19 0 2.7 6.8 13.4 4.6 19 0z"/>
+      <path d="M152 122c8-10 22-8 19 0-2.7 6.8-13.4 4.6-19 0z"/>
+      <path d="M148 125c-3 7-5 10-9 13.5M156 125c3 7 5 10 9 13.5"/>
+      <circle cx="152" cy="122" r="2.6"/>
+    </g>
+
+    <!-- Small present, lower left -->
+    <g stroke-width="1.8">
+      <rect x="34" y="140" width="38" height="8" rx="2"/>
+      <rect x="38" y="148" width="30" height="24" rx="2"/>
+      <path d="M53 140v32"/>
+      <path d="M53 140c-3.8-7-12.5-7-10.5-2C43.8 142.6 49 141.7 53 140z"/>
+      <path d="M53 140c3.8-7 12.5-7 10.5-2C62.2 142.6 57 141.7 53 140z"/>
+    </g>
+
+    <!-- Tibeb diamonds: geometric, never floral -->
+    <g stroke-width="1.6" opacity="0.7">
+      <path d="M108 68l7 7-7 7-7-7z"/>
+      <path d="M100 178l6 6-6 6-6-6z"/>
+      <path d="M186 82l5 5-5 5-5-5z"/>
+      <path d="M6 100l5 5-5 5-5-5z" />
+      <path d="M206 100l5 5-5 5-5-5z" />
+    </g>
+
+    <!-- Confetti dots -->
+    <g fill="#8f1f18" stroke="none" opacity="0.55">
+      <circle cx="92" cy="26" r="2.4"/>
+      <circle cx="128" cy="72" r="2"/>
+      <circle cx="14" cy="152" r="2.2"/>
+      <circle cx="96" cy="120" r="2"/>
+      <circle cx="182" cy="160" r="2.4"/>
+      <circle cx="74" cy="192" r="2"/>
+      <circle cx="164" cy="46" r="1.8"/>
+    </g>
+
+    <!-- Ribbon curl -->
+    <g stroke-width="1.6" opacity="0.6">
+      <path d="M96 148c8-6 16 2 8 8-8 6-16-2-8-8z"/>
+      <path d="M118 154c6 8 14 8 20 2"/>
+    </g>
+  </g>
+</svg>

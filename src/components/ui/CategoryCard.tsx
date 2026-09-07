@@ -44,6 +44,7 @@ export function CategoryCard({
       href={href}
       className="group relative flex flex-col overflow-hidden rounded-card border border-line bg-paper transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-[0_12px_32px_-12px_rgba(116,5,4,0.22)]"
     >
+      <span aria-hidden="true" className="card-ribbon z-10" />
       <div className={`relative overflow-hidden bg-cream ${size === "large" ? "aspect-[16/10]" : "aspect-[3/2]"}`}>
         {image ? (
           /* eslint-disable-next-line @next/next/no-img-element -- static export ships
@@ -70,6 +71,8 @@ export function CategoryCard({
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
           />
         )}
+        {/* Warm scrim: deepest at the bottom edge, so the art sits into the card. */}
+        <span aria-hidden="true" className="card-scrim" />
         <span
           aria-hidden="true"
           className="absolute left-4 top-4 grid h-11 w-11 place-items-center rounded-full bg-paper/90 text-xl shadow-sm backdrop-blur-sm"

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Artwork } from "@/components/Artwork";
+import { GiftStack, RibbonDivider } from "@/components/decor/GiftDecor";
 import { CategoryCard } from "@/components/ui/CategoryCard";
 import { JsonLd } from "@/components/ui/Breadcrumbs";
 import { ProductCard } from "@/components/ui/ProductCard";
@@ -52,16 +52,19 @@ export default function HomePage() {
       <JsonLd data={jsonLd} />
 
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-line bg-cream">
+      <section className="gift-panel relative overflow-hidden border-b border-line bg-cream">
+        {/*
+          A wash over the wrap on the text side only. It paints above the
+          pattern (later in the DOM at the same negative depth) and below the
+          copy, so the headline never competes with a bow. The right side stays
+          uncovered, where the presents are.
+        */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 opacity-40 lg:block"
-        >
-          <Artwork seed={{ hue: 20, motif: "weave" }} id="hero" scale="feature" className="h-full w-full" />
-          <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/70 to-transparent" />
-        </div>
+          className="pointer-events-none absolute inset-0 -z-[1] bg-gradient-to-r from-cream via-cream/75 to-transparent"
+        />
 
-        <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:py-32">
+        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 py-20 sm:px-6 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
           <div className="max-w-2xl">
             <p className="eyebrow">Gift guides for the Habesha community</p>
             <h1 className="mt-4 font-display text-4xl font-semibold leading-[1.1] text-ink sm:text-5xl lg:text-6xl">
@@ -92,6 +95,10 @@ export default function HomePage() {
               Independent recommendations with honest trade-offs. We explain what to check
               before you buy — not just what to click.
             </p>
+          </div>
+
+          <div aria-hidden="true" className="relative mx-auto w-full max-w-md lg:max-w-none">
+            <GiftStack className="h-auto w-full drop-shadow-[0_24px_40px_rgba(116,5,4,0.14)]" />
           </div>
         </div>
       </section>
@@ -132,7 +139,7 @@ export default function HomePage() {
       {/* Featured guides */}
       <section
         aria-labelledby="featured-heading"
-        className="border-y border-line bg-cream/60"
+        className="gift-panel border-y border-line bg-cream/70"
       >
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
           <div className="flex flex-wrap items-end justify-between gap-4">
@@ -186,12 +193,14 @@ export default function HomePage() {
               body: "We may earn a commission when you buy through our links, at no extra cost to you. Buttons that leave the site always say where they go.",
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-card border border-line bg-paper p-6">
+            <div key={item.title} className="gift-tag rounded-card p-6 pt-12">
               <h3 className="font-display text-lg font-semibold text-ink">{item.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">{item.body}</p>
             </div>
           ))}
         </div>
+
+        <RibbonDivider className="mt-16" />
       </section>
     </>
   );

@@ -54,7 +54,9 @@ export function Header() {
     href === routes.gifts ? pathname === href : pathname.startsWith(href);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-paper/85 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur-md">
+      {/* Ribbon across the top edge — the site's one constant gifting cue. */}
+      <div aria-hidden="true" className="ribbon-bar" />
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4 sm:px-6 lg:h-[4.5rem]">
         <Wordmark />
 

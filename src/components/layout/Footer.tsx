@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BowMark } from "@/components/decor/GiftDecor";
 import { categories } from "@/content";
 import { allGuides } from "@/lib/content";
 import { routes, site } from "@/lib/site";
@@ -16,12 +17,16 @@ export function Footer() {
 
   return (
     <footer className="mt-24 border-t border-line bg-paper">
+      <div aria-hidden="true" className="ribbon-bar" />
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="font-display text-lg font-semibold text-ink">
-              Habesha<span className="text-brand">Gifting</span>
-              <span className="text-muted">.com</span>
+            <p className="flex items-center gap-2 font-display text-lg font-semibold text-ink">
+              <BowMark className="h-5 w-6 shrink-0 text-brand" />
+              <span>
+                Habesha<span className="text-brand">Gifting</span>
+                <span className="text-muted">.com</span>
+              </span>
             </p>
             <p className="mt-3 max-w-xs text-sm text-muted">
               Gift ideas and honest buying guides for the Habesha community, wherever in the

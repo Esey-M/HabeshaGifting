@@ -88,7 +88,11 @@ export default async function GuidePage({ params }: { params: Params }) {
       <Breadcrumbs trail={trail} />
 
       <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-16">
-        <div className="min-w-0">
+        {/*
+          Long-form copy gets its own sheet of paper so it is never read off the
+          gift-wrap ground; the wrap stays visible in the margins around it.
+        */}
+        <div className="min-w-0 rounded-card border border-line bg-paper p-6 shadow-[0_18px_44px_-28px_rgba(116,5,4,0.28)] sm:p-9 lg:p-11">
           <header>
             <p className="eyebrow">{product.tag}</p>
             <h1 className="mt-3 font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl lg:text-[2.75rem]">
@@ -170,7 +174,7 @@ export default async function GuidePage({ params }: { params: Params }) {
                 Pros and cons
               </h2>
               <div className="mt-5 grid gap-5 sm:grid-cols-2">
-                <div className="rounded-card border border-line bg-paper p-5">
+                <div className="rounded-card border border-line bg-cream/50 p-5">
                   <h3 className="font-display text-base font-semibold text-ink">Pros</h3>
                   <ul className="mt-3 space-y-2.5">
                     {product.guide.pros.map((item) => (

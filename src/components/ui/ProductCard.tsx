@@ -17,7 +17,8 @@ export function ProductCard({ product }: { product: Product }) {
   const budget = getBudget(product.budget);
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-card border border-line bg-paper transition-all duration-300 hover:border-brand-200 hover:shadow-[0_12px_32px_-14px_rgba(116,5,4,0.2)]">
+    <article className="group relative flex flex-col overflow-hidden rounded-card border border-line bg-paper transition-all duration-300 hover:border-brand-200 hover:shadow-[0_12px_32px_-14px_rgba(116,5,4,0.2)]">
+      <span aria-hidden="true" className="card-ribbon z-10" />
       <Link
         href={routes.guide(product.slug)}
         tabIndex={-1}
@@ -44,6 +45,8 @@ export function ProductCard({ product }: { product: Product }) {
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
           />
         )}
+        {/* Warm scrim: deepest at the bottom edge, so the art sits into the card. */}
+        <span aria-hidden="true" className="card-scrim" />
       </Link>
 
       <div className="flex flex-1 flex-col p-5">

@@ -98,7 +98,7 @@ export default async function CategoryPage({ params }: { params: Params }) {
         </div>
       </section>
 
-      <section className="mt-20 rounded-card border border-line bg-cream p-8 sm:p-10">
+      <section className="gift-panel mt-20 overflow-hidden rounded-card border border-line bg-cream p-8 sm:p-10">
         <SectionHeading
           eyebrow="Not sure where to start?"
           title="Browse every guide instead"
