@@ -77,7 +77,7 @@
       );
     background-size: var(--gift-wrap-size) var(--gift-wrap-size), auto;
     background-repeat: repeat, repeat;
-    opacity: 0.075;
+    opacity: 0.14;
   }
 
   @media print {
@@ -179,7 +179,7 @@
     /* Anchored to the viewport like the body layer, so the tiles of the two
        line up and the page reads as one continuous sheet of wrap. */
     background-attachment: fixed;
-    opacity: 0.16;
+    opacity: 0.26;
   }
 
   /* The striped ribbon that runs across the top of every page. */
@@ -231,10 +231,11 @@
     pointer-events: none;
     background-image: linear-gradient(
       to top,
-      rgba(28, 18, 16, 0.46) 0%,
-      rgba(28, 18, 16, 0.24) 26%,
-      rgba(28, 18, 16, 0.08) 55%,
-      rgba(255, 255, 255, 0.06) 100%
+      rgba(24, 12, 10, 0.66) 0%,
+      rgba(24, 12, 10, 0.46) 16%,
+      rgba(24, 12, 10, 0.24) 40%,
+      rgba(24, 12, 10, 0.07) 70%,
+      rgba(255, 255, 255, 0.1) 100%
     );
   }
 
