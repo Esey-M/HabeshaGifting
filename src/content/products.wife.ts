@@ -197,7 +197,7 @@ export const wifeProducts: Product[] = [
       alternatives: [
         "ethiopian-cross-necklace-gold-filled",
         "dainty-cross-choker-necklace",
-        "ethiopian-cross-pendant",
+        "habesha-cross-necklace-earring-set",
       ],
     },
   },
@@ -448,7 +448,11 @@ export const wifeProducts: Product[] = [
         "Gilding often rules out the dishwasher",
         "Takes real cupboard space to store",
       ],
-      alternatives: ["coffee-ceremony-starter-set", "traditional-clay-jebena-coffee-pot"],
+      alternatives: [
+        "coffee-ceremony-starter-set",
+        "traditional-clay-jebena-coffee-pot",
+        "wooden-coffee-tray-rekbot",
+      ],
     },
   },
   {

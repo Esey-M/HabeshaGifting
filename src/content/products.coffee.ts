@@ -82,7 +82,6 @@ export const coffeeProducts: Product[] = [
     tags: ["coffee", "jebena", "ceremony", "modern", "kitchen", "housewarming"],
     placements: [
       { category: "coffee-traditional-gifts", subcategory: "jebena-coffee-pots" },
-      { category: "gifts-for-him", subcategory: "son" },
     ],
     guide: {
       heading: "The Modern Ceramic Jebena: A Practical Alternative to Clay",
@@ -121,7 +120,11 @@ export const coffeeProducts: Product[] = [
         "Heat retention is not as even as clay",
         "Still breakable under thermal shock",
       ],
-      alternatives: ["traditional-clay-jebena-coffee-pot", "adey-abeba-23-piece-coffee-set"],
+      alternatives: [
+        "traditional-clay-jebena-coffee-pot",
+        "adey-abeba-23-piece-coffee-set",
+        "coffee-ceremony-starter-set",
+      ],
     },
   },
   {
@@ -197,7 +200,6 @@ export const coffeeProducts: Product[] = [
     tags: ["coffee", "ceremony", "set", "wedding", "gift set", "starter"],
     placements: [
       { category: "gifts-for-her", subcategory: "daughter" },
-      { category: "gifts-for-him", subcategory: "son" },
     ],
     guide: {
       heading: "Is a Complete Coffee Ceremony Set Worth It?",

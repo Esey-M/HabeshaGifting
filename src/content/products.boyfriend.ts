@@ -134,7 +134,11 @@ export const boyfriendProducts: Product[] = [
         "Bracelet will likely need sizing before wear",
         "Water resistance at this level is limited",
       ],
-      alternatives: ["cologne-organizer-stand", "cordless-hair-clipper-kit", "leather-journal-engraved"],
+      alternatives: [
+        "cologne-organizer-stand",
+        "cordless-hair-clipper-kit",
+        "slim-rfid-leather-wallet",
+      ],
     },
   },
   {
@@ -253,7 +257,11 @@ export const boyfriendProducts: Product[] = [
         "Individual pieces are small",
         "Fragranced products are a problem for sensitive skin",
       ],
-      alternatives: ["cologne-organizer-stand", "cordless-hair-clipper-kit", "bath-and-body-gift-set"],
+      alternatives: [
+        "cologne-organizer-stand",
+        "cordless-hair-clipper-kit",
+        "bath-and-body-gift-set",
+      ],
     },
   },
   {

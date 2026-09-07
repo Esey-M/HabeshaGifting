@@ -71,7 +71,7 @@ export const giftingProducts: Product[] = [
       ],
       alternatives: [
         "personalized-steel-pendant-necklace",
-        "ethiopian-cross-pendant",
+        "ethiopian-cross-necklace-gold-filled",
         "gold-plated-rosary-necklace",
       ],
     },
@@ -135,7 +135,11 @@ export const giftingProducts: Product[] = [
         "Simulated stones rather than mined",
         "Less distinctive than script or cultural pieces",
       ],
-      alternatives: ["personalized-birthstone-ring", "personalized-steel-pendant-necklace"],
+      alternatives: [
+        "personalized-birthstone-ring",
+        "personalized-steel-pendant-necklace",
+        "dainty-cross-choker-necklace",
+      ],
     },
   },
   {
@@ -194,7 +198,11 @@ export const giftingProducts: Product[] = [
         "Cannot be resized or repaired",
         "Personalised items are non-returnable if the spelling is wrong",
       ],
-      alternatives: ["initial-letter-pendant-necklace", "personalized-birthstone-ring"],
+      alternatives: [
+        "initial-letter-pendant-necklace",
+        "personalized-birthstone-ring",
+        "dainty-cross-choker-necklace",
+      ],
     },
   },
   {
@@ -310,7 +318,7 @@ export const giftingProducts: Product[] = [
         "Denominational mismatch is easy to get wrong",
       ],
       alternatives: [
-        "ethiopian-cross-pendant",
+        "ethiopian-cross-necklace-gold-filled",
         "habesha-cross-necklace-earring-set",
         "personalized-steel-pendant-necklace",
       ],
@@ -432,7 +440,11 @@ export const giftingProducts: Product[] = [
         "Colour choice carries real taste risk",
         "Cheaper synthetics pill quickly",
       ],
-      alternatives: ["habesha-textile-wall-hanging", "bath-and-body-gift-set"],
+      alternatives: [
+        "habesha-textile-wall-hanging",
+        "bath-and-body-gift-set",
+        "fleece-sherpa-pajama-set",
+      ],
     },
   },
   {

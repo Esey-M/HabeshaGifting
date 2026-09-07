@@ -3,60 +3,6 @@ import type { Product } from "./types";
 /** Jewelry, clothing, personalised and keepsake products. */
 export const culturalProducts: Product[] = [
   {
-    slug: "ethiopian-cross-pendant",
-    title: "Ethiopian Cross Pendant",
-    tag: "Jewelry",
-    summary:
-      "The interlaced Ethiopian cross in silver or gold-tone, in regional styles from Lalibela to Axum.",
-    bestFor: "Christmas · Baptism · Grandma",
-    budget: "under-100",
-    affiliateUrl: null,
-    art: { hue: 45, motif: "cross" },
-    updated: "2026-07-22",
-    tags: ["jewelry", "cross", "ethiopian", "orthodox", "pendant", "faith", "silver"],
-    placements: [
-      { category: "gifts-for-him", subcategory: "son" },
-    ],
-    guide: {
-      heading: "Choosing an Ethiopian Cross: Style, Region and Meaning",
-      standfirst:
-        "Not all Ethiopian crosses are the same, and the differences between them are regional and historical rather than decorative.",
-      why: [
-        "The interlace is the tradition. Ethiopian crosses are built from continuous woven latticework rather than two intersecting bars, a design language stretching back to the Axumite period and unlike any other Christian cross form.",
-        "Regional styles are genuinely distinct. Lalibela, Axum and Gondar crosses each have recognisable geometry, and giving one from the recipient's own family region turns a nice object into a specific one.",
-        "It carries meaning across generations. For Orthodox families this is a faith object first, which gives it a weight that decorative jewellery does not have — and makes it a natural baptism, Genna or Fasika gift.",
-      ],
-      whoFor: [
-        "Orthodox Christian family members, particularly older relatives",
-        "A baptism or christening, where a cross is the conventional gift",
-        "Anyone who wears a cross daily and would appreciate a distinctly Habesha one",
-        "Second-generation family members connecting to a specific regional heritage",
-      ],
-      whyGift: [
-        "Meaningful rather than merely decorative",
-        "Frequently kept and passed down",
-        "Appropriate across a wide age range",
-      ],
-      considerations: [
-        "Consider whether the recipient is practising. A cross is a faith object, and it is not a neutral gift for someone who is not religious.",
-        "Larger hand-carved crosses are heavy on a fine chain. Buy an appropriately weighted chain or check one is included.",
-        "Sellers often label all styles generically as 'Ethiopian cross'. If regional specificity matters, look at the geometry in the photographs rather than the title.",
-        "Silver tarnishes and openwork interlace is difficult to polish. A rhodium finish or regular gentle cleaning helps.",
-      ],
-      pros: [
-        "Strong cultural and religious meaning",
-        "Distinctive design unlike other cross styles",
-        "Long-lived, often passed down",
-      ],
-      cons: [
-        "Not appropriate for non-religious recipients",
-        "Openwork is fiddly to clean",
-        "Regional style rarely stated by sellers",
-      ],
-      alternatives: ["habesha-cross-necklace-earring-set", "personalized-steel-pendant-necklace"],
-    },
-  },
-  {
     slug: "personalized-birthstone-ring",
     title: "Personalized Birthstone Ring",
     tag: "Personalized Jewelry",
@@ -520,64 +466,6 @@ export const culturalProducts: Product[] = [
         "personalized-coffee-mug-amharic",
         "custom-family-photo-frame",
         "wifi-digital-photo-frame",
-      ],
-    },
-  },
-  {
-    slug: "leather-journal-engraved",
-    title: "Engraved Leather Journal",
-    tag: "Engraved Gifts",
-    summary:
-      "A refillable leather-bound notebook engraved with initials, a name or a short phrase.",
-    bestFor: "Graduation · Teen boy · New job",
-    budget: "under-50",
-    affiliateUrl: null,
-    art: { hue: 195, motif: "arch" },
-    updated: "2026-06-12",
-    tags: ["journal", "leather", "engraved", "personalized", "graduation", "writing"],
-    placements: [
-      { category: "gifts-for-him", subcategory: "son" },
-    ],
-    guide: {
-      heading: "The Engraved Journal: A Good Gift for People Who Are Starting Something",
-      standfirst:
-        "Journals are a cliché for a reason, and the cliché is defensible when the recipient is at an actual beginning.",
-      why: [
-        "It suits transitions specifically. A journal given at a graduation or a new job is a gift about what comes next, which is why it lands better at those moments than at, say, a birthday.",
-        "Refillable covers change the maths. A leather cover that takes replacement inserts is used for a decade rather than filled once and shelved, which is what separates a real gift from a desk ornament.",
-        "Engraving raises the stakes usefully. An engraved cover is harder to abandon in a drawer than an anonymous notebook, and recipients report actually using them.",
-      ],
-      whoFor: [
-        "Graduates and anyone starting a new job",
-        "Teenagers, where a plain notebook would go unused",
-        "Someone who already writes and is using a cheap notebook",
-        "A celebration gift where you want something personal but not intimate",
-      ],
-      whyGift: [
-        "Fits a moment of transition",
-        "Refillable versions last for years",
-        "Personal without being expensive",
-      ],
-      considerations: [
-        "Refillable versus bound is the key decision. A bound journal is finished when it is full; a refillable cover is not.",
-        "Check the paper weight if they use fountain pens or markers — thin paper bleeds through and makes a nice journal unusable for the person most likely to appreciate it.",
-        "Genuine leather ages beautifully and bonded leather peels within a couple of years. The listing language here is deliberately slippery.",
-        "For a recipient who does not write, this is a gift that quietly becomes clutter. Be honest about whether they are that person.",
-      ],
-      pros: [
-        "Well suited to milestones and transitions",
-        "Refillable versions have real longevity",
-        "Modest cost for a personalised gift",
-      ],
-      cons: [
-        "Useless for someone who does not write",
-        "Bonded leather is widely mislabelled",
-        "Thin paper limits which pens work",
-      ],
-      alternatives: [
-        "engraved-wooden-keepsake-box",
-        "personalized-coffee-mug-amharic",
-        "mens-classic-dress-watch",
       ],
     },
   },
