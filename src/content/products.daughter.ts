@@ -89,9 +89,18 @@ export const daughterProducts: Product[] = [
     bestFor: "Daughter · Young girl · No language required",
     budget: "under-25",
     affiliateUrl:
-      "https://www.amazon.com/dp/B0HFK1148B?linkCode=ll2&tag=mesmerdesign-20&linkId=d3dd073678bfdfedcbfd61e063cc2972&language=en_US",
+      "https://www.amazon.com/Habesha-Coloring-Book-Illustrations-Traditional/dp/B0HFK1148B?linkCode=ll2&tag=mesmerdesign-20&linkId=a4df212e9d184ef31ff0b5df0af895ff&language=en_US",
     art: { hue: 330, motif: "rays" },
     updated: "2026-09-09",
+    /**
+     * Full canonical path kept, unlike the rest of the catalogue.
+     *
+     * This ASIN was the one link of eleven that failed on 2026-09-09, landing
+     * readers on an Amazon title-search page instead of the product. The bare
+     * /dp/ form is not the cause — ten sibling links use it and resolve fine —
+     * but the slug costs nothing and removes a variable, so it stays here.
+     * Do not "normalise" it back without re-testing this specific ASIN.
+     */
     tags: ["books", "coloring", "kids", "habesha", "culture", "daughter", "budget"],
     placements: [
       { category: "gifts-for-her", subcategory: "daughter" },
