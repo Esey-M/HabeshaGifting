@@ -47,7 +47,15 @@ export interface Category {
    */
   image?: string;
   subcategories: Subcategory[];
-  /** Shown in the primary desktop navigation. */
+  /**
+   * Shown in the primary header navigation.
+   *
+   * Presentation only, and deliberately not a visibility switch: the footer,
+   * the /gifts hub, the homepage, the sitemap and llms.txt all enumerate
+   * `categories` directly, so a category with `inNav: false` keeps every
+   * internal link and every entry in the machine-readable surfaces. Turning
+   * this off shortens the header; it does not hide or orphan a category.
+   */
   inNav?: boolean;
 }
 

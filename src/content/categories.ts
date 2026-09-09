@@ -18,7 +18,7 @@ export const categories: Category[] = [
       "Some gifts are chosen for a person, others for a moment. Start with the occasion and we will point you toward gifts that fit the weight of the day — from a first mekses to a fiftieth birthday.",
     childLabel: "Occasions",
     art: { hue: 0, motif: "rays" },
-    inNav: true,
+    inNav: false,
     image: "/img/categories/gifts-by-occasion",
     subcategories: [
       {
@@ -359,7 +359,7 @@ export const categories: Category[] = [
       "Habesha is the umbrella here, not a flattening. Some gifts are distinctly Ethiopian, some distinctly Eritrean, and many belong to both. We label them honestly rather than blurring the difference.",
     childLabel: "Collections",
     art: { hue: 100, motif: "weave" },
-    inNav: true,
+    inNav: false,
     image: "/img/categories/ethiopian-eritrean-gifts",
     subcategories: [
       {
@@ -434,7 +434,7 @@ export const categories: Category[] = [
       "Coffee is the centre of Habesha hospitality, and it makes for gifts that get used constantly. This is the section for anyone building — or upgrading — a coffee ceremony set.",
     childLabel: "Collections",
     art: { hue: 25, motif: "vessel" },
-    inNav: true,
+    inNav: false,
     image: "/img/categories/coffee-traditional-gifts",
     subcategories: [
       {
@@ -509,7 +509,7 @@ export const categories: Category[] = [
       "Personalisation is where a good gift becomes a kept one. A name in Ge'ez script, a wedding date, or a family photograph turns an ordinary object into something specific to one person.",
     childLabel: "Collections",
     art: { hue: 280, motif: "cross" },
-    inNav: true,
+    inNav: false,
     image: "/img/categories/personalized-gifts",
     subcategories: [
       {

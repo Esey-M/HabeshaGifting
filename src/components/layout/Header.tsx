@@ -7,12 +7,24 @@ import { categories } from "@/content";
 import { routes } from "@/lib/site";
 import { Wordmark } from "./Wordmark";
 
+/**
+ * The primary nav is deliberately short: Gifts, plus the two recipient
+ * categories people arrive looking for.
+ *
+ * Everything else — Gifts by Occasion, Ethiopian & Eritrean, Coffee &
+ * Traditional, Personalized, and the guides index — is reached through the
+ * /gifts hub one click away, and is still linked site-wide from the footer,
+ * which carries the full category titles as anchor text on every page. Nothing
+ * is orphaned by trimming this list, and the sitemap and llms.txt are built
+ * from `categories` directly rather than from `inNav`.
+ *
+ * `inNav` is the single switch: set it in content/categories.ts, not here.
+ */
 const navItems = [
   { href: routes.gifts, label: "Gifts" },
   ...categories
-    .filter((c) => c.inNav && c.slug !== "gifts-by-occasion")
+    .filter((c) => c.inNav)
     .map((c) => ({ href: routes.category(c.slug), label: shortLabel(c.title) })),
-  { href: routes.guides, label: "Gift Guides" },
 ];
 
 /** Nav labels are shortened; the full title still appears as the page H1. */
