@@ -9,10 +9,17 @@ import type { Product } from "./types";
  * claims durability, glaze quality or finish that cannot be read off the
  * listing, and no prices or ratings appear.
  *
- * Both entries share the Friend listing with items already placed there from
+ * These entries share the Friend listing with items already placed there from
  * `products.sister`, so each is written against its nearest neighbour: the mug
  * set against `ceramic-lined-travel-mug` (desk versus commute) and the teapot
  * against `crochet-sister-doll` (targeted pun versus generic keepsake).
+ *
+ * The monogram mug arrived in a batch labelled "young girls" and is not one —
+ * it is a 12oz coffee mug marketed to women. It is filed here rather than on
+ * the Young Girl listing, and written explicitly against `friendship-mug-gift-box`
+ * so the site is not carrying two marble-and-gold mugs that read as the same
+ * recommendation: that one is a boxed set with a fixed friendship message, this
+ * one is a bare initial with no wording at all.
  *
  * `budget` is our own editorial estimate of what the category typically costs.
  */
@@ -146,6 +153,72 @@ export const friendProducts: Product[] = [
         "friendship-mug-gift-box",
         "crochet-sister-doll",
         "rose-self-care-gift-box",
+      ],
+    },
+  },
+  {
+    slug: "monogram-initial-mug",
+    title: "Monogrammed Initial Coffee Mug",
+    tag: "Custom Mugs",
+    summary:
+      "A marble-glazed mug carrying one gold letter and no words at all — the version of a personalised mug that never dates and never needs explaining.",
+    bestFor: "Friend · Sister · When you cannot read her taste",
+    budget: "under-25",
+    affiliateUrl:
+      "https://www.amazon.com/dp/B0DZVD97ZG?linkCode=ll2&tag=mesmerdesign-20&linkId=6f4f0e7986d0db5eb15b1b3dacd8d352&language=en_US",
+    art: { hue: 40, motif: "vessel" },
+    updated: "2026-09-09",
+    tags: ["mug", "personalized", "monogram", "initial", "friend", "office", "budget"],
+    placements: [
+      { category: "personalized-gifts", subcategory: "custom-mugs" },
+      { category: "gifts-for-her", subcategory: "friend" },
+      { category: "gifts-for-her", subcategory: "sister" },
+      { category: "gifts-for-her", subcategory: "mom" },
+      { category: "gifts-by-occasion", subcategory: "birthday" },
+      { category: "gifts-by-occasion", subcategory: "christmas-holidays" },
+    ],
+    guide: {
+      heading: "A Letter Says Less Than a Slogan, Which Is Why It Lasts Longer",
+      standfirst:
+        "Nearly every argument against a personalised mug is really an argument against the words printed on it. Take the words away and keep the personalisation, and most of the category's failure modes disappear at once.",
+      why: [
+        "A single letter cannot embarrass her, and a slogan can. A mug that declares a relationship, an in-joke or a mood is a public statement she has to keep agreeing with, on a desk, in front of colleagues, for years. A monogram makes no claim at all — it marks the mug as hers and stops there, which is the one job personalisation actually needs to do.",
+        "It does not date. Slogan mugs age badly in two directions: the phrasing goes stale, and the relationship named on the side can change. A letter is inert. The same mug works at a desk now, in a shared kitchen next year and in a house she moves into a decade from now, which is an unusual amount of longevity for something this cheap.",
+        "It is the safest personalised gift when you do not know her taste. Buying for a colleague, a new friend, or someone you have met twice is the hardest problem in gifting, and a monogram solves it by being specific without presuming anything about her. Compare the alternative — a mug carrying a friendship message — which is lovely from a close friend and faintly presumptuous from anybody else.",
+      ],
+      whoFor: [
+        "A colleague, a new friend, or anyone whose taste you cannot yet read",
+        "A shared kitchen or office where mugs get permanently confused",
+        "Someone who already owns several mugs with words on them",
+        "A gift meant to feel considered rather than sentimental",
+      ],
+      whyGift: [
+        "Personal without making a claim she has to keep agreeing with",
+        "Nothing about it dates or becomes awkward later",
+        "Settles the \"whose mug is this\" problem in a shared kitchen",
+      ],
+      considerations: [
+        "Check the letter in the dropdown rather than in the photograph. This is the failure mode of every A–Z variant listing: the main image shows one letter while the selected variant is another, and a mug with the wrong initial on it is not a gift, it is a return.",
+        "Decide which initial you are actually giving. A first-name initial is the safe default. A surname initial can be wrong within a year, and for someone recently married or about to be it is a small landmine — where you are unsure, use the first name.",
+        "Gold and metallic decoration usually means no microwave, whatever else the listing claims. Metallic printing arcs, and most people reheat coffee at some point in the morning, so this is worth checking and worth mentioning when you hand it over.",
+        "Treat dishwasher claims lightly on any decorated mug. Repeated hot cycles fade printed and foiled decoration in a way fired-in glaze resists, and hand washing is the honest advice for anything with gold on it.",
+        "If you want the gift to say something about the friendship rather than simply name her, this is the wrong mug and a boxed friendship set is the right one. The two are answers to genuinely different questions, and buying the wrong answer is how a good mug ends up in a cupboard.",
+      ],
+      pros: [
+        "Personalised with no wording that can date or embarrass",
+        "Works for someone whose taste you barely know",
+        "Ends mug confusion in a shared kitchen or office",
+        "Inexpensive and picked up every morning",
+      ],
+      cons: [
+        "Metallic lettering usually rules out the microwave",
+        "Wrong-letter orders are common and unfixable",
+        "Says nothing about the relationship, if that is what you wanted",
+      ],
+      alternatives: [
+        "friendship-mug-gift-box",
+        "personalized-coffee-mug-amharic",
+        "ceramic-lined-travel-mug",
       ],
     },
   },

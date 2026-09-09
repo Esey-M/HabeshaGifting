@@ -97,6 +97,7 @@ export const daughterProducts: Product[] = [
       { category: "gifts-for-her", subcategory: "daughter" },
       { category: "gifts-for-her", subcategory: "young-girl" },
       { category: "gifts-for-her", subcategory: "teen-girl" },
+      { category: "gifts-for-him", subcategory: "young-boy" },
       { category: "ethiopian-eritrean-gifts", subcategory: "shared-cultural" },
       { category: "gifts-by-occasion", subcategory: "birthday" },
       { category: "gifts-by-occasion", subcategory: "christmas-holidays" },
@@ -162,8 +163,10 @@ export const daughterProducts: Product[] = [
     placements: [
       { category: "gifts-for-her", subcategory: "daughter" },
       { category: "gifts-for-her", subcategory: "teen-girl" },
+      { category: "gifts-for-her", subcategory: "young-girl" },
       { category: "gifts-for-him", subcategory: "son" },
       { category: "gifts-for-him", subcategory: "teen-boy" },
+      { category: "gifts-for-him", subcategory: "young-boy" },
       { category: "ethiopian-eritrean-gifts", subcategory: "ethiopian-inspired" },
       { category: "gifts-by-occasion", subcategory: "birthday" },
       { category: "gifts-by-occasion", subcategory: "christmas-holidays" },
@@ -179,7 +182,7 @@ export const daughterProducts: Product[] = [
       ],
       whoFor: [
         "A daughter who speaks or half-speaks Amharic and cannot read a word of it",
-        "A teenager or an adult — this is not a picture book for small children",
+        "An older child working alongside a parent, a teenager, or an adult",
         "Anyone who has bounced off a fidel wall chart before",
         "A learner who responds to structure and would never build her own",
       ],
@@ -190,6 +193,7 @@ export const daughterProducts: Product[] = [
       ],
       considerations: [
         "This teaches the script, not the language. She will finish able to sound out words correctly and still not know what many of them mean, which is the right order to learn in but the wrong expectation to leave unspoken. A gift labelled \"learn Amharic\" that turns out to be a handwriting workbook can land as a disappointment purely through mismatched framing.",
+        "For a young child, treat it as something to work through with an adult rather than alone. It is a writing workbook: it assumes a hand steady enough to form characters and the patience to sit down with it daily, which suits a school-age child beside a parent far better than one left to it unsupervised.",
         "Several fidel characters are pronounced identically — ሀ, ሐ and ኀ; ሰ and ሠ; ጸ and ፀ. This makes no difference to reading and a great deal of difference to spelling. No workbook can resolve it, and it is worth her knowing that it is a quirk of the script rather than a failure of hers.",
         "A workbook is written in, which makes it a single-user object. That is fine for one child and a problem for three; buy per learner rather than per household.",
         "Forty-six days is a real commitment, and a gift that asks for daily work is a genuine risk. It lands well with someone who has already said she wants to learn, and badly as a hint. Be honest with yourself about which one you are doing before you order it.",
@@ -229,8 +233,10 @@ export const daughterProducts: Product[] = [
     placements: [
       { category: "gifts-for-her", subcategory: "daughter" },
       { category: "gifts-for-her", subcategory: "teen-girl" },
+      { category: "gifts-for-her", subcategory: "young-girl" },
       { category: "gifts-for-him", subcategory: "son" },
       { category: "gifts-for-him", subcategory: "teen-boy" },
+      { category: "gifts-for-him", subcategory: "young-boy" },
       { category: "ethiopian-eritrean-gifts", subcategory: "ethiopian-inspired" },
       { category: "gifts-by-occasion", subcategory: "birthday" },
       { category: "gifts-by-occasion", subcategory: "christmas-holidays" },
@@ -257,6 +263,7 @@ export const daughterProducts: Product[] = [
       ],
       considerations: [
         "She needs to recognise most of the fidel already or this becomes miserable. Somebody starting from zero will spend ten minutes locating a single word and abandon the book. Give the alphabet workbook first and this one second — in that order they work well together; reversed, the second one never gets opened.",
+        "A young child will need somebody sitting with her at first. The puzzles themselves are age-neutral, but the reading is not — with an adult pointing out the first few words it works from around school age, and without one it does not.",
         "It teaches words, not grammar or speech. She will finish with a large stock of nouns and no way to build a sentence out of them. That is a perfectly good thing for a puzzle book to be, provided nobody is expecting conversation as the outcome.",
         "It is written in, so it belongs to one person. Two learners in a house means two copies, and this is the most common miscalculation people make when buying language material for a family.",
         "The listing describes a large-format book of around a hundred pages with generous grids and a full answer key. That format is comfortable to work on at a table and awkward to carry — this is a kitchen-table book rather than a handbag one.",
@@ -296,8 +303,10 @@ export const daughterProducts: Product[] = [
     placements: [
       { category: "gifts-for-her", subcategory: "daughter" },
       { category: "gifts-for-her", subcategory: "teen-girl" },
+      { category: "gifts-for-her", subcategory: "young-girl" },
       { category: "gifts-for-him", subcategory: "son" },
       { category: "gifts-for-him", subcategory: "teen-boy" },
+      { category: "gifts-for-him", subcategory: "young-boy" },
       { category: "ethiopian-eritrean-gifts", subcategory: "eritrean-inspired" },
       { category: "gifts-by-occasion", subcategory: "birthday" },
       { category: "gifts-by-occasion", subcategory: "christmas-holidays" },
@@ -314,7 +323,7 @@ export const daughterProducts: Product[] = [
       whoFor: [
         "An Eritrean or Tigrayan family that has struggled to find anything at all",
         "A daughter who speaks Tigrinya and cannot read it",
-        "A teenager or an adult, rather than a small child",
+        "An older child with a parent beside her, a teenager, or an adult",
         "Anyone who has been making do with Amharic material for want of an alternative",
       ],
       whyGift: [
@@ -324,6 +333,7 @@ export const daughterProducts: Product[] = [
       ],
       considerations: [
         "Check which language you are buying, every single time. This is the most common error in the category by a wide margin: the Amharic and Tigrinya editions of alphabet workbooks look near-identical in a search result, and arriving with the wrong one reads as carelessness about which family you were buying for.",
+        "For a young child this is a book to do with an adult, not to hand over. Forming the characters is a handwriting exercise before it is a reading one, and a school-age child working beside a parent gets further with it in a week than an unsupervised one does in a month.",
         "It teaches the script, not the language. She will read aloud accurately and will not necessarily understand what she has just read. That is the correct first step and a bad expectation to leave unstated.",
         "Forty-three days of daily work is a genuine ask of a recipient. As a gift it works for someone who has said she wants this; as an unrequested nudge it reads as homework with a bow on it, and it will sit unopened.",
         "A workbook is written in and cannot be passed to a younger sibling afterwards. Buy one per learner.",
@@ -363,8 +373,10 @@ export const daughterProducts: Product[] = [
     placements: [
       { category: "gifts-for-her", subcategory: "daughter" },
       { category: "gifts-for-her", subcategory: "teen-girl" },
+      { category: "gifts-for-her", subcategory: "young-girl" },
       { category: "gifts-for-him", subcategory: "son" },
       { category: "gifts-for-him", subcategory: "teen-boy" },
+      { category: "gifts-for-him", subcategory: "young-boy" },
       { category: "ethiopian-eritrean-gifts", subcategory: "eritrean-inspired" },
       { category: "gifts-by-occasion", subcategory: "birthday" },
       { category: "gifts-by-occasion", subcategory: "christmas-holidays" },
@@ -392,6 +404,7 @@ export const daughterProducts: Product[] = [
       considerations: [
         "Confirm the language before ordering. The Amharic and Tigrinya editions of this kind of book sit side by side in search results with similar covers, and the wrong one arrives looking almost right — which is worse than arriving obviously wrong, because it may not be noticed until she opens it.",
         "Some fidel recognition is assumed. If she is still working the characters out, pair this with the Tigrinya alphabet workbook and give the workbook first; a puzzle book handed to a complete beginner is a puzzle book that gets closed.",
+        "A young child will want company for the first few pages. Nothing about a word search is too old for her, but locating characters she is still learning is slow work alone and quick work with somebody beside her.",
         "Vocabulary, not grammar. Expect a large stock of words and no sentences, and set expectations accordingly.",
         "Written in, so it belongs to one person. Buy per learner rather than per household.",
         "Answer keys matter more in this format than they sound. A puzzle she cannot finish and cannot check against anything is a puzzle that ends the habit — confirm one is included before ordering.",
