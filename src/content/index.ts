@@ -7,6 +7,8 @@ import { boyfriendProducts } from "./products.boyfriend";
 import { husbandProducts } from "./products.husband";
 import { brotherProducts } from "./products.brother";
 import { sisterProducts } from "./products.sister";
+import { daughterProducts } from "./products.daughter";
+import { friendProducts } from "./products.friend";
 import type { Product } from "./types";
 
 export { budgets, categories } from "./categories";
@@ -23,4 +25,6 @@ export const products: Product[] = [
   ...husbandProducts,
   ...brotherProducts,
   ...sisterProducts,
+  ...daughterProducts,
+  ...friendProducts,
 ];

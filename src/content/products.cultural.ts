@@ -305,6 +305,7 @@ export const culturalProducts: Product[] = [
     updated: "2026-08-22",
     tags: ["books", "kids", "children", "amharic", "tigrinya", "language", "learning"],
     placements: [
+      { category: "gifts-for-her", subcategory: "young-girl" },
       { category: "gifts-for-him", subcategory: "young-boy" },
       { category: "gifts-by-occasion", subcategory: "new-baby" },
     ],
@@ -345,9 +346,9 @@ export const culturalProducts: Product[] = [
         "Script-only editions exclude non-reading parents",
       ],
       alternatives: [
-        "personalized-coffee-mug-amharic",
-        "custom-family-photo-frame",
-        "wifi-digital-photo-frame",
+        "habesha-coloring-book",
+        "learn-amharic-alphabet-46-days",
+        "master-tigrinya-alphabet-43-days",
       ],
     },
   },
