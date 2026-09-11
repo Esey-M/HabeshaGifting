@@ -22,6 +22,7 @@ export const boyfriendProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0B3DCVS7Y?linkCode=ll2&tag=mesmerdesign-20&linkId=6ae0c88b5b6fbd193b423695a17376be&language=en_US",
+    image: "/img/products/cordless-hair-clipper-kit",
     art: { hue: 210, motif: "rays" },
     updated: "2026-09-07",
     tags: ["grooming", "clippers", "trimmer", "barber", "boyfriend", "brother", "practical"],
@@ -85,6 +86,7 @@ export const boyfriendProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DRNNS8M2?linkCode=ll2&tag=mesmerdesign-20&linkId=2390278b7ad181ba96b334b5d3339980&language=en_US",
+    image: "/img/products/mens-classic-dress-watch",
     art: { hue: 45, motif: "rays" },
     updated: "2026-09-07",
     tags: ["watch", "accessories", "dress watch", "boyfriend", "graduation", "anniversary", "formal"],
@@ -151,6 +153,7 @@ export const boyfriendProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0GHNTMBD9?linkCode=ll2&tag=mesmerdesign-20&linkId=52afcfec3433a6b3d47f08c543bcf317&language=en_US",
+    image: "/img/products/cologne-organizer-stand",
     art: { hue: 25, motif: "arch" },
     updated: "2026-09-07",
     tags: ["organizer", "cologne", "grooming", "storage", "home", "boyfriend", "housewarming"],
@@ -210,6 +213,7 @@ export const boyfriendProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0CG9D1KWV?linkCode=ll2&tag=mesmerdesign-20&linkId=80b635efbdb7f2f6abffdcb3607e3a77&language=en_US",
+    image: "/img/products/mens-spa-gift-set",
     art: { hue: 195, motif: "basket" },
     updated: "2026-09-07",
     tags: ["gift set", "spa", "grooming", "bath", "boyfriend", "friend", "christmas", "boxed"],
@@ -274,6 +278,7 @@ export const boyfriendProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0B73XM8ZB?linkCode=ll2&tag=mesmerdesign-20&linkId=0a3ce910bd92667fd698a7c2c7615ddb&language=en_US",
+    image: "/img/products/portable-push-up-board",
     art: { hue: 220, motif: "weave" },
     updated: "2026-09-07",
     tags: ["fitness", "home gym", "training", "portable", "boyfriend", "brother", "budget"],

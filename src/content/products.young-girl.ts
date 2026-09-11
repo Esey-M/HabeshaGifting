@@ -28,6 +28,7 @@ export const youngGirlProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0GV5TB8H6?linkCode=ll2&tag=mesmerdesign-20&linkId=6620411fdf9a0fa583eb518adfddeca1&language=en_US",
+    image: "/img/products/kids-initial-crossbody-bag",
     art: { hue: 335, motif: "basket" },
     updated: "2026-09-09",
     tags: ["bag", "crossbody", "personalized", "initial", "young girl", "kids", "budget"],
@@ -93,6 +94,7 @@ export const youngGirlProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FG2C4ZMJ?linkCode=ll2&tag=mesmerdesign-20&linkId=274440b9e879d963d2a323f3f9a71755&language=en_US",
+    image: "/img/products/kids-karaoke-machine",
     art: { hue: 285, motif: "rays" },
     updated: "2026-09-09",
     tags: ["toys", "karaoke", "music", "kids", "young girl", "bluetooth", "party"],

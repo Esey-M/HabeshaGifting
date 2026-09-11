@@ -23,6 +23,7 @@ export const sisterProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0F6ST3SRG?linkCode=ll2&tag=mesmerdesign-20&linkId=4d6ec26cf6afaac274f7261e6302e030&language=en_US",
+    image: "/img/products/satin-scrunchie-set",
     art: { hue: 320, motif: "weave" },
     updated: "2026-09-07",
     tags: ["hair", "scrunchies", "satin", "natural hair", "sister", "teen", "budget"],
@@ -83,6 +84,7 @@ export const sisterProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FYXPPHZP?linkCode=ll2&tag=mesmerdesign-20&linkId=cab3171f1f4cfa32e3d961f5d0b8cc45&language=en_US",
+    image: "/img/products/engraved-message-cuff-bracelet",
     art: { hue: 210, motif: "arch" },
     updated: "2026-09-07",
     tags: ["jewelry", "bracelet", "engraved", "stainless steel", "sister", "graduation", "personalized"],
@@ -148,6 +150,7 @@ export const sisterProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FCXVZXTM?linkCode=ll2&tag=mesmerdesign-20&linkId=ea03b5da7fa3a80dcbd96b0b8ec54e9a&language=en_US",
+    image: "/img/products/sister-birthstone-necklace",
     art: { hue: 195, motif: "cross" },
     updated: "2026-09-07",
     tags: ["jewelry", "necklace", "birthstone", "sister", "personalized", "birthday", "christmas"],
@@ -273,6 +276,7 @@ export const sisterProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FHWKYT89?linkCode=ll2&tag=mesmerdesign-20&linkId=3bcf09c252b9fbdde7551e0376d40b14&language=en_US",
+    image: "/img/products/wireless-earbuds",
     art: { hue: 250, motif: "rays" },
     updated: "2026-09-07",
     tags: ["earbuds", "tech", "bluetooth", "sister", "teen", "graduation", "budget"],
@@ -469,6 +473,7 @@ export const sisterProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FXYFK4PZ?linkCode=ll2&tag=mesmerdesign-20&linkId=48cd2cbc33ed39ea756c8b9dd699b459&language=en_US",
+    image: "/img/products/ceramic-lined-travel-mug",
     art: { hue: 20, motif: "vessel" },
     updated: "2026-09-07",
     tags: ["coffee", "travel mug", "tumbler", "insulated", "sister", "commute", "ceramic"],
@@ -530,6 +535,7 @@ export const sisterProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0CSFWXWZH?linkCode=ll2&tag=mesmerdesign-20&linkId=133950efa6c27abc3ab955623884aae0&language=en_US",
+    image: "/img/products/chenille-knit-slippers",
     art: { hue: 355, motif: "basket" },
     updated: "2026-09-07",
     tags: ["slippers", "chenille", "comfort", "washable", "sister", "christmas", "house shoes"],
@@ -659,6 +665,7 @@ export const sisterProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FL6ZVHV5?linkCode=ll2&tag=mesmerdesign-20&linkId=32925a534cc906e52f23a60396d97159&language=en_US",
+    image: "/img/products/crochet-sister-doll",
     art: { hue: 340, motif: "weave" },
     updated: "2026-09-07",
     tags: ["keepsake", "crochet", "handmade", "sister", "budget", "long distance", "card"],
@@ -717,6 +724,7 @@ export const sisterProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B09QX2S8FZ?linkCode=ll2&tag=mesmerdesign-20&linkId=3de80034cee136713c923b55939f4e3f&language=en_US",
+    image: "/img/products/lockable-diary-journal",
     art: { hue: 280, motif: "arch" },
     updated: "2026-09-07",
     tags: ["journal", "diary", "stationery", "teen", "sister", "writing", "privacy"],

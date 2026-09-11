@@ -28,6 +28,7 @@ export const daughterProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FP219PXK?linkCode=ll2&tag=mesmerdesign-20&linkId=71cfe848dc6f7a684a313cf2aa543471&language=en_US",
+    image: "/img/products/crochet-bee-keepsake",
     art: { hue: 45, motif: "weave" },
     updated: "2026-09-09",
     tags: ["keepsake", "crochet", "handmade", "daughter", "moving out", "desk", "budget"],
@@ -90,6 +91,7 @@ export const daughterProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/Habesha-Coloring-Book-Illustrations-Traditional/dp/B0HFK1148B?linkCode=ll2&tag=mesmerdesign-20&linkId=a4df212e9d184ef31ff0b5df0af895ff&language=en_US",
+    image: "/img/products/habesha-coloring-book",
     art: { hue: 330, motif: "rays" },
     updated: "2026-09-09",
     /**
@@ -166,6 +168,7 @@ export const daughterProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0HF4S7ZMT?linkCode=ll2&tag=mesmerdesign-20&linkId=086d2cc47908acf0b7fc632e9706ac88&language=en_US",
+    image: "/img/products/learn-amharic-alphabet-46-days",
     art: { hue: 95, motif: "arch" },
     updated: "2026-09-09",
     tags: ["books", "language", "amharic", "fidel", "learning", "daughter", "heritage"],
@@ -236,6 +239,7 @@ export const daughterProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0HBY1BF9S?linkCode=ll2&tag=mesmerdesign-20&linkId=e362cfcda2fe71ab65d0b04f13fc389b&language=en_US",
+    image: "/img/products/amharic-word-search-puzzles",
     art: { hue: 110, motif: "rays" },
     updated: "2026-09-09",
     tags: ["books", "language", "amharic", "puzzles", "vocabulary", "daughter", "heritage"],
@@ -306,6 +310,7 @@ export const daughterProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0GW6FT88H?linkCode=ll2&tag=mesmerdesign-20&linkId=3d68b87fc81406c041f7835bbea067cc&language=en_US",
+    image: "/img/products/master-tigrinya-alphabet-43-days",
     art: { hue: 205, motif: "arch" },
     updated: "2026-09-09",
     tags: ["books", "language", "tigrinya", "fidel", "learning", "eritrean", "daughter"],
@@ -376,6 +381,7 @@ export const daughterProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0H3Z58GSH?linkCode=ll2&tag=mesmerdesign-20&linkId=92b85b35e467e2eb3d76293e04e2e623&language=en_US",
+    image: "/img/products/tigrinya-word-search-puzzles",
     art: { hue: 220, motif: "rays" },
     updated: "2026-09-09",
     tags: ["books", "language", "tigrinya", "puzzles", "vocabulary", "eritrean", "daughter"],

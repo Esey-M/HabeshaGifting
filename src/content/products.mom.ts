@@ -26,6 +26,7 @@ export const momProducts: Product[] = [
     budget: "under-100",
     affiliateUrl:
       "https://www.amazon.com/dp/B0D8JDPKKS?linkCode=ll2&tag=mesmerdesign-20&linkId=b9bd90173c81222cc2b93c7910fe69fc&language=en_US",
+    image: "/img/products/wifi-digital-photo-frame",
     art: { hue: 200, motif: "arch" },
     updated: "2026-09-07",
     tags: ["photo frame", "digital", "wifi", "family", "mom", "grandma", "diaspora", "christmas"],
@@ -91,6 +92,7 @@ export const momProducts: Product[] = [
     budget: "under-100",
     affiliateUrl:
       "https://www.amazon.com/dp/B0C6LVFQPY?linkCode=ll2&tag=mesmerdesign-20&linkId=59984b572bd94d222f095f45eff0323b&language=en_US",
+    image: "/img/products/painted-wooden-jewelry-armoire",
     art: { hue: 30, motif: "arch" },
     updated: "2026-09-07",
     tags: ["jewelry box", "armoire", "wooden", "storage", "keepsake", "mom", "grandma", "lock"],
@@ -151,6 +153,7 @@ export const momProducts: Product[] = [
     budget: "100-plus",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DM265BQ4?linkCode=ll2&tag=mesmerdesign-20&linkId=78c9eb01a48faee2200e1fc9b379e9a6&language=en_US",
+    image: "/img/products/shiatsu-foot-massager-heated",
     art: { hue: 190, motif: "vessel" },
     updated: "2026-09-07",
     tags: ["massager", "foot", "wellness", "heated", "comfort", "mom", "dad", "grandma"],
@@ -217,6 +220,7 @@ export const momProducts: Product[] = [
     budget: "under-100",
     affiliateUrl:
       "https://www.amazon.com/dp/B0GXZBV5Y7?linkCode=ll2&tag=mesmerdesign-20&linkId=57c8457508e51798e0b3dc83792917e4&language=en_US",
+    image: "/img/products/neck-and-shoulder-massager-heated",
     art: { hue: 210, motif: "weave" },
     updated: "2026-09-07",
     tags: ["massager", "neck", "shoulder", "wellness", "heated", "mom", "dad", "grandma"],
@@ -283,6 +287,7 @@ export const momProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FJLYTLTJ?linkCode=ll2&tag=mesmerdesign-20&linkId=93e0e350d947e23bb3465f14b89b0d20&language=en_US",
+    image: "/img/products/memory-foam-house-slippers",
     art: { hue: 20, motif: "weave" },
     updated: "2026-09-07",
     tags: ["slippers", "comfort", "house shoes", "memory foam", "mom", "grandma", "christmas", "winter"],
@@ -346,6 +351,7 @@ export const momProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FQTVY3JK?linkCode=ll2&tag=mesmerdesign-20&linkId=5f39fb92a0f16b43057fc14420b6303e&language=en_US",
+    image: "/img/products/get-well-self-care-basket",
     art: { hue: 150, motif: "basket" },
     updated: "2026-09-07",
     tags: ["gift set", "care package", "get well", "self care", "mom", "sister", "friend", "recovery"],
@@ -408,6 +414,7 @@ export const momProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FMJTYNJL?linkCode=ll2&tag=mesmerdesign-20&linkId=936ebb905bb224ce366761f82d743780&language=en_US",
+    image: "/img/products/sunflower-led-night-light",
     art: { hue: 44, motif: "rays" },
     updated: "2026-09-07",
     tags: ["night light", "lamp", "rechargeable", "bedside", "home", "mom", "grandma", "dimmable"],
@@ -471,6 +478,7 @@ export const momProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0GL1ZY5X1?linkCode=ll2&tag=mesmerdesign-20&linkId=d40f2445dd6c59d499466356cc64a682&language=en_US",
+    image: "/img/products/crochet-rose-keepsake",
     art: { hue: 348, motif: "weave" },
     updated: "2026-09-07",
     tags: ["keepsake", "crochet", "flowers", "long distance", "mom", "grandma", "budget", "handmade"],

@@ -22,6 +22,7 @@ export const husbandProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B09M3Y8QZY?linkCode=ll2&tag=mesmerdesign-20&linkId=306f414f1c354b5bfb9843cbbbdd6244&language=en_US",
+    image: "/img/products/slim-rfid-leather-wallet",
     art: { hue: 30, motif: "arch" },
     updated: "2026-09-07",
     tags: ["wallet", "leather", "accessories", "everyday carry", "husband", "graduation", "practical"],
@@ -88,6 +89,7 @@ export const husbandProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0CS3B7MD8?linkCode=ll2&tag=mesmerdesign-20&linkId=68f93a8403b337116b8f40695f13b2c1&language=en_US",
+    image: "/img/products/portable-tire-inflator",
     art: { hue: 235, motif: "rays" },
     updated: "2026-09-07",
     tags: ["car", "tools", "practical", "inflator", "husband", "dad", "driving", "safety"],
@@ -154,6 +156,7 @@ export const husbandProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DK4VM1SX?linkCode=ll2&tag=mesmerdesign-20&linkId=799a961c182a8b9387fbe6c516526051&language=en_US",
+    image: "/img/products/foldable-wireless-charging-station",
     art: { hue: 250, motif: "arch" },
     updated: "2026-09-07",
     tags: ["tech", "charger", "wireless", "travel", "husband", "desk", "magsafe"],
@@ -221,6 +224,7 @@ export const husbandProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B09BVKH8MC?linkCode=ll2&tag=mesmerdesign-20&linkId=644710fb786dd5961f384d244030dc21&language=en_US",
+    image: "/img/products/mens-arch-support-slippers",
     art: { hue: 20, motif: "weave" },
     updated: "2026-09-07",
     tags: ["slippers", "comfort", "arch support", "house shoes", "husband", "dad", "christmas"],
@@ -287,6 +291,7 @@ export const husbandProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0F18ZM7JL?linkCode=ll2&tag=mesmerdesign-20&linkId=10e6703f83160e0cb5cf499329d8b0bd&language=en_US",
+    image: "/img/products/rotating-cologne-organizer",
     art: { hue: 35, motif: "vessel" },
     updated: "2026-09-07",
     tags: ["organizer", "cologne", "wooden", "rotating", "display", "husband", "anniversary"],
@@ -347,6 +352,7 @@ export const husbandProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B07WJSY2G8?linkCode=ll2&tag=mesmerdesign-20&linkId=855dbe1bfee57c731a46dda7abaa5ec3&language=en_US",
+    image: "/img/products/corded-heated-neck-massager",
     art: { hue: 185, motif: "vessel" },
     updated: "2026-09-07",
     tags: ["massager", "neck", "wellness", "heated", "desk", "husband", "office"],

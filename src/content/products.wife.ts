@@ -22,6 +22,7 @@ export const wifeProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B08VZPF1V9?linkCode=ll2&tag=mesmerdesign-20&linkId=a8e766a49dd228f440ac99e0b05cc615&language=en_US",
+    image: "/img/products/victorias-secret-mini-perfume-set",
     art: { hue: 340, motif: "rays" },
     updated: "2026-09-07",
     tags: ["perfume", "fragrance", "gift set", "miniatures", "wife", "christmas", "birthday"],
@@ -81,6 +82,7 @@ export const wifeProducts: Product[] = [
     budget: "under-100",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DH87PZXY?linkCode=ll2&tag=mesmerdesign-20&linkId=82ec63404803b35652b19dd91f5a4131&language=en_US",
+    image: "/img/products/ethiopian-cross-necklace-gold-filled",
     art: { hue: 45, motif: "cross" },
     updated: "2026-09-07",
     tags: ["jewelry", "necklace", "cross", "ethiopian", "gold filled", "wife", "anniversary"],
@@ -147,6 +149,7 @@ export const wifeProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0C3LRQKMF?linkCode=ll2&tag=mesmerdesign-20&linkId=1d118da3ff4ae0b29ef39ef65abaa974&language=en_US",
+    image: "/img/products/coptic-cross-pendant-necklace",
     art: { hue: 40, motif: "cross" },
     updated: "2026-09-07",
     tags: ["jewelry", "necklace", "cross", "coptic", "ethiopian", "eritrean", "wife", "everyday"],
@@ -211,6 +214,7 @@ export const wifeProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FC2W6D39?linkCode=ll2&tag=mesmerdesign-20&linkId=132a5fc5790911d7f0b6569ed5743165&language=en_US",
+    image: "/img/products/dainty-cross-choker-necklace",
     art: { hue: 20, motif: "cross" },
     updated: "2026-09-07",
     tags: ["jewelry", "necklace", "cross", "dainty", "budget", "wife", "everyday", "layering"],
@@ -272,6 +276,7 @@ export const wifeProducts: Product[] = [
     budget: "under-100",
     affiliateUrl:
       "https://www.amazon.com/dp/B016M82EVG?linkCode=ll2&tag=mesmerdesign-20&linkId=a40fe2070e07e5cb7c35c9282b520aaa&language=en_US",
+    image: "/img/products/habesha-gold-jewelry-four-piece-set",
     art: { hue: 48, motif: "weave" },
     updated: "2026-09-07",
     tags: ["jewelry", "set", "habesha", "ethiopian", "gold plated", "wedding", "wife", "occasion"],
@@ -336,6 +341,7 @@ export const wifeProducts: Product[] = [
     budget: "under-100",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DHG8P5H5?linkCode=ll2&tag=mesmerdesign-20&linkId=18f0d74a0b7c67c86d444e4e91691ba8&language=en_US",
+    image: "/img/products/eritrean-silver-gold-jewelry-set",
     art: { hue: 200, motif: "cross" },
     updated: "2026-09-07",
     tags: ["jewelry", "set", "eritrean", "habesha", "sterling silver", "gold filled", "wife"],
@@ -400,6 +406,7 @@ export const wifeProducts: Product[] = [
     budget: "100-plus",
     affiliateUrl:
       "https://www.amazon.com/dp/B087PWYG41?linkCode=ll2&tag=mesmerdesign-20&linkId=162f45482f096040a0d8269023353708&language=en_US",
+    image: "/img/products/adey-abeba-23-piece-coffee-set",
     art: { hue: 25, motif: "vessel" },
     updated: "2026-09-07",
     tags: ["coffee", "ceremony", "sini", "adey abeba", "ethiopian", "wedding", "wife", "hosting"],
@@ -465,6 +472,7 @@ export const wifeProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FZTMTRK1?linkCode=ll2&tag=mesmerdesign-20&linkId=b916e505fa554c3348351e298e1af2a0&language=en_US",
+    image: "/img/products/crochet-tulip-keepsake",
     art: { hue: 355, motif: "weave" },
     updated: "2026-09-07",
     tags: ["keepsake", "crochet", "flowers", "romantic", "anniversary", "wife", "budget", "desk"],
@@ -526,6 +534,7 @@ export const wifeProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0CQ4Q7YDC?linkCode=ll2&tag=mesmerdesign-20&linkId=93ba1a8b5cda1670abcc8bc6312c3b9b&language=en_US",
+    image: "/img/products/sunflower-cordless-table-lamp",
     art: { hue: 40, motif: "rays" },
     updated: "2026-09-07",
     tags: ["lamp", "lighting", "cordless", "home", "decor", "wife", "birthday", "atmosphere"],
@@ -587,6 +596,7 @@ export const wifeProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DCV8L41M?linkCode=ll2&tag=mesmerdesign-20&linkId=5cf3af9e31b21ad6f17657e13912c462&language=en_US",
+    image: "/img/products/fleece-sherpa-pajama-set",
     art: { hue: 15, motif: "weave" },
     updated: "2026-09-07",
     tags: ["sleepwear", "pyjamas", "fleece", "loungewear", "winter", "christmas", "wife", "comfort"],
@@ -644,6 +654,7 @@ export const wifeProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FJFNTWSY?linkCode=ll2&tag=mesmerdesign-20&linkId=2e1c4ffbf1a2b0e45241187a8b45f989&language=en_US",
+    image: "/img/products/long-nightgown-three-pack",
     art: { hue: 330, motif: "arch" },
     updated: "2026-09-07",
     tags: ["sleepwear", "nightgown", "house dress", "multipack", "practical", "wife", "everyday"],

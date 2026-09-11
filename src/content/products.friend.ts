@@ -101,6 +101,7 @@ export const friendProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0H2H6S545?linkCode=ll2&tag=mesmerdesign-20&linkId=a5f519068be87dcb3cdee87d9b580fd1&language=en_US",
+    image: "/img/products/crochet-teapot-keepsake",
     art: { hue: 15, motif: "weave" },
     updated: "2026-09-09",
     tags: ["keepsake", "crochet", "handmade", "friend", "tea", "desk", "budget"],
@@ -167,6 +168,7 @@ export const friendProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DZVD97ZG?linkCode=ll2&tag=mesmerdesign-20&linkId=6f4f0e7986d0db5eb15b1b3dacd8d352&language=en_US",
+    image: "/img/products/monogram-initial-mug",
     art: { hue: 40, motif: "vessel" },
     updated: "2026-09-09",
     tags: ["mug", "personalized", "monogram", "initial", "friend", "office", "budget"],

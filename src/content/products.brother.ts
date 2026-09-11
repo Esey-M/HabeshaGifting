@@ -23,6 +23,7 @@ export const brotherProducts: Product[] = [
     budget: "under-100",
     affiliateUrl:
       "https://www.amazon.com/dp/B0HGFFLDYL?linkCode=ll2&tag=mesmerdesign-20&linkId=b8a8c8d081be06ef13dafc2ab8c86185&language=en_US",
+    image: "/img/products/noise-cancelling-headphones",
     art: { hue: 260, motif: "arch" },
     updated: "2026-09-07",
     tags: ["headphones", "tech", "noise cancelling", "travel", "brother", "graduation", "commute"],
@@ -86,6 +87,7 @@ export const brotherProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DGKWTQQC?linkCode=ll2&tag=mesmerdesign-20&linkId=1b85d901c515e5cda7a1938169e847f0&language=en_US",
+    image: "/img/products/nano-power-bank",
     art: { hue: 225, motif: "vessel" },
     updated: "2026-09-07",
     tags: ["power bank", "tech", "charger", "travel", "brother", "practical", "everyday carry"],
@@ -153,6 +155,7 @@ export const brotherProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DC6CHTZW?linkCode=ll2&tag=mesmerdesign-20&linkId=b7ff8d87f92269ad2f5e66beb4ba125a&language=en_US",
+    image: "/img/products/electric-mug-warmer",
     art: { hue: 25, motif: "vessel" },
     updated: "2026-09-07",
     tags: ["coffee", "mug warmer", "desk", "buna", "brother", "practical", "home"],
@@ -220,6 +223,7 @@ export const brotherProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0H35TYWQ3?linkCode=ll2&tag=mesmerdesign-20&linkId=ceafd9e2abf9ff9bc649688e41b7b03f&language=en_US",
+    image: "/img/products/polarized-aviator-sunglasses",
     art: { hue: 40, motif: "rays" },
     updated: "2026-09-07",
     tags: ["sunglasses", "accessories", "polarized", "driving", "brother", "summer", "budget"],
@@ -285,6 +289,7 @@ export const brotherProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0BFQ36XPW?linkCode=ll2&tag=mesmerdesign-20&linkId=74258abdd2f2a210b51783eff5fd33b0&language=en_US",
+    image: "/img/products/fitness-smartwatch",
     art: { hue: 200, motif: "rays" },
     updated: "2026-09-07",
     tags: ["smartwatch", "fitness", "tracker", "tech", "brother", "health", "birthday"],
@@ -352,6 +357,7 @@ export const brotherProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B087JG6H25?linkCode=ll2&tag=mesmerdesign-20&linkId=add6c9ec440b6db83e360e77f00a4919&language=en_US",
+    image: "/img/products/stainless-chronograph-watch",
     art: { hue: 215, motif: "arch" },
     updated: "2026-09-07",
     tags: ["watch", "chronograph", "accessories", "brother", "graduation", "everyday", "steel"],
@@ -418,6 +424,7 @@ export const brotherProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B09JK98N3K?linkCode=ll2&tag=mesmerdesign-20&linkId=0d2dd8bd334ed64fa3951b7f878fad82&language=en_US",
+    image: "/img/products/mens-full-size-spa-basket",
     art: { hue: 30, motif: "basket" },
     updated: "2026-09-07",
     tags: ["gift set", "spa", "grooming", "full size", "brother", "dad", "christmas", "travel"],
@@ -478,6 +485,7 @@ export const brotherProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0D1GQKYJL?linkCode=ll2&tag=mesmerdesign-20&linkId=002387abc65410a6fd87829218a3089e&language=en_US",
+    image: "/img/products/mens-moccasin-slippers",
     art: { hue: 15, motif: "weave" },
     updated: "2026-09-07",
     tags: ["slippers", "moccasin", "comfort", "house shoes", "brother", "christmas", "non slip"],
@@ -543,6 +551,7 @@ export const brotherProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DF7KTLXF?linkCode=ll2&tag=mesmerdesign-20&linkId=1709a4b323e8f8c423abf64d0ffb338a&language=en_US",
+    image: "/img/products/crochet-turtle-keepsake",
     art: { hue: 150, motif: "weave" },
     updated: "2026-09-07",
     tags: ["keepsake", "crochet", "handmade", "sibling", "brother", "budget", "funny"],
