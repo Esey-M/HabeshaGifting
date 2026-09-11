@@ -34,6 +34,7 @@ export const friendProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B085VYLRFQ?linkCode=ll2&tag=mesmerdesign-20&linkId=2acf785575328e8f63fe6ff515e48ffe&language=en_US",
+    image: "/img/products/friendship-mug-gift-box",
     art: { hue: 340, motif: "vessel" },
     updated: "2026-09-09",
     tags: ["coffee", "mug", "porcelain", "gift box", "friend", "birthday", "budget"],

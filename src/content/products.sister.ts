@@ -211,6 +211,7 @@ export const sisterProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0C68PPF5H?linkCode=ll2&tag=mesmerdesign-20&linkId=baa185ae31de2e03bd59be393966aa9c&language=en_US",
+    image: "/img/products/leather-sling-crossbody-bag",
     art: { hue: 25, motif: "basket" },
     updated: "2026-09-07",
     tags: ["bag", "crossbody", "leather", "travel", "sister", "accessories", "everyday"],
@@ -333,6 +334,7 @@ export const sisterProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FG4432L8?linkCode=ll2&tag=mesmerdesign-20&linkId=b35f167b50ba8b3657067bec374f1676&language=en_US",
+    image: "/img/products/flame-effect-oil-diffuser",
     art: { hue: 15, motif: "rays" },
     updated: "2026-09-07",
     tags: ["diffuser", "aromatherapy", "home", "scent", "sister", "housewarming", "lighting"],
@@ -400,6 +402,7 @@ export const sisterProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0F8QFGG4R?linkCode=ll2&tag=mesmerdesign-20&linkId=e246c5673b1ee2ece5d855e18dccf7cd&language=en_US",
+    image: "/img/products/oversized-open-cardigan",
     art: { hue: 30, motif: "weave" },
     updated: "2026-09-07",
     tags: ["clothing", "cardigan", "knitwear", "layering", "sister", "christmas", "cozy"],
@@ -592,6 +595,7 @@ export const sisterProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0D2CBZGQG?linkCode=ll2&tag=mesmerdesign-20&linkId=5e73d18e2e5dd1ff3ac2156b1456118d&language=en_US",
+    image: "/img/products/rose-self-care-gift-box",
     art: { hue: 345, motif: "basket" },
     updated: "2026-09-07",
     tags: ["gift set", "self care", "boxed", "sister", "friend", "birthday", "spa"],

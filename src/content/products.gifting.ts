@@ -144,7 +144,7 @@ export const giftingProducts: Product[] = [
   },
   {
     slug: "personalized-steel-pendant-necklace",
-    title: "Silver Initial Necklace with Heart Pendant",
+    title: "Initial Necklace with Heart Pendant",
     tag: "Personalized Jewelry",
     summary:
       "An initial and a small heart in stainless steel rather than plated brass — the version built to survive being worn every single day.",
@@ -152,6 +152,7 @@ export const giftingProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0H2V55L5V?linkCode=ll2&tag=mesmerdesign-20&linkId=ddb198bab4aa4198536045a714046306&language=en_US",
+    image: "/img/products/personalized-steel-pendant-necklace",
     art: { hue: 210, motif: "cross" },
     updated: "2026-09-06",
     tags: ["jewelry", "necklace", "personalized", "stainless steel", "engraved", "girlfriend", "budget"],
@@ -215,6 +216,7 @@ export const giftingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B08JSXNGZT?linkCode=ll2&tag=mesmerdesign-20&linkId=8549781a5ac96b27e2efc05dc0b9fd7e&language=en_US",
+    image: "/img/products/bath-and-body-gift-set",
     art: { hue: 300, motif: "basket" },
     updated: "2026-09-06",
     tags: ["gift set", "bath", "body", "pamper", "girlfriend", "birthday", "boxed"],
@@ -273,6 +275,7 @@ export const giftingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0CCBRMZJ4?linkCode=ll2&tag=mesmerdesign-20&linkId=885fe756830f281687b4ea8206c34b50&language=en_US",
+    image: "/img/products/gold-plated-rosary-necklace",
     art: { hue: 40, motif: "cross" },
     updated: "2026-09-06",
     tags: ["jewelry", "rosary", "necklace", "faith", "orthodox", "gold", "christmas"],
@@ -334,6 +337,7 @@ export const giftingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FPM4YWDM?linkCode=ll2&tag=mesmerdesign-20&linkId=f280010098c9c3822f94f971a8ae446f&language=en_US",
+    image: "/img/products/thinking-of-you-gift-box",
     art: { hue: 350, motif: "basket" },
     updated: "2026-09-06",
     tags: ["gift set", "care package", "girlfriend", "birthday", "long distance", "comfort"],
@@ -395,6 +399,7 @@ export const giftingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0C6TDJC1P?linkCode=ll2&tag=mesmerdesign-20&linkId=33f6aca8231a6d81b9c6ea4ba04bbeea&language=en_US",
+    image: "/img/products/pashmina-shawl-wrap",
     art: { hue: 340, motif: "weave" },
     updated: "2026-09-06",
     tags: ["scarf", "shawl", "pashmina", "wrap", "accessories", "girlfriend", "winter"],
@@ -457,6 +462,7 @@ export const giftingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FQMK936Q?linkCode=ll2&tag=mesmerdesign-20&linkId=efd85824662e8cbf764c92fbce40ef9d&language=en_US",
+    image: "/img/products/jewelry-organizer-box",
     art: { hue: 25, motif: "arch" },
     updated: "2026-09-06",
     tags: ["jewelry box", "organizer", "storage", "home", "girlfriend", "practical"],
@@ -518,6 +524,7 @@ export const giftingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DG92NWYG?linkCode=ll2&tag=mesmerdesign-20&linkId=371cf3243bee0c6cd50bf40e3a3ed9b9&language=en_US",
+    image: "/img/products/crystal-lamp-star-projector",
     art: { hue: 280, motif: "rays" },
     updated: "2026-09-06",
     tags: ["lamp", "projector", "lighting", "home", "girlfriend", "bedroom", "atmosphere"],
@@ -575,6 +582,7 @@ export const giftingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0BN7NZ6NB?linkCode=ll2&tag=mesmerdesign-20&linkId=ab09363fac033ac39125d36b58803cbc&language=en_US",
+    image: "/img/products/romantic-keepsake-gift",
     art: { hue: 345, motif: "cross" },
     updated: "2026-09-06",
     tags: ["keepsake", "romantic", "anniversary", "valentine", "girlfriend", "boxed"],
@@ -636,6 +644,7 @@ export const giftingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0H5136Q21?linkCode=ll2&tag=mesmerdesign-20&linkId=826e3a6367537639e74e85129e521afa&language=en_US",
+    image: "/img/products/r540-extrait-de-parfum",
     art: { hue: 350, motif: "rays" },
     updated: "2026-09-06",
     tags: ["perfume", "fragrance", "extrait", "unisex", "girlfriend", "affordable", "amber"],
@@ -695,6 +704,7 @@ export const giftingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0DBH681YG?linkCode=ll2&tag=mesmerdesign-20&linkId=99edd75cd5b6ca101588a30890f34eed&language=en_US",
+    image: "/img/products/spa-gift-set-25-piece",
     art: { hue: 300, motif: "basket" },
     updated: "2026-09-06",
     tags: ["gift set", "spa", "bath", "multi-piece", "girlfriend", "birthday", "presentation"],

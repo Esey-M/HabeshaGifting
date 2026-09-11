@@ -28,9 +28,10 @@ const PRODUCT_WIDTHS = [480, 800, 1200, 1600];
 const CATEGORY_WIDTHS = [480, 800, 1200];
 
 const CONTENT_FILES = [
-  "src/content/products.coffee.ts",
-  "src/content/products.cultural.ts",
-  "src/content/products.gifting.ts",
+  ...(await readdir(path.join(ROOT, "src/content")))
+    .filter((file) => /^products\..+\.ts$/.test(file))
+    .sort()
+    .map((file) => `src/content/${file}`),
   "src/content/categories.ts",
 ];
 
