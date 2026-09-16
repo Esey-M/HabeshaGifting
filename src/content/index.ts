@@ -11,6 +11,8 @@ import { daughterProducts } from "./products.daughter";
 import { friendProducts } from "./products.friend";
 import { youngGirlProducts } from "./products.young-girl";
 import { engagementProducts } from "./products.engagement";
+import { weddingProducts } from "./products.wedding";
+import { graduationProducts } from "./products.graduation";
 import type { Product } from "./types";
 
 export { budgets, categories } from "./categories";
@@ -31,4 +33,6 @@ export const products: Product[] = [
   ...friendProducts,
   ...youngGirlProducts,
   ...engagementProducts,
+  ...weddingProducts,
+  ...graduationProducts,
 ];
