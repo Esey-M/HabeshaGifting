@@ -4,9 +4,9 @@ export const site = {
   name: "HabeshaGifting",
   domain: "habeshagifting.com",
   url: "https://habeshagifting.com",
-  tagline: "Thoughtful gifts for the Habesha in your life",
+  tagline: "Ethiopian & Eritrean Gift Ideas",
   description:
-    "Gift ideas and honest buying guides for Habesha family and friends — coffee ceremony sets, cultural gifts, personalised pieces and gifts for every occasion.",
+    "Ethiopian and Eritrean gift ideas for Habesha family and friends. Explore coffee ceremony gifts, cultural keepsakes and honest guides to choosing well.",
   locale: "en_US",
   email: "hello@habeshagifting.com",
   /** First publication of the site, used for Organization schema. */

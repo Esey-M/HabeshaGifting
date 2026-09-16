@@ -180,7 +180,7 @@ function guideCard({ eyebrow, title, hasArt }) {
 }
 
 function defaultCard() {
-  const title = "Thoughtful Gifts for the Habesha in Your Life";
+  const title = "Ethiopian & Eritrean Gift Ideas";
   const { size, lines } = fit(title, [66, 60, 54], W - 160, 3);
   const lineHeight = size * 1.2;
   // Fixed baseline for the first line, so the block always clears the eyebrow.

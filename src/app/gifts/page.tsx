@@ -8,14 +8,14 @@ import { graph, webPageNode } from "@/lib/schema";
 import { absoluteUrl, routes } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "All Gift Categories",
+  title: "Ethiopian & Eritrean Gift Categories",
   description:
-    "Browse every gift category on HabeshaGifting — by recipient, by occasion, cultural gifts, coffee ceremony sets and personalised pieces.",
+    "Browse Ethiopian, Eritrean and Habesha gift ideas by recipient, occasion or tradition, including coffee ceremony gifts and personalised pieces.",
   alternates: { canonical: routes.gifts },
   openGraph: {
-    title: "All Gift Categories | HabeshaGifting",
+    title: "Ethiopian & Eritrean Gift Categories | HabeshaGifting",
     description:
-      "Browse every gift category on HabeshaGifting — by recipient, by occasion, cultural gifts, coffee ceremony sets and personalised pieces.",
+      "Browse Ethiopian, Eritrean and Habesha gift ideas by recipient, occasion or tradition, including coffee ceremony gifts and personalised pieces.",
     url: routes.gifts,
   },
 };
@@ -29,7 +29,7 @@ export default function GiftsIndexPage() {
   const jsonLd = graph(
     ...webPageNode({
       path: routes.gifts,
-      name: "All Gift Categories",
+      name: "Ethiopian & Eritrean Gift Categories",
       description: metadata.description as string,
       trail,
       type: "CollectionPage",
@@ -58,8 +58,8 @@ export default function GiftsIndexPage() {
         <SectionHeading
           as="h1"
           eyebrow="Every way in"
-          title="All Gift Categories"
-          description="Six main categories, each opening onto recipients, occasions or collections. Pick whichever way of thinking about the gift comes most naturally."
+          title="Ethiopian & Eritrean Gift Categories"
+          description="Find Habesha gift ideas by recipient, occasion or tradition. Explore Ethiopian and Eritrean collections, coffee ceremony gifts and personalised keepsakes."
         />
       </div>
 

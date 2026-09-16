@@ -7,13 +7,13 @@ import { graph, webPageNode } from "@/lib/schema";
 import { absoluteUrl, routes } from "@/lib/site";
 
 const description =
-  "Every gift guide on HabeshaGifting — what each gift suits, what to check before you order, and where it falls short.";
+  "Ethiopian, Eritrean and Habesha gift guides: who each idea suits, what to check before ordering, and when to choose something else.";
 
 export const metadata: Metadata = {
-  title: "All Gift Guides",
+  title: "Ethiopian & Eritrean Gift Guides",
   description,
   alternates: { canonical: routes.guides },
-  openGraph: { title: "All Gift Guides | HabeshaGifting", description, url: routes.guides },
+  openGraph: { title: "Ethiopian & Eritrean Gift Guides | HabeshaGifting", description, url: routes.guides },
 };
 
 export default function GuidesIndexPage() {
@@ -27,7 +27,7 @@ export default function GuidesIndexPage() {
   const jsonLd = graph(
     ...webPageNode({
       path: routes.guides,
-      name: "All Gift Guides",
+      name: "Ethiopian & Eritrean Gift Guides",
       description,
       modified: guides[0]?.updated,
       trail,
@@ -36,7 +36,7 @@ export default function GuidesIndexPage() {
     {
       "@type": "ItemList",
       "@id": `${absoluteUrl(routes.guides)}#list`,
-      name: "All Gift Guides",
+      name: "Ethiopian & Eritrean Gift Guides",
       description,
       numberOfItems: guides.length,
       itemListElement: guides.map((p, i) => ({
@@ -58,7 +58,7 @@ export default function GuidesIndexPage() {
         <SectionHeading
           as="h1"
           eyebrow={`${guides.length} guides`}
-          title="All Gift Guides"
+          title="Ethiopian & Eritrean Gift Guides"
           description={description}
         />
       </div>

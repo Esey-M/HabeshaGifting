@@ -132,7 +132,7 @@ export const culturalProducts: Product[] = [
     image: "/img/products/amharic-family-name-print",
     art: { hue: 25, motif: "arch" },
     updated: "2026-09-16",
-    tags: ["print", "wall art", "amharic", "personalized", "home decor", "housewarming", "typography"],
+    tags: ["print", "wall art", "amharic", "personalized", "home decor", "housewarming", "typography", "ethiopian"],
     placements: [
       { category: "personalized-gifts", subcategory: "personalized-home-decor" },
     ],
@@ -194,15 +194,15 @@ export const culturalProducts: Product[] = [
     affiliateUrl: null,
     image: "/img/products/personalized-coffee-mug-amharic",
     art: { hue: 200, motif: "vessel" },
-    updated: "2026-08-11",
-    tags: ["mug", "personalized", "amharic", "coffee", "budget", "office", "funny"],
+    updated: "2026-09-16",
+    tags: ["mug", "personalized", "amharic", "coffee", "budget", "office", "funny", "ethiopian"],
     placements: [
       { category: "personalized-gifts", subcategory: "custom-mugs" },
     ],
     guide: {
-      heading: "The Custom Mug: Low Risk, Surprisingly High Hit Rate",
+      heading: "Personalised Amharic Mugs: A Small Ethiopian Gift With Meaning",
       standfirst:
-        "It is the least ambitious gift in this catalogue and one of the most reliably used. That combination is worth taking seriously.",
+        "A personalised Amharic mug makes a small Ethiopian gift for someone who uses the language. Verify the script and customisation proof before ordering.",
       why: [
         "It gets used daily, which is a low bar that most gifts fail. A mug enters the rotation immediately and stays there, which is more than can be said for most decorative cultural objects.",
         "Ge'ez script on a mug lands well in an office. It is a small, daily, unforced cultural signal, and it reliably starts the conversation the recipient is happy to have.",
@@ -312,17 +312,17 @@ export const culturalProducts: Product[] = [
     affiliateUrl: null,
     image: "/img/products/ethiopian-childrens-book-set",
     art: { hue: 35, motif: "basket" },
-    updated: "2026-08-22",
-    tags: ["books", "kids", "children", "amharic", "tigrinya", "language", "learning"],
+    updated: "2026-09-16",
+    tags: ["books", "kids", "children", "amharic", "tigrinya", "language", "learning", "ethiopian", "eritrean", "habesha"],
     placements: [
       { category: "gifts-for-her", subcategory: "young-girl" },
       { category: "gifts-for-him", subcategory: "young-boy" },
       { category: "gifts-by-occasion", subcategory: "new-baby" },
     ],
     guide: {
-      heading: "Children's Books: The Cultural Gift That Does the Most Work",
+      heading: "Amharic and Tigrinya Children's Books as Habesha Gifts",
       standfirst:
-        "For diaspora families worried about language loss, a good picture book achieves more than any decorative object in this catalogue.",
+        "Amharic and Tigrinya children's books can help Ethiopian and Eritrean families share language at home. Match the book's language and reading level to the child.",
       why: [
         "It addresses the actual concern. Parents raising children abroad routinely watch the language thin out by the second generation, and books are the one gift that pushes directly against that — repeated nightly, in the child's own hands.",
         "Picture books make the language low-pressure. A child who resists a lesson will happily learn twenty words from a story, and the parent reading it usually gets a refresher too.",

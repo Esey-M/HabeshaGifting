@@ -84,15 +84,15 @@ export const coffeeProducts: Product[] = [
     affiliateUrl: null,
     image: "/img/products/ceramic-jebena-modern-design",
     art: { hue: 30, motif: "vessel" },
-    updated: "2026-08-14",
-    tags: ["coffee", "jebena", "ceremony", "modern", "kitchen", "housewarming"],
+    updated: "2026-09-16",
+    tags: ["coffee", "jebena", "ceremony", "modern", "kitchen", "housewarming", "habesha", "ethiopian", "eritrean"],
     placements: [
       { category: "coffee-traditional-gifts", subcategory: "jebena-coffee-pots" },
     ],
     guide: {
-      heading: "The Modern Ceramic Jebena: A Practical Alternative to Clay",
+      heading: "Ceramic Jebena Gift Guide for Ethiopian & Eritrean Coffee Lovers",
       standfirst:
-        "Glazed ceramic gives up a little tradition for a lot of convenience. For a first apartment or a nervous host, that is usually the right trade.",
+        "For an Ethiopian or Eritrean coffee lover setting up a first home, a ceramic jebena may be easier to live with than clay. Check the heat-use instructions before gifting one.",
       why: [
         "The glaze is the point. Unglazed clay absorbs oils and needs curing and careful washing; a glazed interior rinses clean, does not hold flavours between uses, and survives a dishwasher-adjacent household.",
         "Ceramic tolerates modern kitchens better. Clay wants a low, even flame; ceramic copes more gracefully with an electric coil or a glass-top hob, which is what most people in the diaspora actually have.",
@@ -144,16 +144,16 @@ export const coffeeProducts: Product[] = [
     affiliateUrl: null,
     image: "/img/products/wooden-coffee-tray-rekbot",
     art: { hue: 35, motif: "arch" },
-    updated: "2026-07-30",
-    tags: ["coffee", "tray", "rekbot", "wood", "wedding", "handcrafted"],
+    updated: "2026-09-16",
+    tags: ["coffee", "tray", "rekbot", "wood", "wedding", "handcrafted", "habesha", "ethiopian", "eritrean"],
     placements: [
       { category: "coffee-traditional-gifts", subcategory: "coffee-trays" },
       { category: "ethiopian-eritrean-gifts", subcategory: "home-decor" },
     ],
     guide: {
-      heading: "The Coffee Tray: The Piece Most People Forget to Buy",
+      heading: "Rekbot Coffee Tray: A Habesha Coffee Ceremony Gift Guide",
       standfirst:
-        "Everyone buys the jebena and the cups. The tray is what turns them into a service — and it is usually the last thing anyone owns.",
+        "A rekbot-style tray gives a Habesha coffee ceremony set a place to be served. Check its size, carrying strength and finish before choosing one as a gift.",
       why: [
         "A tray is what makes the ceremony portable. Coffee is brewed in one place and served in another, often to a room full of people, and carrying a hot pot and twelve cups without one is genuinely awkward.",
         "It is the piece with the longest life. Cups break and clay cracks, but a solid wooden tray outlasts everything else in the set — which is why it works as a wedding or anniversary gift specifically.",
@@ -200,15 +200,15 @@ export const coffeeProducts: Product[] = [
     affiliateUrl: null,
     image: "/img/products/ethiopian-incense-burner-set",
     art: { hue: 300, motif: "vessel" },
-    updated: "2026-08-02",
-    tags: ["incense", "etan", "frankincense", "traditional", "home", "ceremony"],
+    updated: "2026-09-16",
+    tags: ["incense", "etan", "frankincense", "traditional", "home", "ceremony", "habesha", "ethiopian", "eritrean"],
     placements: [
       { category: "coffee-traditional-gifts", subcategory: "incense-traditional" },
     ],
     guide: {
-      heading: "Incense and Etan: The Smallest Gift With the Strongest Memory",
+      heading: "Etan Incense Gifts for an Ethiopian or Eritrean Coffee Ceremony",
       standfirst:
-        "Smell is the sense most tied to memory, which is why a few dollars of frankincense often outperforms a far more expensive gift.",
+        "Etan incense can be a small Ethiopian or Eritrean coffee ceremony gift. Check the scent, burner requirements and whether the recipient uses incense at home.",
       why: [
         "Etan is inseparable from the coffee ceremony and from holidays. Lighting it is the signal that something is beginning — guests are arriving, or a feast day has started.",
         "It is one of the few gifts that recreates a place rather than representing one. For someone far from home, that is a materially different experience from looking at a decorative object.",
@@ -259,16 +259,16 @@ export const coffeeProducts: Product[] = [
     affiliateUrl: null,
     image: "/img/products/woven-mesob-inspired-basket",
     art: { hue: 38, motif: "basket" },
-    updated: "2026-07-11",
-    tags: ["mesob", "basket", "home decor", "handwoven", "traditional", "housewarming"],
+    updated: "2026-09-16",
+    tags: ["mesob", "basket", "home decor", "handwoven", "traditional", "housewarming", "ethiopian"],
     placements: [
       { category: "coffee-traditional-gifts", subcategory: "traditional-home-decor" },
       { category: "ethiopian-eritrean-gifts", subcategory: "home-decor" },
     ],
     guide: {
-      heading: "The Mesob as a Gift: Beautiful, Bulky, and Worth Thinking About",
+      heading: "Mesob Basket Gifts: Choosing Ethiopian-Inspired Home Décor",
       standfirst:
-        "A woven mesob is the most visually striking object in this catalogue. It is also the one most likely to be admired, photographed, and then have nowhere to live.",
+        "A mesob-inspired basket makes a distinctive Ethiopian home gift when the recipient has room for it. Check whether the listing offers a usable table or a decorative piece.",
       why: [
         "It is genuinely handmade, and it looks it. The coiled straw work takes days, and the irregularity that comes with hand-weaving is exactly what makes it read as craft rather than décor bought in bulk.",
         "It has an actual function. A full-size mesob is a communal table — injera is laid directly on it and everyone eats from the same surface, which is the physical expression of how Habesha meals work.",
@@ -319,16 +319,16 @@ export const coffeeProducts: Product[] = [
     affiliateUrl: null,
     image: "/img/products/habesha-textile-wall-hanging",
     art: { hue: 350, motif: "weave" },
-    updated: "2026-08-08",
-    tags: ["textile", "tibeb", "wall art", "home decor", "handwoven", "ethiopian", "eritrean"],
+    updated: "2026-09-16",
+    tags: ["textile", "tibeb", "wall art", "home decor", "handwoven", "ethiopian", "eritrean", "habesha"],
     placements: [
       { category: "ethiopian-eritrean-gifts", subcategory: "home-decor" },
       { category: "coffee-traditional-gifts", subcategory: "traditional-home-decor" },
     ],
     guide: {
-      heading: "Textile Wall Art: Cultural Décor Without the Clichés",
+      heading: "Habesha Textile Wall Art: Ethiopian & Eritrean Gift Ideas",
       standfirst:
-        "Hanging a woven piece is the most restrained way to make a home read as Habesha — no flags, no maps, no souvenirs.",
+        "A woven textile can bring Ethiopian or Eritrean design into a Habesha home. Check the pattern, size, material and hanging method before buying wall art.",
       why: [
         "The tibeb border is the design. The coloured woven band that edges a netela or kemis is a genuine craft tradition with regional variation, and isolating it as wall art puts the actual artistry in the frame rather than a national symbol.",
         "Textiles solve a room problem that prints cannot. They absorb sound, add texture, and read as warm in a way flat framed art does not — which matters in the hard-surfaced rented flats most people live in.",

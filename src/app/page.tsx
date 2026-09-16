@@ -68,11 +68,11 @@ export default function HomePage() {
           <div className="max-w-2xl">
             <p className="eyebrow">Gift guides for the Habesha community</p>
             <h1 className="mt-4 font-display text-4xl font-semibold leading-[1.1] text-ink sm:text-5xl lg:text-6xl">
-              Thoughtful Gifts for the Habesha in Your Life
+              Ethiopian &amp; Eritrean Gift Ideas for the Habesha in Your Life
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-              Discover meaningful gift ideas for Habesha family, friends and every special
-              occasion.
+              Explore Ethiopian and Eritrean gift ideas for Habesha family and friends,
+              from coffee ceremony pieces to personal keepsakes.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
