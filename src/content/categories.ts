@@ -29,6 +29,7 @@ export const categories: Category[] = [
         heading: "Habesha Wedding Gift Ideas",
         intro:
           "A Habesha wedding is rarely one event, and a good gift acknowledges that. These ideas suit the couple's new home, the coffee they will serve guests for years, and the keepsakes they will still have at their tenth anniversary.",
+        image: "/img/categories/wedding",
         art: { hue: 12, motif: "arch" },
       },
       {
@@ -39,6 +40,7 @@ export const categories: Category[] = [
         heading: "Engagement Gift Ideas",
         intro:
           "Engagement gifts sit in a lovely in-between place: personal enough to celebrate the couple, restrained enough that you are not pre-empting the wedding list.",
+        image: "/img/categories/engagement",
         art: { hue: 18, motif: "cross" },
       },
       {
@@ -49,6 +51,7 @@ export const categories: Category[] = [
         heading: "Birthday Gift Ideas",
         intro:
           "The best birthday gifts show you were paying attention the rest of the year. These lean personal, useful, or beautiful — ideally two of the three.",
+        image: "/img/categories/birthday",
         art: { hue: 30, motif: "rays" },
       },
       {
@@ -59,6 +62,7 @@ export const categories: Category[] = [
         heading: "Graduation Gift Ideas",
         intro:
           "A graduation gift often marks a first apartment as much as a degree. These ideas balance celebration with things that genuinely help someone start out.",
+        image: "/img/categories/graduation",
         art: { hue: 42, motif: "arch" },
       },
       {
@@ -69,6 +73,7 @@ export const categories: Category[] = [
         heading: "New Baby Gift Ideas",
         intro:
           "New-parent gifts split neatly into two kinds: something for the baby, and something that makes the parents' week easier. The best gift baskets do both.",
+        image: "/img/categories/new-baby",
         art: { hue: 54, motif: "basket" },
       },
       {
@@ -79,6 +84,7 @@ export const categories: Category[] = [
         heading: "Housewarming Gift Ideas",
         intro:
           "A housewarming gift should survive the unpacking and still be in use a year later. Think of the first thing they will want to show a guest.",
+        image: "/img/categories/housewarming",
         art: { hue: 8, motif: "vessel" },
       },
       {
@@ -89,6 +95,7 @@ export const categories: Category[] = [
         heading: "Anniversary Gift Ideas",
         intro:
           "Anniversary gifts reward specificity. A date, a place, a phrase in Amharic or Tigrinya turns an ordinary object into something only the two of them can read.",
+        image: "/img/categories/anniversary",
         art: { hue: 355, motif: "cross" },
       },
       {
@@ -99,6 +106,7 @@ export const categories: Category[] = [
         heading: "Holiday Gift Ideas",
         intro:
           "Between Genna in January, Fasika in spring and the December holidays, there is always a season coming. These ideas travel well and suit gifting in quantity.",
+        image: "/img/categories/christmas-holidays",
         art: { hue: 140, motif: "rays" },
       },
       {
@@ -109,6 +117,7 @@ export const categories: Category[] = [
         heading: "Coffee Ceremony Gift Ideas",
         intro:
           "The buna ceremony is a gift-giving occasion in its own right. These are gifts for the person who runs it — and gifts that let someone start their own.",
+        image: "/img/categories/coffee-ceremony",
         art: { hue: 24, motif: "vessel" },
       },
       {
@@ -119,6 +128,7 @@ export const categories: Category[] = [
         heading: "Celebration Gift Ideas",
         intro:
           "Not every milestone has a category. For new citizenship, a new job, or simply good news worth marking, these gifts strike a celebratory note without being fussy.",
+        image: "/img/categories/celebration",
         art: { hue: 300, motif: "rays" },
       },
     ],

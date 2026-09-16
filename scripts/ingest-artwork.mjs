@@ -41,9 +41,10 @@ async function findSlug(slug) {
     const src = await readFile(path.join(ROOT, rel), "utf8");
     const at = src.indexOf(`slug: "${slug}",`);
     if (at === -1) continue;
-    const block = src.slice(at, at + 4000);
+    const artAt = src.indexOf("art: {", at);
+    const block = src.slice(at, artAt === -1 ? at : artAt);
     const kind = rel.includes("categories") ? "category" : "product";
-    return { file: rel, src, at, kind, hasImage: /^\s*image: "/m.test(block.split("\n").slice(0, 30).join("\n")) };
+    return { file: rel, src, at, kind, hasImage: /^\s*image: "/m.test(block) };
   }
   return null;
 }

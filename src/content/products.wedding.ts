@@ -24,6 +24,7 @@ export const weddingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0D126Z2FV?linkCode=ll2&tag=mesmerdesign-20&linkId=b29e5739de723e7728a2cdcc8934b868&language=en_US",
+    image: "/img/products/mr-mrs-crystal-wine-glass-set",
     art: { hue: 6, motif: "vessel" },
     updated: "2026-09-16",
     tags: ["gift sets", "glassware", "crystal", "wedding", "mr and mrs", "keepsake", "couple"],
@@ -90,6 +91,7 @@ export const weddingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0CF3SG6DX?linkCode=ll2&tag=mesmerdesign-20&linkId=33ad67e0c35261e894b071e960becf52&language=en_US",
+    image: "/img/products/mr-mrs-marble-mug-set",
     art: { hue: 200, motif: "vessel" },
     updated: "2026-09-16",
     tags: ["gift sets", "mug", "ceramic", "wedding", "mr and mrs", "couple", "everyday"],
@@ -156,6 +158,7 @@ export const weddingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0B419SRTJ?linkCode=ll2&tag=mesmerdesign-20&linkId=c2fada32ba3d2172b3c71c152392c912&language=en_US",
+    image: "/img/products/insulated-couple-wine-tumbler-set",
     art: { hue: 190, motif: "vessel" },
     updated: "2026-09-16",
     tags: ["gift sets", "tumbler", "stainless steel", "wedding", "outdoor", "couple", "insulated"],
@@ -222,6 +225,7 @@ export const weddingProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0CLLRHXN8?linkCode=ll2&tag=mesmerdesign-20&linkId=6b9293b144b6813b210567be3bc6d550&language=en_US",
+    image: "/img/products/mr-mrs-waffle-robe-set",
     art: { hue: 28, motif: "weave" },
     updated: "2026-09-16",
     tags: ["comfort", "robe", "loungewear", "wedding", "mr and mrs", "couple", "honeymoon"],

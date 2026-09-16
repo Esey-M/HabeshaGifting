@@ -23,6 +23,7 @@ export const engagementProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FP1RH4T1?linkCode=ll2&tag=mesmerdesign-20&linkId=de8c9a61da3f45e5c1a44a44e93c8cbb&language=en_US",
+    image: "/img/products/crochet-engagement-toast",
     art: { hue: 22, motif: "rays" },
     updated: "2026-09-16",
     tags: ["keepsake", "crochet", "handmade", "engagement", "card-alternative", "desk", "budget"],
@@ -88,6 +89,7 @@ export const engagementProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0BN22SN6V?linkCode=ll2&tag=mesmerdesign-20&linkId=82e7dcc1af2778a0c4bed826d792bfec&language=en_US",
+    image: "/img/products/boho-wedding-planner-book",
     art: { hue: 12, motif: "arch" },
     updated: "2026-09-16",
     tags: ["stationery", "planner", "wedding", "engagement", "organizer", "journal", "practical"],
@@ -154,6 +156,7 @@ export const engagementProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0BNHPD6NC?linkCode=ll2&tag=mesmerdesign-20&linkId=ed9410c14b43ab485a22533f8594b813&language=en_US",
+    image: "/img/products/cast-iron-proposal-sculpture",
     art: { hue: 8, motif: "vessel" },
     updated: "2026-09-16",
     tags: ["home decor", "sculpture", "cast iron", "engagement", "anniversary", "couple", "keepsake"],

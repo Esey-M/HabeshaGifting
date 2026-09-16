@@ -24,6 +24,7 @@ export const graduationProducts: Product[] = [
     budget: "under-50",
     affiliateUrl:
       "https://www.amazon.com/dp/B0FBWKM8XX?linkCode=ll2&tag=mesmerdesign-20&linkId=2b877637140638eb8a3cc3e6c66e843c&language=en_US",
+    image: "/img/products/crochet-flower-bouquet-graduation",
     art: { hue: 48, motif: "rays" },
     updated: "2026-09-16",
     tags: ["keepsake", "crochet", "bouquet", "flowers", "graduation", "handmade", "ceremony"],
@@ -90,6 +91,7 @@ export const graduationProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0GBVS3MZF?linkCode=ll2&tag=mesmerdesign-20&linkId=a3c8cd61c9a072c43ae1db7590d03ec8&language=en_US",
+    image: "/img/products/crochet-graduation-toast",
     art: { hue: 36, motif: "rays" },
     updated: "2026-09-16",
     tags: ["keepsake", "crochet", "handmade", "graduation", "desk", "dorm", "budget"],
@@ -155,6 +157,7 @@ export const graduationProducts: Product[] = [
     budget: "under-25",
     affiliateUrl:
       "https://www.amazon.com/dp/B0BYVDJBL8?linkCode=ll2&tag=mesmerdesign-20&linkId=0e7eee7d7be737fc1a5ff451609ebfa7&language=en_US",
+    image: "/img/products/graduation-tassel-glass-cup",
     art: { hue: 190, motif: "vessel" },
     updated: "2026-09-16",
     tags: ["practical", "glass", "tumbler", "straw", "graduation", "desk", "budget"],
