@@ -363,10 +363,10 @@ export const categories: Category[] = [
     slug: "ethiopian-eritrean-gifts",
     title: "Ethiopian & Eritrean Gifts",
     icon: "🇪🇹",
-    tagline: "Cultural gifts rooted in both traditions, under one Habesha roof.",
-    heading: "Ethiopian & Eritrean Gifts",
+    tagline: "Ethiopian and Eritrean gift ideas, with practical guides to coffee, script, jewellery and home pieces.",
+    heading: "Ethiopian & Eritrean Gift Ideas",
     intro:
-      "Habesha is the umbrella here, not a flattening. Some gifts are distinctly Ethiopian, some distinctly Eritrean, and many belong to both. We label them honestly rather than blurring the difference.",
+      "Looking for a Habesha gift? Start with what the person will actually use: a coffee ceremony piece, something for their home, or a personal keepsake. Ethiopian and Eritrean traditions overlap, but language and design details matter. Browse the separate collections below, then read each buying guide for the questions to ask before ordering.",
     childLabel: "Collections",
     art: { hue: 100, motif: "weave" },
     inNav: false,
@@ -376,20 +376,20 @@ export const categories: Category[] = [
         slug: "ethiopian-inspired",
         title: "Ethiopian-Inspired Gifts",
         icon: "🇪🇹",
-        tagline: "Gifts drawing on Ethiopian craft, script and design.",
+        tagline: "Amharic script, Ethiopian design and gift ideas with a clear reason to give them.",
         heading: "Ethiopian Gift Ideas",
         intro:
-          "From Amharic script jewellery to habesha kemis-inspired textiles, these gifts draw specifically on Ethiopian craft traditions.",
+          "For an Ethiopian gift, look for a connection the recipient will recognise: an Amharic inscription, a design they enjoy wearing, or a useful piece for their home. Check the script and the seller's customisation details before ordering; a cultural label alone does not make a gift personal.",
         art: { hue: 95, motif: "cross" },
       },
       {
         slug: "eritrean-inspired",
         title: "Eritrean-Inspired Gifts",
         icon: "🇪🇷",
-        tagline: "Gifts drawing on Eritrean craft, script and design.",
+        tagline: "Tigrinya script and Eritrean-inspired keepsakes chosen for the person receiving them.",
         heading: "Eritrean Gift Ideas",
         intro:
-          "Tigrinya script pieces, Asmara-inspired design and Eritrean craft traditions — gifts that are specifically Eritrean rather than generically Habesha.",
+          "Eritrean gift ideas work best when the details match the person. If you choose a Tigrinya inscription or an Asmara reference, confirm the wording, spelling and design with someone who knows what the recipient would want. The guides below explain where each idea fits and what to check before buying.",
         art: { hue: 210, motif: "arch" },
       },
       {

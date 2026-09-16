@@ -166,6 +166,7 @@ export default async function GuidePage({ params }: { params: Params }) {
     { id: sectionId("What makes it a good gift"), label: "What makes it a good gift" },
     { id: sectionId("Important considerations"), label: "Important considerations" },
     { id: "pros", label: "Pros" },
+    ...(product.guide.questions?.length ? [{ id: "reader-questions", label: "Common questions" }] : []),
     ...(alternatives.length > 0 ? [{ id: "alternatives-heading", label: "Alternatives" }] : []),
   ];
 
@@ -307,6 +308,22 @@ export default async function GuidePage({ params }: { params: Params }) {
               </div>
             </section>
           </div>
+
+          {product.guide.questions && product.guide.questions.length > 0 && (
+            <section className="mt-12 scroll-mt-24" aria-labelledby="reader-questions">
+              <h2 id="reader-questions" className="font-display text-2xl font-semibold text-ink">
+                Common questions about this gift
+              </h2>
+              <dl className="mt-6 space-y-6">
+                {product.guide.questions.map(({ question, answer }) => (
+                  <div key={question}>
+                    <dt className="font-semibold text-ink">{question}</dt>
+                    <dd className="mt-2 leading-relaxed text-ink-soft">{answer}</dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          )}
 
           {alternatives.length > 0 && (
             <section className="mt-16" aria-labelledby="alternatives-heading">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd } from "@/components/ui/Breadcrumbs";
 import { CategoryCard } from "@/components/ui/CategoryCard";
@@ -58,6 +59,7 @@ export default async function CategoryPage({ params }: { params: Params }) {
   ];
 
   const path = routes.category(category.slug);
+  const isCultural = category.slug === "ethiopian-eritrean-gifts";
 
   const jsonLd = graph(
     ...webPageNode({
@@ -123,6 +125,75 @@ export default async function CategoryPage({ params }: { params: Params }) {
           })}
         </div>
       </section>
+
+      {isCultural && (
+        <section aria-labelledby="cultural-guide-heading" className="mt-20 max-w-4xl border-t border-line pt-12">
+          <p className="eyebrow">Choosing a meaningful gift</p>
+          <h2 id="cultural-guide-heading" className="mt-3 font-display text-3xl font-semibold text-ink">
+            How to choose an Ethiopian or Eritrean gift
+          </h2>
+          <div className="prose-editorial mt-6 space-y-5">
+            <p>
+              First, decide whether the gift should be used, displayed or kept as a personal
+              reminder. A <Link href={routes.guide("traditional-clay-jebena-coffee-pot")}>clay jebena</Link>
+              {" "}suits someone who already hosts coffee or wants to start. A {" "}
+              <Link href={routes.guide("woven-mesob-inspired-basket")}>woven mesob-inspired basket</Link>
+              {" "}is a home gift, but check its dimensions and intended use before buying.
+              A personalised print or piece of jewellery needs the recipient&rsquo;s preferred
+              name, language and spelling.
+            </p>
+            <p>
+              If you are unsure which tradition or language to reference, choose something
+              shared, such as a coffee gift, and ask a family member before ordering custom
+              text. A design described as &ldquo;Habesha&rdquo; can be appropriate across both
+              communities, but it cannot tell you whether a particular person would prefer
+              Amharic, Tigrinya or no writing at all.
+            </p>
+          </div>
+
+          <h3 className="mt-10 font-display text-2xl font-semibold text-ink">Common gift questions</h3>
+          <dl className="mt-5 space-y-7">
+            <div>
+              <dt className="font-semibold text-ink">What is a useful Habesha housewarming gift?</dt>
+              <dd className="mt-2 leading-relaxed text-ink-soft">
+                A coffee ceremony piece can be useful if the recipient hosts coffee. Check
+                whether they need a pot, tray or serving cups first; a duplicate may take up
+                precious space. Start with our {" "}
+                <Link href={routes.category("coffee-traditional-gifts")} className="text-brand underline-offset-4 hover:underline">coffee and traditional gifts</Link>
+                {" "}collections.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-ink">What should I check before buying a jebena as a gift?</dt>
+              <dd className="mt-2 leading-relaxed text-ink-soft">
+                Check the size, whether the pot is for use or display, what heat source it can
+                tolerate, and how it will be packed for shipping. The {" "}
+                <Link href={routes.guide("traditional-clay-jebena-coffee-pot")} className="text-brand underline-offset-4 hover:underline">clay jebena guide</Link>
+                {" "}explains these trade-offs.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-ink">Is an Amharic gift right for an Eritrean recipient?</dt>
+              <dd className="mt-2 leading-relaxed text-ink-soft">
+                It depends on the person and the message. Do not assume a shared Habesha identity
+                means the recipient wants Amharic text. Ask which language they use and verify
+                any custom wording before it is printed or engraved. Browse {" "}
+                <Link href={routes.subcategory(category.slug, "eritrean-inspired")} className="text-brand underline-offset-4 hover:underline">Eritrean gift ideas</Link>
+                {" "}for alternatives.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-ink">What makes a personalised cultural gift feel personal?</dt>
+              <dd className="mt-2 leading-relaxed text-ink-soft">
+                A name, phrase or date the recipient would choose themselves matters more than
+                a generic cultural motif. For script gifts, confirm the exact characters,
+                preview the layout and check the return policy before ordering. See the {" "}
+                <Link href={routes.guide("amharic-family-name-print")} className="text-brand underline-offset-4 hover:underline">Amharic family name print guide</Link>.
+              </dd>
+            </div>
+          </dl>
+        </section>
+      )}
 
       <section className="gift-panel mt-20 overflow-hidden rounded-card border border-line bg-cream p-8 sm:p-10">
         <SectionHeading

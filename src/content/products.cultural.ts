@@ -131,13 +131,13 @@ export const culturalProducts: Product[] = [
     affiliateUrl: null,
     image: "/img/products/amharic-family-name-print",
     art: { hue: 25, motif: "arch" },
-    updated: "2026-07-05",
+    updated: "2026-09-16",
     tags: ["print", "wall art", "amharic", "personalized", "home decor", "housewarming", "typography"],
     placements: [
       { category: "personalized-gifts", subcategory: "personalized-home-decor" },
     ],
     guide: {
-      heading: "Script Prints: Cultural Wall Art for a Modern Interior",
+      heading: "Amharic Family Name Prints: A Personal Ethiopian Housewarming Gift",
       standfirst:
         "A well-set Ge'ez typographic print is the easiest way to make a contemporary home read as Habesha without a single cliché.",
       why: [
@@ -161,6 +161,10 @@ export const culturalProducts: Product[] = [
         "Check whether the price includes a frame. Many listings show a framed mock-up and ship the print alone.",
         "Ask about the font. Poorly digitised Ge'ez typefaces have awkward character spacing that a reader will notice immediately even if you would not.",
         "Confirm print size against the wall you have in mind. Prints photograph without scale and A4 is smaller than most people picture.",
+      ],
+      questions: [
+        { question: "How do I check an Amharic name before ordering a print?", answer: "Ask the recipient or a fluent family member for the exact spelling in Ge'ez script, then compare every character in the seller's proof. Do not rely on automatic transliteration for a family name." },
+        { question: "Does a custom name print usually include a frame?", answer: "It depends on the listing. Check the selected size and variation for a frame, and confirm whether the item ships as a physical print or a digital file." },
       ],
       pros: [
         "Fits modern interiors naturally",

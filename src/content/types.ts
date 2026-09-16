@@ -145,6 +145,8 @@ export interface Guide {
   whyGift: string[];
   /** Honest caveats before buying. */
   considerations: string[];
+  /** Specific reader questions answered in the article body. */
+  questions?: { question: string; answer: string }[];
   pros: string[];
   cons: string[];
   /** Slugs of alternative products. Resolved at render time. */

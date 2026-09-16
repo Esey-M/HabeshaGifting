@@ -19,13 +19,13 @@ export const coffeeProducts: Product[] = [
     affiliateUrl: null,
     image: "/img/products/traditional-clay-jebena-coffee-pot",
     art: { hue: 22, motif: "vessel" },
-    updated: "2026-08-14",
+    updated: "2026-09-16",
     tags: ["coffee", "jebena", "ceremony", "ethiopian", "eritrean", "traditional", "kitchen"],
     placements: [
       { category: "coffee-traditional-gifts", subcategory: "jebena-coffee-pots" },
     ],
     guide: {
-      heading: "The Traditional Clay Jebena: What to Know Before You Buy One",
+      heading: "Ethiopian & Eritrean Jebena Gifts: Choosing a Traditional Clay Pot",
       standfirst:
         "A clay jebena is the most recognisable gift you can give a Habesha household — and the one most likely to be bought wrongly. Here is how to choose the right one.",
       why: [
@@ -49,6 +49,10 @@ export const coffeeProducts: Product[] = [
         "Unglazed clay must be cured before first use, usually by boiling water in it once or twice and discarding it. If your recipient will not do this, a glazed or ceramic version is more forgiving.",
         "Ask, discreetly, what size they need. A pot sized for two people is a frustrating gift for someone who hosts twelve.",
         "Clay is heavy and brittle. If it is being posted internationally, packaging quality matters more than the pot itself.",
+      ],
+      questions: [
+        { question: "Is a clay jebena a good housewarming gift?", answer: "Yes, if the recipient wants to make coffee in one and has room to keep it. Ask whether they already own a pot and how many guests they usually serve before choosing a size." },
+        { question: "Can every clay jebena go on a stove?", answer: "No. Some are decorative only. Check the seller's heat-use instructions for the exact pot and the recipient's heat source before ordering; do not infer stovetop safety from its shape." },
       ],
       pros: [
         "Traditional material with the best heat behaviour",
